@@ -3,6 +3,7 @@
 /* remove some elements */
 #header .pagename, /* remove page name e.g. 'Gaming' */
 #sr-header-area, /* bar that contains subreddit links */
+#header-img,
 .default-header, /* reddit name */
 .giftgold, .goldvertisement, .gilded-comments-link, /* gold related */
 .trophy-area, /* trophy box */
@@ -461,7 +462,7 @@ div.arrow.downmod, body.res-nightmode div.arrow.downmod{
     background-image: url(http://c.thumbs.redditmedia.com/n8fFm75rDzKvc8A8.png) !important;
 }
 
-.res-nightmode #header-img.default-header, .res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default, .res-nightmode .thumbnail.nsfw {
+.res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default, .res-nightmode .thumbnail.nsfw {
     background-image: url(http://c.thumbs.redditmedia.com/0ZkZPsviQScvt3an.png) !important;
 }
 
@@ -564,20 +565,6 @@ div.score{
 
 .commentarea .score.likes, .commentarea .score.dislikes{
     font-style:italic !important;
-}
-
-.linkinfo .shortlink {
-    margin-top: 0px;
-}
-
-.linkinfo .shortlink input{
-	border:none;
-	font-style:normal;
-}
-
-input#shortlink-text{
-	background:none;
-	font-family:Consolas, Monaco, monospace;
 }
 
 .titlebox h1{
@@ -721,10 +708,6 @@ time.edited-timestamp{
 
 p a:hover {
     text-decoration:underline;
-}
-
-.panestack-title{
-    border-bottom-style:none;
 }
 
 .menuarea, .commentarea .menuarea{
@@ -914,14 +897,6 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
     margin-right:8px;
 }
 
-.panestack-title{
-    margin-right:0px;
-}
-
-.comments-page .panestack-title{
-    margin-top:20px;
-}
-
 .menuarea{
     font-style:italic;
 }
@@ -935,12 +910,6 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
 	font-weight:normal;
 	font-style:italic;
 	opacity:0 !important;
-	-Xmoz-transition:opacity 0.2s linear 0s;
-	-Xwebkit-transition:opacity 0.2s linear 0s;
-}
-
-.panestack-title:hover .RESSubscriptionButton{
-	opacity:1 !important;
 	-Xmoz-transition:opacity 0.2s linear 0s;
 	-Xwebkit-transition:opacity 0.2s linear 0s;
 }
@@ -1019,6 +988,7 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
 	font-size:16px;
 	white-space: normal;
 	background:transparent !important;
+	border: 0px !important;
 }
 
 .menuarea .drop-choices form, .menuarea .drop-choices a, .menuarea a, .menuarea .drop-choices a.choice {
@@ -1271,18 +1241,6 @@ h2{
 		-webkit-transition:width 1.3s ease-out 0s;
 	}
 	
-	#header-img, #header-img.default-header {
-		top:44px;
-		-moz-transition:top 1s ease-out 0s;
-		-webkit-transition:top 1s ease-out 0s;
-	}
-	
-	.pagename{
-		top:31px;
-		-moz-transition:top 1s ease-out 0s;
-		-webkit-transition:top 1s ease-out 0s;
-	}
-	
 	ul.tabmenu, #header ul.tabmenu {
 		top:68px;
 		-moz-transition:top 1s ease-out 0s;
@@ -1421,13 +1379,6 @@ div.styleToggle{
 	color:black;
 }
 
-.sidecontentbox .title h1 {
-	font-size: 16px;
-	color:black;
-	text-transform:lowercase;
-	padding-bottom:4px;
-}
-
 .subreddit .usertext .md{
 	background:none;
 	padding:7px;
@@ -1473,15 +1424,6 @@ div.styleToggle{
     opacity:1;
 }
 
-.listing-page .sidecontentbox .content{
-	background-color:whiteSmoke;
-	border-radius:5px;
-	border-top-left-radius:0px;
-	border-width:0px;
-	margin-top:3px;
-	padding:9px;
-}
-
 span.column.centered{
     text-align:left;
 }
@@ -1501,36 +1443,6 @@ span.column.centered{
 
 .subscription-box li {
     margin-bottom: 4px;
-}
-
-.sidecontentbox .icon-menu a{
-    background:none !important;
-}
-
-.sidecontentbox .collapse-button{
-	font-size:18px;
-	height:14px;
-	width:14px;
-	cursor:default;
-}
-
-.pagename a[href="http://www.reddit.com/r/Dashboard/"], .pagename a.dashboardTab{
-	font-size:15px !important;
-	margin-right: 8px;
-	text-transform:lowercase;
-	white-space:nowrap;
-	background-color:#FFCAB6;
-	border: 1px solid orangeRed;
-	border-radius: 2px;
-	padding-left:3px; padding-right:3px;
-	position:relative;
-	top:3px;
-	cursor:default;
-}
-
-.pagename a[href="http://www.reddit.com/r/Dashboard/"]:hover, .pagename a.dashboardTab:hover{
-	background-color:whiteSmoke;
-	border:1px solid #bbb
 }
 
 .RESDashboardComponentContainer{
@@ -1944,23 +1856,6 @@ pre, code {
     margin:0px;
 }
 
-#sr-header-area .drop-choices.srdrop, .drop-choices, table#srList{
-    background-color:white;
-}
-
-#sr-header-area .drop-choices.srdrop, .drop-choices, table#srList, .RESDropdownList {
-	box-shadow: #888 1px 1px 5px 0px;
-	border-width:0px;
-	border-radius:4px !important;
-	border-top-left-radius:0px !important;
-	padding:5px;
-	font-size:12px;
-}
-
-#sr-header-area .drop-choices.srdrop, .drop-choices {
-    margin-top:4px;
-}
-
 #srList tr {
 	border-width: 0px;
 	font-size:11px;
@@ -2196,22 +2091,13 @@ p#noresults.error{
 	color:#aaa;
 }
 
-.res-nightmode #header, .res-nightmode div#header, .res-nightmode div#header-bottom-right, .res-nightmode #sr-header-area, .res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode #header-bottom-left {
+.res-nightmode #header, .res-nightmode div#header, .res-nightmode div#header-bottom-right, .res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode #header-bottom-left {
 	background-color:#171717 !important;
 	box-shadow:none;
 }
 
 .res-nightmode #header{
     border-bottom: solid 1px #323232;
-}
-
-body.res-nightmode div.side div.spacer div.sidecontentbox h1{
-	background:none !important;
-	border:none !important;
-}
-
-.res-nightmode #sr-header-area a{
-    color:white;
 }
 
 .res-nightmode textarea{
@@ -2241,11 +2127,11 @@ background-color:black !important;
     color:white;
 }
 
-.res-nightmode #sr-header-area .drop-choices.srdrop, .res-nightmode .drop-choices, .res-nightmode table#srList{
+.res-nightmode .drop-choices, .res-nightmode table#srList{
     background-color:#222 !important;
 }
 
-.res-nightmode #sr-header-area .drop-choices.srdrop, .res-nightmode .drop-choices, .res-nightmode table#srList, .res-nightmode .RESDropdownList {
+.res-nightmode .drop-choices, .res-nightmode table#srList, .res-nightmode .RESDropdownList {
 	box-shadow:none;
 	border:1px solid #888 !important;
 	border-radius:4px !important;
@@ -2297,7 +2183,7 @@ background-color:black !important;
 	color:#8ad;
 }
 
-.res-nightmode a:hover, html .res-nightmode .pagename a, .res-nightmode div#header .hover.redditname a:hover{
+.res-nightmode a:hover, .res-nightmode div#header .hover.redditname a:hover{
 	color:white !important;
 }
 
@@ -2465,14 +2351,6 @@ color:white !important;
 
 .res-nightmode #userTaggerTable th, .res-nightmode #newCommentsTable th{
     background-color: #171717 !important;
-}
-
-.res-nightmode .sidecontentbox .content{
-    background-color:#171717 !important;
-}
-
-.sidecontentbox {
-    background-color: transparent !important;
 }
 
 .res-nightmode .sponsorshipbox div{
