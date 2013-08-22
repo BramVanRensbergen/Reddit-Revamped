@@ -38,78 +38,9 @@ a.thumbnail.self
     box-shadow: #888 0px 0px 5px 0px;
 }
 
-#search{
-    position: absolute !important;
-    top: 5px !important;
-    right: 10px !important;
-    z-index: 199 !important;
-    width: 150px !important;
-    height: 30px !important;
-}
-
-form#search input[type="text"]{
-    width:140px !important;
-    height: 19px !important;
-    text-align:right;
-    color:black;
-    font-family: inherit;
-    font-size:13px !important;
-    font-style: italic !important;
-    margin-left:4px;
-    padding-right: 10px !important;
-    -moz-transition:all 0.1s linear 0s;
-    -webkit-transition:all 0.1s linear 0s;
-}
-
-div#searchexpando{
-    position:relative !important;
-    top: 10px !important;
-    left:-140px !important;
-    font-size: 12px !important;
-    z-index:-1 !important;
-    background-color:#fbfbfb !important;
-    box-shadow:#888 1px 1px 5px 0px !important;
-    width:280px !important;
-    margin-top:0px !important;
-    padding-left:10px !important;
-    padding-right:3px !important;
-    padding-top: 10px !important;
-    padding-bottom: 1px !important;
-    border-style:none !important;
-    border-color:gray !important;
-    line-height:1.7em !important;
-}
-
-#header-bottom-right{
-  top: 4px !important;  /* put the user info box on the top line of the header */
-  right: 10px !important;
-  background-color:#f5f5f5 !important;  
-}
-
-#userbarToggle{
-    top: -1px !important;
-     background-color:#f5f5f5 !important;  
-    border-right: 0px !important;
-}
-
-#header-bottom-right .separator{
-    padding-left: 4px !important;
-    margin: 0px !important;
-}
-
-/* move userbar to the left to make space for search box */
-body.listing-page #header-bottom-right, body.comments-page #header-bottom-right, body.wiki-page #header-bottom-right{
-  right: 160px !important;
-}
-
-body.profile-page #header-bottom-right{
-    right: 10px !important;
-     
-}
-
 /* Make sure the tab menu is aligned correctly on each page */
 #header ul.tabmenu{
-	margin-top:0px !important;
+    margin-top:0px !important;
     border-width:0px; border-style:none;
     display:block;
     float: left;
@@ -146,6 +77,121 @@ background-color:#f5f5f5 !important;
     border:none;
     color: red !important;
     border-style: none !important;
+}
+
+#header-bottom-right{
+  top: 4px !important;  /* put the user info box on the top line of the header */
+  right: 10px !important;
+  background-color:#f5f5f5 !important;  
+}
+
+#userbarToggle{
+    top: -1px !important;
+     background-color:#f5f5f5 !important;  
+    border-right: 0px !important;
+}
+
+#header-bottom-right .separator{
+    padding-left: 4px !important;
+    margin: 0px !important;
+}
+
+/* move userbar to the left to make space for search box */
+body.listing-page #header-bottom-right, body.comments-page #header-bottom-right, body.wiki-page #header-bottom-right{
+  right: 160px !important;
+}
+
+body.profile-page #header-bottom-right{
+    right: 10px !important;
+     
+}
+
+#search {
+    position: absolute !important;
+    top: 5px !important;
+    right: 10px !important;
+    z-index: 199 !important;
+    width: 150px !important;
+    height: 30px !important;
+}
+
+form#search input[type="text"]{
+    width:140px !important;
+    height: 19px !important;
+    text-align:right;
+    color:black;
+    font-family: inherit;
+    font-size:13px !important;
+    font-style: italic !important;
+    margin-left:4px;
+    padding-right: 10px !important;
+    -moz-transition:all 0.1s linear 0s;
+    -webkit-transition:all 0.1s linear 0s;
+}
+
+#searchexpando{
+    position:relative !important;
+    top: 10px !important;
+    left:-140px !important;
+    font-size: 12px !important;
+    z-index:-1 !important;
+    background-color:#fbfbfb !important;
+    box-shadow:#888 1px 1px 5px 0px !important;
+    width:280px !important;
+    margin-top:0px !important;
+    padding-left:10px !important;
+    padding-right:3px !important;
+    padding-top: 10px !important;
+    padding-bottom: 1px !important;
+    border-style:none !important;
+    border-color:gray !important;
+    line-height:1.7em !important;
+}
+
+body.search-page #search{
+    position: inherit !important;
+    width: inherit !important;
+    height: inherit !important;
+}
+
+body.search-page form#search input[type="text"]{
+    text-align: left !important;
+    margin-left: 0px !important;    
+}
+
+body.search-page form#search br:nth-of-type(1){
+   display: none !important;    
+}
+
+div.searchpane.raisedbox {
+    background-color: #eee;
+    padding: 2px 10px 7px 80px !important;
+    border: 1px solid #aaa;
+    border-radius:4px;
+    margin-right:0px;    
+}
+
+.search-summary {
+    font-size:12px !important;
+    margin: 3px 8px 0 0 !important;
+}
+
+.searchpane h4{
+    font-size: 17px !important;
+    font-weight:normal !important;
+}
+
+.searchfacets {
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom:15px;
+    box-shadow:none !important;
+/*     background: white-smoke; */
+}
+
+.searchfacets .title {
+    margin: 0px;
+    margin-bottom:10px;
 }
 
 /**************************
@@ -281,6 +327,9 @@ div.usertext-body, .commentarea .usertext-body, .profile-page .usertext-body, .m
     max-width:38em !important;
 }
 
+.RES-keyNav-activeElement .usertext.border .usertext-body{
+    background-color:inherit !important;
+}
 
 .link .usertext .md {
 	background-color: transparent !important;
@@ -1134,7 +1183,7 @@ h2{
 	padding-top:13px; padding-bottom:15px;
 	padding-left:0px; padding-right:0px;
 	margin-bottom:10px;
-	background-color:#faf9f7;
+	background-color:#faf9f7 !important;
 	border-radius:5px;
 	font-size:110%;
 	line-height:1.6em;
@@ -1811,36 +1860,6 @@ pre, code {
 	font-family:Consolas, Monaco, monospace;
 	font-size:13px;
 	overflow-x:visible;
-}
-
-.searchpane.raisedbox{
-	background-color: #eee;
-	padding: 7px 10px 7px 80px;
-	border: 1px solid #aaa;
-	border-radius:4px;
-	margin-right:0px;
-}
-
-.search-summary{
-    font-size:12px;
-}
-
-.searchpane h4{
-	font-size:17px;
-	font-weight:normal;
-}
-
-.searchfacets {
-	padding: 10px;
-	margin-top: 0px;
-	margin-bottom:15px;
-	box-shadow:none !important;
-	background: white-smoke;
-}
-
-.searchfacets .title {
-	margin: 0px;
-	margin-bottom:10px;
 }
 
 .infobar {
