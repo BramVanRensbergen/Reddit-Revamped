@@ -87,7 +87,7 @@ background-color:#f5f5f5 !important;
 
 #userbarToggle{
     top: -1px !important;
-     background-color:#f5f5f5 !important;  
+    background-color:#f5f5f5 !important;  
     border-right: 0px !important;
 }
 
@@ -96,53 +96,25 @@ background-color:#f5f5f5 !important;
     margin: 0px !important;
 }
 
-/* move userbar to the left to make space for search box */
-body.listing-page #header-bottom-right, body.comments-page #header-bottom-right, body.wiki-page #header-bottom-right{
-  right: 160px !important;
-}
-
-body.profile-page #header-bottom-right{
-    right: 10px !important;
-     
-}
-
 #search {
-    position: absolute !important;
-    top: 5px !important;
-    right: 10px !important;
-    z-index: 199 !important;
-    width: 150px !important;
-    height: 30px !important;
+	margin-top: 13px !important;
 }
 
 form#search input[type="text"]{
-    width:140px !important;
     height: 19px !important;
-    text-align:right;
     color:black;
     font-family: inherit;
     font-size:13px !important;
     font-style: italic !important;
     margin-left:4px;
-    padding-right: 10px !important;
     -moz-transition:all 0.1s linear 0s;
     -webkit-transition:all 0.1s linear 0s;
 }
 
 #searchexpando{
-    position:relative !important;
-    top: 10px !important;
-    left:-140px !important;
     font-size: 12px !important;
-    z-index:-1 !important;
     background-color:#fbfbfb !important;
     box-shadow:#888 1px 1px 5px 0px !important;
-    width:280px !important;
-    margin-top:0px !important;
-    padding-left:10px !important;
-    padding-right:3px !important;
-    padding-top: 10px !important;
-    padding-bottom: 1px !important;
     border-style:none !important;
     border-color:gray !important;
     line-height:1.7em !important;
@@ -186,7 +158,6 @@ div.searchpane.raisedbox {
     margin-top: 0px;
     margin-bottom:15px;
     box-shadow:none !important;
-/*     background: white-smoke; */
 }
 
 .searchfacets .title {
@@ -1064,6 +1035,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     white-space:normal;
 }
 .menuarea .dropdown-title{
+	margin-left: 10px;
 	font-size:14px;
 	font-style:normal;
 	line-height:24px;
