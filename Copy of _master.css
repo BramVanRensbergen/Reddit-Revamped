@@ -1,7 +1,7 @@
 @-moz-document domain('reddit.com'){
 	
 /* remove some elements */
-#header span.pagename, /* remove page name e.g. 'Gaming' */
+#header .pagename, /* remove page name e.g. 'Gaming' */
 #sr-header-area, /* bar that contains subreddit links */
 #header-img,
 .default-header, /* reddit name */
@@ -9,7 +9,7 @@
 .trophy-area, /* trophy box */
 .account-activity-box, /* link to account activity */
 .listing-chooser .contents h3, /* 'multireddits' title */
-div.footer-parent, /* entire footer */
+.footer-parent, /* entire footer */
 .panestack-title, /* name of display (eg top 500 comments) on comment page */
 .side .create, /* create your own subreddit link */
 .reddiquette, /* reddiquette link below comment box */
@@ -63,7 +63,7 @@ a.thumbnail.self
 }
 
 #header-bottom-left ul.tabmenu li a {
-    background-color:#f5f5f5 !important;
+background-color:#f5f5f5 !important;
     background:none;
     border:none;
     color:black !important;
@@ -87,7 +87,7 @@ a.thumbnail.self
 
 #userbarToggle{
     top: -1px !important;
-    background-color:#f5f5f5 !important;  
+     background-color:#f5f5f5 !important;  
     border-right: 0px !important;
 }
 
@@ -96,45 +96,77 @@ a.thumbnail.self
     margin: 0px !important;
 }
 
-#search {
-	margin-top: 13px !important;
+#RESPrefsDropdown{
+/* 	right: 196px !important; */
 }
 
-#search input[type="text"]{
+/* move userbar to the left to make space for search box */
+body.listing-page #header-bottom-right, body.comments-page #header-bottom-right, body.wiki-page #header-bottom-right{
+  right: 160px !important;
+}
+
+body.profile-page #header-bottom-right{
+    right: 10px !important;     
+}
+
+#search {
+    position: absolute !important;
+    top: 5px !important;
+    right: 10px !important;
+    z-index: 199 !important;
+    width: 150px !important;
+    height: 30px !important;
+}
+
+form#search input[type="text"]{
+    width:140px !important;
     height: 19px !important;
+    text-align:right;
     color:black;
     font-family: inherit;
     font-size:13px !important;
     font-style: italic !important;
+    margin-left:4px;
+    padding-right: 10px !important;
     -moz-transition:all 0.1s linear 0s;
     -webkit-transition:all 0.1s linear 0s;
 }
 
 #searchexpando{
+    position:relative !important;
+    top: 10px !important;
+    left:-140px !important;
     font-size: 12px !important;
+    z-index:-1 !important;
     background-color:#fbfbfb !important;
     box-shadow:#888 1px 1px 5px 0px !important;
+    width:280px !important;
+    margin-top:0px !important;
+    padding-left:10px !important;
+    padding-right:3px !important;
+    padding-top: 10px !important;
+    padding-bottom: 1px !important;
     border-style:none !important;
     border-color:gray !important;
     line-height:1.7em !important;
 }
 
-.search-page #search{
+body.search-page #search{
     position: inherit !important;
     width: inherit !important;
     height: inherit !important;
 }
 
-.search-page form#search input[type="text"]{
+body.search-page form#search input[type="text"]{
     text-align: left !important;
     margin-left: 0px !important;    
 }
 
-.search-page form#search br:nth-of-type(1){
+body.search-page form#search br:nth-of-type(1){
    display: none !important;    
 }
 
-.searchpane.raisedbox {
+div.searchpane.raisedbox {
     background-color: #eee;
     padding: 2px 10px 7px 80px !important;
     border: 1px solid #aaa;
@@ -157,6 +189,7 @@ a.thumbnail.self
     margin-top: 0px;
     margin-bottom:15px;
     box-shadow:none !important;
+/*     background: white-smoke; */
 }
 
 .searchfacets .title {
@@ -168,10 +201,9 @@ a.thumbnail.self
 ******* LEFT SIDEBAR ******
 ***************************/
 
-.with-listing-chooser .listing-chooser{  
-  top: 0px !important;   
-  padding-top: 35px !important;
-  height: 100% !important;
+body.with-listing-chooser .listing-chooser{  
+  top: 35px !important;   /* move listing chooser a bit up, to match the smaller header */
+  height: 100% !important; /* otherwise the chooser can be cut off when there are no/few posts */
 }
 
 /* reduce spacing above "everything" in the multireddit sidebar */
@@ -261,14 +293,6 @@ font-size: medium !important;
 ******* CONTENT ******
 **********************/
 
-/* when page is (nearly) empty, make sure to fill the screen anyway */
-body.with-listing-chooser {
-    height: -moz-calc(100% - 36px) !important;
-	height: -webkit-calc(100% - 36px) !important;
-	height: -o-calc(100% - 36px) !important;
-	height: calc(100% - 36px) !important;
-}
-
 .content{
     margin-top: 13px !important;
     margin-left:10px;
@@ -306,15 +330,6 @@ div.usertext-body, .commentarea .usertext-body, .profile-page .usertext-body, .m
     max-width:38em !important;
 }
 
-
-.RES-keyNav-activeElement{
-    outline-width: 0px !important;
-    border-radius:3px !important;
-    background-color:#f0f4fb !important;
-/*     border:1px solid #d4dfef !important; */
-}
-
-
 .RES-keyNav-activeElement .usertext.border .usertext-body{
     background-color:inherit !important;
 }
@@ -339,8 +354,8 @@ div.usertext-body, .commentarea .usertext-body, .profile-page .usertext-body, .m
 }
 
 .md {
-	font-size: 14px;
-	overflow: visible;
+	font-size:14px;
+	overflow:visible;
 }
 
 .usertext-body h3 {
@@ -410,14 +425,8 @@ sup, sub, .commentarea .expando-button{
     border-radius: 2px;
 }
 
-.entry{
-	padding-left: 10px !important;
-	margin-bottom: 5px !important;
-}
-
-.link{
-    margin-top: 7px !important;
-    margin-bottom: 7px !important;
+.comments-page .entry{
+	padding-left: 15px !important;	
 }
 
 body.with-listing-chooser .content{
@@ -426,6 +435,10 @@ body.with-listing-chooser .content{
 
 body.with-listing-chooser.listing-chooser-collapsed .content{
     margin-left: 10px !important;
+}
+
+.RES-keyNav-activeElement{
+    outline-width: 0px !important;
 }
 
 body .res_comment_ups {
@@ -443,146 +456,11 @@ body .res_post_downs {
     color:#8d8db8 !important;
 }
 
-.menuarea{
-    font-size: 13px !important;
-    border-bottom-style:none;
-    margin-top:7px; 
-    margin-bottom:12px;
-    margin-left:10px; 
-    margin-right:0px;
-    padding:4px 8px 4px 8px !important;
-    border-radius:3px;
-    background-color:#f0f4fb;
-    border:1px solid #d4dfef !important;
-    font-style:italic;
-    white-space:normal;
-    color:#8897AE;
-}
-
-.listing-page .menuarea, .search-page .menuarea{
-    margin-bottom:18px;
-    padding:6px 6px 1px 10px;
-    margin-left:6px;
-}
-
-.menuarea .selected, .commentNavSortType{
-    font-weight:normal !important;
-}
-
-.menuarea .drop-choices{
-    font-size:14px !important;
-}
-
-.loggedin .commentarea .menuarea{
-   margin-bottom:2px !important;
-}
-
-.menuarea .spacer{
-    font-size:17px;
-}
-
-.comments-page .menuarea .spacer{
-    margin-bottom:0px;
-}
-
-.menuarea .separator{
-    display:none;
-}
-
-.commentNavSortTypeDisabled{
-    color:#ccd4e0 !important;
-}
-
-.menuarea .dropdown{
-    display:none !important;
-}
-
-.menuarea .drop-choices{
-    display:inline !important;
-    position:static !important;
-    box-shadow:none;
-    font-size:16px;
-    white-space: normal;
-    background:transparent !important;
-    border: 0px !important;
-}
-
-.menuarea .drop-choices form, .menuarea .drop-choices a, .menuarea a, .menuarea .drop-choices a.choice {
-    display:inline !important;
-}
-
-.menuarea .drop-choices a:hover, .messages-page .menuarea a:hover{
-    background:none !important;
-    color:#0046af !important;
-    text-decoration: none !important;
-}
-
-.menuarea .drop-choices a{
-    margin-left:10px;
-}
-
-input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menuarea .drop-choices form a.choice.selected{
-    display:inline;
-    color:orangeRed !important;
-}
-
-.menuarea .dropdown-title{
-    font-size:14px;
-    font-style:normal;
-    line-height:24px;
-    color:#8897ae;
-}
-
-.menuarea .spacer{
-    display:block;
-}
-
-.res .RESDialogSmall.livePreview {
-    box-shadow: none !important;
-    margin-top: 0px !important;
-}
-
-.res .usertext-edit .RESDialogContents{
-    margin-left: 0px !important; 
-    margin-right: 0px !important;
-    margin-top: 0px !important; 
-    margin-bottom: 10px !important;
-    border: 2px solid #D4DFEF !important;
-    border-radius: 4px !important;
-    padding-top: 9px !important; 
-    padding-bottom: 4px !important;
-}
-
-.res .usertext-edit .RESDialogSmall{
-    border:none !important;
-}
-
-.res .usertext-edit .RESDialogSmall > h3 {
-    font-size: 16px !important;
-    margin-top: 0px !important;
-    margin-bottom: 7px !important;
-    font-style:italic !important;
-    position: static !important;
-    background:none !important;
-    border:none !important;
-    height: auto !important;
-    padding-left: 3px !important;
-    padding-top: 0px !important;
-}
-
-.sitetable form.usertext.cloneable{
-    margin-top:10px;
-}
-
-body .sitetable .usertext-edit{
-    margin-bottom:0px;
-}
-
 
 /********************************
 ******** Original Aerial ********
 *********************************
- not made by me except for some small changes (much of the above was taken from this and modified) 
+ not made by me except for some small changes (some of the above was taken from this, and edited) 
  */
 body, #main, input, button, .wikipage, .wikipage h1, .wikipage h2, .wikipage h3, .wikipage h4, .flat-vert.title {
     font-family:"Segoe UI", "PT Sans", "Open Sans", "Ubuntu", "Tahoma", "Myriad Web", sans-serif !important;
@@ -694,6 +572,11 @@ div#userbarToggle.userbarHide, div#userbarToggle.userbarShow{
 	min-width: 19px;
 	position:relative;
 	top:2px;
+}
+
+.link{
+	margin-top:14px;
+	margin-bottom:0px;
 }
 
 .link .rank{
@@ -879,6 +762,29 @@ p a:hover {
     text-decoration:underline;
 }
 
+.menuarea, .commentarea .menuarea{
+	font-size:13px;
+	border-bottom-style:none;
+	margin-top:0px; margin-bottom:18px;
+	margin-left:10px; margin-right:0px;
+}
+
+.comments-page.single-page .commentarea .menuarea{
+    margin-top:7px;
+}
+
+.menuarea .selected, .commentNavSortType{
+    font-weight:normal !important;
+}
+
+.menuarea .drop-choices{
+    font-size:14px;
+}
+
+.loggedin .commentarea .menuarea{
+    margin-bottom:2px;
+}
+
 .tagline .linkflairlabel{
 font-size:11px;
 }
@@ -1043,6 +949,14 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
     margin-right:8px;
 }
 
+.menuarea{
+    font-style:italic;
+}
+
+.menuarea .spacer{
+    font-size:17px;
+}
+
 .RESSubscriptionButton{
 	font-size:12px;
 	font-weight:normal;
@@ -1054,6 +968,10 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
 
 .RESSubscriptionButton:hover{
     background-color:whiteSmoke;
+}
+
+.comments-page .menuarea .spacer{
+    margin-bottom:0px;
 }
 
 #REScommentNavToggle {
@@ -1080,6 +998,84 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
 	font-size:14px;
 	margin-left:10px;
 }
+
+.menuarea, div.menuarea, .commentarea .menuarea{
+	border-radius:3px;
+	background-color:#f0f4fb;
+	border:1px solid #d4dfef;
+}
+
+.listing-page .menuarea, .search-page .menuarea{
+	margin-bottom:18px;
+	padding:6px 6px 1px 10px;
+	margin-left:6px;
+}
+
+.commentarea .menuarea, loggedin .commentarea .menuarea {
+	margin-bottom:12px !important;
+	padding:4px 8px 4px 8px;
+	margin-left:10px;
+}
+
+.menuarea .separator{
+    display:none;
+}
+
+.res .commentarea .menuarea{
+    color:#8897AE;
+}
+
+.commentNavSortTypeDisabled{
+    color:#ccd4e0 !important;
+}
+
+.menuarea .dropdown{
+    display:none;
+}
+
+.menuarea .drop-choices{
+	display:inline;
+	position:static;
+	box-shadow:none;
+	font-size:16px;
+	white-space: normal;
+	background:transparent !important;
+	border: 0px !important;
+}
+
+.menuarea .drop-choices form, .menuarea .drop-choices a, .menuarea a, .menuarea .drop-choices a.choice {
+	display:inline;
+	color:black;
+}
+
+.menuarea .drop-choices a:hover, .messages-page .menuarea a:hover{
+	background:none;
+	color:#0046af;
+	text-decoration:none;
+}
+
+.menuarea .drop-choices a{
+    margin-left:10px;
+}
+
+input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menuarea .drop-choices form a.choice.selected{
+	display:inline;
+	color:orangeRed !important;
+}
+
+.menuarea{
+    white-space:normal;
+}
+.menuarea .dropdown-title{
+	font-size:14px;
+	font-style:normal;
+	line-height:24px;
+	color:#8897ae;
+}
+.menuarea .spacer{
+    display:block;
+}
+
 
 .res div.usertext-edit > div{
     margin-top:4px;
@@ -1122,6 +1118,44 @@ body span[class="hover pagename redditname"], body span[class="hover pagename re
 
 .markdownEditor a:hover {
     background-color: #ddd;
+}
+
+.res .RESDialogSmall.livePreview {
+	box-shadow:none;
+	margin-top:0px;
+}
+
+.res .usertext-edit .RESDialogContents{
+	margin-left:0px; margin-right:0px;
+	margin-top:0px; margin-bottom:10px;
+	border: 2px solid #D4DFEF;
+	border-radius:4px;
+	padding-top:9px !important; padding-bottom:4px !important;
+}
+
+.res .usertext-edit .RESDialogSmall{
+    border:none;
+}
+
+.res .usertext-edit .RESDialogSmall > h3 {
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 7px;
+	font-style:italic;
+	position: static;
+	background:none;
+	border:none;
+	height: auto;
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+.sitetable form.usertext.cloneable{
+    margin-top:10px;
+}
+
+body .sitetable .usertext-edit{
+    margin-bottom:0px;
 }
 
 body.res .sitetable .RESDialogSmall{
@@ -1354,9 +1388,8 @@ div.styleToggle{
 }
 
 .titlebox .bottom{
-	font-size: 12px !important;
-	font-style: italic;
-	margin-bottom: 20px !important;
+	font-size:12px !important;
+	font-style:italic;
 }
 
 .titlebox .age{
