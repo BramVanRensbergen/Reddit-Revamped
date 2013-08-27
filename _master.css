@@ -1,5 +1,5 @@
 @-moz-document domain('reddit.com'){
-	
+
 /* remove some elements */
 #header span.pagename, /* remove page name e.g. 'Gaming' */
 #sr-header-area, /* bar that contains subreddit links */
@@ -263,16 +263,20 @@ font-size: medium !important;
 
 /* when page is (nearly) empty, make sure to fill the screen anyway */
 body.with-listing-chooser {
-    height: -moz-calc(100% - 36px) !important;
-	height: -webkit-calc(100% - 36px) !important;
-	height: -o-calc(100% - 36px) !important;
-	height: calc(100% - 36px) !important;
+    min-height: -moz-calc(100% - 36px) !important;
+	min-height: -webkit-calc(100% - 36px) !important;
+	min-height: -o-calc(100% - 36px) !important;
+	min-height: calc(100% - 36px) !important;
 }
 
 .content{
     margin-top: 13px !important;
     margin-left:10px;
     margin-right:10px;
+}
+
+.guider{
+	display: none !important;
 }
 
 .tagline, .tagline span, .flat-list.buttons{
