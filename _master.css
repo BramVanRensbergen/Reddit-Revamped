@@ -3,8 +3,6 @@
 /* remove some elements */
 #header span.pagename, /* remove page name e.g. 'Gaming' */
 #sr-header-area, /* bar that contains subreddit links */
-#header-img,
-.default-header, /* reddit name */
 .giftgold, .goldvertisement, .gilded-comments-link, /* gold related */
 .trophy-area, /* trophy box */
 .account-activity-box, /* link to account activity */
@@ -14,10 +12,7 @@ div.footer-parent, /* entire footer */
 .side .create, /* create your own subreddit link */
 .reddiquette, /* reddiquette link below comment box */
 .shortlink, /* shortlink in right sidebar */
-.sidecontentbox, /* moderators box in right sidebar */
-a.thumbnail.self
-{    
-  visibility:hidden !important;
+.thumbnail.self, .thumbnail.default, #header-img{    
   display: none !important;
 }
 
@@ -39,18 +34,19 @@ a.thumbnail.self
 }
 
 /* Make sure the tab menu is aligned correctly on each page */
-#header ul.tabmenu{
+#header .tabmenu {	
     margin-top:0px !important;
-    border-width:0px; border-style:none;
-    display:block;
+    border-width: 0px !important; 
+    border-style: none !important;
+    display: block;
     float: left;
-    margin-left:0px !important;
-    position:relative;
-    top:5px;
-    left:22px;
-    z-index:97;
-    overflow:visible;
-    width:100px;
+    margin-left: 0px !important;
+    position: relative !important;
+    top: 5px !important;
+    left: 15px !important;
+    z-index: 97;
+    overflow: visible !important;
+    width: 100px;
 }
 
 #header-bottom-left ul.tabmenu a:hover {
@@ -260,6 +256,10 @@ font-size: medium !important;
 /*********************
 ******* CONTENT ******
 **********************/
+
+body{
+	background-color: white !important;
+}
 
 /* when page is (nearly) empty, make sure to fill the screen anyway */
 body.with-listing-chooser {
@@ -901,9 +901,7 @@ font-size:11px;
 a[href$="/spoiler"], a[href$="#spoiler"] {
 	outline: 1px solid #ccc;
 	background-color: white;
-	background-image:
-	-webkit-linear-gradient(-45deg, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%, #ccc 100%, transparent);
-	-moz-linear-gradient(-45deg, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%, #ccc 100%, transparent);
+	background-image: linear-gradient(-45deg, transparent 25%, #ccc 25%, #ccc 50%, transparent 50%, transparent 75%, #ccc 75%, #ccc 100%, transparent);
 	background-size: 10px 10px;
 	color:rgba(0, 0, 0, .0);
 }
@@ -1232,6 +1230,7 @@ h2{
 }
 
 .side{
+	background-color: white !important;
 	padding-left:18px;
 	width:23%;
 	max-width:300px;
@@ -1722,44 +1721,37 @@ body .author.admin {
 }
 
 body .author.friend.submitter{
-	background: -moz-linear-gradient(90deg, #0046af 50%, orangeRed 50%) !important;
-	background: -webkit-linear-gradient(90deg, #0046af 50%, orangeRed 50%) !important;
+	background: linear-gradient(90deg, #0046af 50%, orangeRed 50%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.submitter.moderator{
-	background: -moz-linear-gradient(90deg, #0046af 50%, #282 50%) !important;
-	background: -webkit-linear-gradient(90deg, #0046af 50%, #282 50%) !important;
+	background: linear-gradient(90deg, #0046af 50%, #282 50%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.friend.moderator{
-	background: -moz-linear-gradient(90deg, orangeRed 50%, #282 50%) !important;
-	background: -webkit-linear-gradient(90deg, orangeRed 50%, #282 50%) !important;
+	background: linear-gradient(90deg, orangeRed 50%, #282 50%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.submitter.admin{
-	background: -moz-linear-gradient(90deg, #0046af 50%, #d70000 50%) !important;
-	background: -webkit-linear-gradient(90deg, #0046af 50%, #d70000 50%) !important;
+	background: linear-gradient(90deg, #0046af 50%, #d70000 50%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.friend.admin{
-	background: -moz-linear-gradient(90deg, orangeRed 50%, #d70000 50%) !important;
-	background: -webkit-linear-gradient(90deg, orangeRed 50%, #d70000 50%) !important;
+	background: linear-gradient(90deg, orangeRed 50%, #d70000 50%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.friend.submitter.moderator{
-	background: -moz-linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #282 66%, #282 99%) !important;
-	background: -webkit-linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #282 66%, #282 99%) !important;
+	background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #282 66%, #282 99%) !important;
 	background-size:100% 100% !important;
 }
 
 body .author.friend.submitter.admin{
-	background: -moz-linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #d70000 66%, #d70000 99%) !important;
-	background: -webkit-linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #d70000 66%, #d70000 99%) !important;
+	background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #d70000 66%, #d70000 99%) !important;
 	background-size:100% 100% !important;
 }
 
@@ -1980,11 +1972,11 @@ input.btn{
 }
 
 .menuarea li{
-	font-size:16px;
-	font-weight:normal;
-	color:black;
-	padding-right:17px;
-	font-style:italic;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	padding-right: 17px !important;
+	font-style: italic;
 }
 
 .message .subject .correspondent, .message .subject .correspondent.rounded{
@@ -2100,9 +2092,7 @@ p#noresults.error{
 .res-nightmode a[href$="/spoiler"], .res-nightmode a[href$="#spoiler"] {
 	outline: 1px solid #333;
 	background-color: black;
-	background-image:
-	-webkit-linear-gradient(-45deg, transparent 25%, #333 25%, #333 50%, transparent 50%, transparent 75%, #333 75%, #333 100%, transparent);
-	-moz-linear-gradient(-45deg, transparent 25%, #333 25%, #333 50%, transparent 50%, transparent 75%, #333 75%, #333 100%, transparent);
+	background-image: webkit-linear-gradient(-45deg, transparent 25%, #333 25%, #333 50%, transparent 50%, transparent 75%, #333 75%, #333 100%, transparent);
 	background-size: 10px 10px;
 	color:rgba(255, 255, 255, 0.0) !important;
 }
