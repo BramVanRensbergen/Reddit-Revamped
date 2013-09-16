@@ -67,7 +67,10 @@ div.footer-parent, /* entire footer */
 .side .create, /* create your own subreddit link */
 .reddiquette, /* reddiquette link below comment box */
 .shortlink, /* shortlink in right sidebar */
-.thumbnail.self, .thumbnail.default, #header-img {    
+.thumbnail.self, .thumbnail.default, #header-img,
+.bottommenu.debuginfo, /* pi debug info */
+#progressIndicator img /* NER next-page-is-loading indicator, colors do not match with theme */
+{    
   display: none !important;
 }
 
@@ -76,14 +79,11 @@ div.footer-parent, /* entire footer */
 ***********************/
 
 /* reduce header height to match actual contents */
-#header, #header-bottom-left { 
+#header { 
     min-height: 25px !important; 
     height: 25px !important;
     padding-bottom: 8px !important;
     background-color: #f5f5f5 !important;
-}
-
-#header {
     border: 1px solid #f5f5f5 !important;
     box-shadow: #888 0px 0px 5px 0px !important;
 }
@@ -101,7 +101,6 @@ div.footer-parent, /* entire footer */
     left: 15px !important;
     z-index: 97 !important;
     overflow: visible !important;
-    width: 100px !important;
 }
 
 #header-bottom-left ul.tabmenu a:hover {
@@ -132,27 +131,27 @@ div.footer-parent, /* entire footer */
 
 #header-bottom-right {
   background: none !important;  
-  position: absolute !important;
-  font-size: 11px !important;
-  top: 4px !important;  /* put the user info box on the top line of the header */
-  right: 10px !important;
   background-color: #f5f5f5 !important;  
+  font-size: 11px !important;
+  padding: 0px !important;
+  position: absolute !important;
+  top: 8px !important;  /* put the user info box on the top line of the header */
+  right: 10px !important;
 }
 
 #header-bottom-right .separator {
     font-size: 0px !important;
-    padding-left: 4px !important;
+    padding: 0px 4px !important;
     margin: 0px !important;
 }
 
 #userbarToggle {
     background-color: inherit !important;
-    border-right: 0px !important;
     border-style: none !important;
     color: gray !important;
     font-size: 20px !important;
     font-weight: bold !important;
-    top: -1px !important;
+    top: -5px !important;
 }
 
 #mailCount {
@@ -267,6 +266,9 @@ div.footer-parent, /* entire footer */
 /***************************
 ******* RIGHT SIDEBAR ******
 ****************************/
+.add-sr { /* add new subreddit to multireddit form */ 
+	margin-top: 5px !important; 
+}
 
 .titlebox {
    font-size: small !important;    
@@ -349,6 +351,42 @@ div.footer-parent, /* entire footer */
     margin-right: 10px !important;
 }
 
+.menuarea, .NERPageMarker, #progressIndicator{
+	margin: 15px 6px !important;
+	border-radius: 3px !important;
+	font-style: italic !important;	
+}
+
+.NERPageMarker, #progressIndicator {
+    color: #7F7F7F !important;
+    font-size: 14px !important;
+    background-color: whiteSmoke !important;
+    overflow: hidden !important;
+}
+
+.menuarea {
+    color: #8897AE !important;
+    font-size: 13px !important;
+    border-bottom-style: none !important;
+    padding: 4px 8px 4px 8px !important;
+    background-color: #f0f4fb !important;
+    border: 1px solid #d4dfef !important;
+    white-space: normal !important;
+}
+
+.NERPageMarker{
+	padding: 4px 0px !important;
+}
+
+#progressIndicator {
+    width: inherit !important;
+}
+
+.listing-page .thing {
+    padding-left: 0px !important;
+    margin-left: 10px !important;
+}
+
 .nsfw-stamp acronym {
     color: white !important;
     background-color: #be0d3e !important;
@@ -374,16 +412,6 @@ div.footer-parent, /* entire footer */
     top: 1px !important;
     margin-left: 5px !important;
 }
-
-/* .comment > .entry > .collapsed, .comment > .entry > .collapsed a.expand { */
-/*     font-size: 11px !important; */
-/*     font-style: italic !important; */
-/* } */
-
-/* .comment > .entry > .collapsed { */
-/*     padding-top: 5px !important; */
-/*     padding-bottom: 5px !important; */
-/* } */
 
 .commentarea .collapsed, .commentarea .collapsed a.expand{
     font-size: 11px !important;
@@ -543,19 +571,6 @@ sup, sub, .commentarea .expando-button {
     color: #8d8db8 !important;
 }
 
-.menuarea {
-    font-size: 13px !important;
-    border-bottom-style: none !important;
-    margin: 7px 0px 12px 10px !important;
-    padding: 4px 8px 4px 8px !important;
-    border-radius: 3px !important;
-    background-color: #f0f4fb !important;
-    border: 1px solid #d4dfef !important;
-    font-style: italic !important;
-    white-space: normal !important;
-    color: #8897AE !important;
-}
-
 .listing-page .menuarea, .search-page .menuarea {
     margin-bottom: 18px !important;
     padding: 6px 6px 1px 10px !important;
@@ -675,10 +690,11 @@ body .sitetable .usertext-edit {
 /***************************
 ********* Voting ***********
 ****************************/
+.score{
+	margin-bottom: 2px !important; /* otherwise the top arrow is a bit closer to the number than the bottom arrow */
+}
 
-.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, 
-    .res-nightmode .arrow.up, .res-nightmode .arrow.down,  .res-nightmode .arrow.up:hover, .res-nightmode .arrow.down:hover, .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod,  
-    .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
+.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, .res-nightmode .arrow.up, .res-nightmode .arrow.down,  .res-nightmode .arrow.up:hover, .res-nightmode .arrow.down:hover, .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
     background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;
 }
 
@@ -708,7 +724,6 @@ body .sitetable .usertext-edit {
     background-position: -15px -642px !important;
     background-repeat: no-repeat !important;
 }
-
 
 /********************************
 **** RES Nightmode specific *****
@@ -923,16 +938,15 @@ body .sitetable .usertext-edit {
     color: #c0c0c0 !important;
 }
 
+.res-nightmode .with-listing-chooser.listing-chooser-collapsed .content{
+	margin-left: 15px !important; /* otherwise a small part of the sidebar border will be cut off */
+}
 
 /********************************
 ******** Unordered **************
 *********************************/
 #srLeftContainer {
     display: inline !important;
-}
-
-.listing-page .thing {
-    padding-left:0px !important;
 }
 
 .rank {
@@ -957,6 +971,7 @@ div.score {
 .score.likes, .link .score.likes {
     color: #ff4500 !important;
     margin-left: 0px !important;
+    
 }
 
 .link .score.unvoted {
@@ -1746,7 +1761,7 @@ ul.tabmenu.formtab {
     border-bottom-right-radius: 0px !important;
     padding-bottom: 9px !important;
     -moz-transition: all 0.5s ease-out 0s !important;
-    -webkit-transition: all 0.5s ease-out 0s !important;
+    -webkit-transition: all 0.5s ease-out 0s !important;       
 }
 
 ul.tabmenu.formtab {
@@ -2007,21 +2022,6 @@ p.sponsored-tagline {
     font-size: 12px !important;
     font-weight: bold !important;
     margin-right: 2px !important;
-}
-
-.NERPageMarker, #progressIndicator {
-    color: #7F7F7F !important;
-    font-size: 14px !important;
-    font-style: italic !important;
-    background-color: whiteSmoke !important;
-    margin-top: 25px !important;
-    margin-bottom: 29px !important;
-    margin-left: 6px !important;
-    overflow: hidden !important;
-}
-
-#progressIndicator {
-    width: inherit !important;
 }
 
 .fancy-toggle-button a, .fancy-toggle-button .add, .fancy-toggle-button .remove, .RESDashboardToggle, .RESDashboardToggle.remove, .RESFilterToggle, .res #authorInfoToolTip .blueButton, .pretty-button, .RESshortcutside {
