@@ -158,94 +158,18 @@ div.footer-parent, /* entire footer */
     color:orangeRed !important;
 }
 
-#RESAccountSwitcherIcon {
-    display: inline !important;
+#RESAccountSwitcherIcon, #RESAccountSwitcherIcon .downArrow {
+ 	display: inline-block !important; 
+}
+
+#RESMainGearOverlay {
+ 	top: 7px !important;
 }
 
 .user .userkarma {
     border-bottom-style:none !important;
 }
 
-/***********************
-******* SEARCH *********
-***********************/
-/* search box in right sidebar, on most pages */
-#search {
-    margin-top: 13px !important;
-}
-
-#search input[type="text"] {
-    height: 19px !important;
-    color: black !important;
-    font-family: inherit !important;
-    font-size: 13px !important;
-    font-style: italic !important;
-    -moz-transition: all 0.1s linear 0s !important;
-    -webkit-transition: all 0.1s linear 0s !important;
-}
-
-#searchexpando {
-    padding: 7px 10px !important;
-    border: 1px solid #ff4500 !important;
-    border-radius: 4px !important;
-    font-size: 12px !important;
-    background-color: #fbfbfb !important;
-    box-shadow: #888 1px 1px 5px 0px !important;
-    border-style: none !important;
-    border-color: gray !important;
-    line-height: 1.7em !important;
-}
-
-#searchexpando p {
-    margin: 0px !important;
-}
-
-/* search page itself */
-
-.search-page #search {
-    position: inherit !important;
-    width: inherit !important;
-    height: inherit !important;
-}
-
-.search-page #search input[type="text"] {
-    text-align: left !important;
-    margin-left: 0px !important;    
-}
-
-.search-page form#search br:nth-of-type(1) {
-   display: none !important;    
-}
-
-.searchpane.raisedbox {
-    background-color: #eee !important;
-    padding: 2px 10px 7px 80px !important;
-    border: 1px solid #aaa !important;
-    border-radius: 4px !important;
-    margin-left: 6px !important;
-}
-
-.search-summary {
-    font-size: 12px !important;
-    margin: 3px 8px 0 0 !important;
-}
-
-.searchpane h4 {
-    font-size: 17px !important;
-    font-weight: normal !important;
-}
-
-.searchfacets {
-    padding: 10px !important;
-    margin-top: 0px !important;
-    margin-bottom: 15px !important;
-    box-shadow: none !important;
-}
-
-.searchfacets .title {
-    margin: 0px !important;
-    margin-bottom: 10px !important;
-}
 
 /**************************
 ******* LEFT SIDEBAR ******
@@ -346,40 +270,51 @@ div.footer-parent, /* entire footer */
 ******* CONTENT ******
 **********************/
 .content {
-    margin-top: 13px !important;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin: 13px 10px !important;
 }
 
-.menuarea, .NERPageMarker, #progressIndicator{
-	margin: 15px 6px !important;
-	border-radius: 3px !important;
-	font-style: italic !important;	
+.menuarea, .NERPageMarker, #progressIndicator, .infobar, #NERFail{
+    border-radius: 3px !important;
+    margin: 15px 6px !important;
+    overflow: hidden !important;    
 }
 
-.NERPageMarker, #progressIndicator {
-    color: #7F7F7F !important;
-    font-size: 14px !important;
+.menuarea, .NERPageMarker, #progressIndicator {
+    font-style: italic !important;  
+}
+
+.NERPageMarker, #progressIndicator, #NERFail {
     background-color: whiteSmoke !important;
-    overflow: hidden !important;
+    border: 1px solid #C7C7C7 !important;
+    color: #7F7F7F !important;
+    font-size: 14px !important;    
 }
 
 .menuarea {
-    color: #8897AE !important;
-    font-size: 13px !important;
-    border-bottom-style: none !important;
-    padding: 4px 8px 4px 8px !important;
     background-color: #f0f4fb !important;
     border: 1px solid #d4dfef !important;
+    color: #8897AE !important;
+    font-size: 13px !important;
+    padding: 4px 8px 4px 8px !important;
     white-space: normal !important;
 }
 
 .NERPageMarker{
-	padding: 4px 0px !important;
+    padding: 4px 0px !important;
 }
 
-#progressIndicator {
+#progressIndicator, #NERFail {
     width: inherit !important;
+}
+
+#NERFail{
+    color: black !important;
+    padding: 6px 0px 0px 0px !important;
+}
+
+.comments-page .thing{
+    margin-left: 6px !important;
+    
 }
 
 .listing-page .thing {
@@ -413,13 +348,17 @@ div.footer-parent, /* entire footer */
     margin-left: 5px !important;
 }
 
-.commentarea .collapsed, .commentarea .collapsed a.expand{
+.commentarea .collapsed, .commentarea .collapsed a.expand {
     font-size: 11px !important;
     font-style: italic !important;
 }
 
-.commentarea .collapsed{
-    padding: 5px 5px 5px 20px !important;
+.commentarea .collapsed {
+    padding: 5px 5px 5px 23px !important;
+}
+
+.commentarea .collapsed.collapsedExpando {
+    padding: 0px !important;
 }
 
 /* small res fix ("source" link is otherwise most to the left of comment/share/...) */
@@ -431,6 +370,10 @@ div.footer-parent, /* entire footer */
 
 .title {
     color: #0046af !important;
+}
+
+.title:visited {
+    color: #551A8B !important;
 }
 
 .commentarea .usertext-body, .profile-page .usertext-body, .message .usertext-body  {
@@ -687,10 +630,93 @@ body .sitetable .usertext-edit {
     margin-bottom: 0px !important;
 }
 
+/***********************
+******* SEARCH *********
+***********************/
+
+/* search box in right sidebar, on most pages */
+#search {
+    margin-top: 13px !important;
+}
+
+#search input[type="text"] {
+    height: 19px !important;
+    color: black !important;
+    font-family: inherit !important;
+    font-size: 13px !important;
+    font-style: italic !important;
+    -moz-transition: all 0.1s linear 0s !important;
+    -webkit-transition: all 0.1s linear 0s !important;
+}
+
+#searchexpando {
+    padding: 7px 10px !important;
+    border: 1px solid #ff4500 !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    background-color: #fbfbfb !important;
+    box-shadow: #888 1px 1px 5px 0px !important;
+    border-style: none !important;
+    border-color: gray !important;
+    line-height: 1.7em !important;
+}
+
+#searchexpando p {
+    margin: 0px !important;
+}
+
+/* search page itself */
+
+.search-page #search {
+    position: inherit !important;
+    width: inherit !important;
+    height: inherit !important;
+}
+
+.search-page #search input[type="text"] {
+    text-align: left !important;
+    margin-left: 0px !important;    
+}
+
+.search-page form#search br:nth-of-type(1) {
+   display: none !important;    
+}
+
+.searchpane.raisedbox {
+    background-color: #eee !important;
+    padding: 2px 10px 7px 80px !important;
+    border: 1px solid #aaa !important;
+    border-radius: 4px !important;
+    margin-left: 6px !important;
+    margin-right: 322px !important;
+}
+
+.search-summary {
+    font-size: 12px !important;
+    margin: 3px 8px 0 0 !important;
+}
+
+.searchpane h4 {
+    font-size: 17px !important;
+    font-weight: normal !important;
+}
+
+.searchfacets {
+    padding: 10px !important;
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
+    box-shadow: none !important;
+}
+
+.searchfacets .title {
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+}
+
 /***************************
 ********* Voting ***********
 ****************************/
-.score{
+.score {
 	margin-bottom: 2px !important; /* otherwise the top arrow is a bit closer to the number than the bottom arrow */
 }
 
@@ -820,10 +846,6 @@ body .sitetable .usertext-edit {
     background-color: inherit !important;
 }
 
-.res-nightmode #RESConsole input[type="button"], .res-nightmode #RESConsole input[type="submit"] {
-    background-color: rgb(16, 122, 196) !important;
-}
-
 .res-nightmode .RESDialogSmall, .res.res-nightmode .usertext-edit .RESDialogSmall > h3, .res-nightmode a[href$="/spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover {
     background: none !important;
 }
@@ -894,6 +916,10 @@ body .sitetable .usertext-edit {
     border: 0px solid #DDDDDD !important;   
 }
 
+.res-nightmode  .infobar{
+	border: 1px solid #F5F5F5 !important;
+}
+
 .res-nightmode #login_login-main {
     border-top-width: 0px !important;
     border-right-width: 0px !important;
@@ -943,6 +969,14 @@ body .sitetable .usertext-edit {
 }
 
 /********************************
+************ Varia **************
+*********************************/
+#RESConsole input[type="button"], #RESConsole input[type="submit"] {
+    background-color: rgb(16, 122, 196) !important;
+    color: white !important;
+}
+
+/********************************
 ******** Unordered **************
 *********************************/
 #srLeftContainer {
@@ -950,9 +984,10 @@ body .sitetable .usertext-edit {
 }
 
 .rank {
-    min-width: 19px !important;
+    margin: 0px 0px 1px 0px !important;
+    /*min-width: 19px !important;*/
     position: relative !important;
-    top: 2px !important;
+    top: 19.9px !important;
 }
 
 .link .rank {
@@ -1948,7 +1983,7 @@ a.voteWeight {
 pre, code {
     font-family: Consolas, Monaco, monospace !important;
     font-size: 13px !important;
-    overflow-x: visible !important;
+    white-space: pre-wrap !important;
 }
 
 #srList tr {
