@@ -71,7 +71,7 @@ div.footer-parent, /* entire footer */
 .side .create, /* create your own subreddit link */
 .reddiquette, /* reddiquette link below comment box */
 .shortlink, /* shortlink in right sidebar */
-.thumbnail.self, .thumbnail.default,
+.thumbnail.self, .thumbnail.default, #header-img,
 .bottommenu.debuginfo, /* pi debug info */
 #progressIndicator img, /* NER next-page-is-loading indicator, colors do not match with theme */
 .nav-buttons /* prev/next page and multi links at bottom of a page-list */
@@ -93,34 +93,41 @@ div.footer-parent, /* entire footer */
     box-shadow: #888 0px 0px 5px 0px !important;
 }
 
-#header-bottom-left .tabmenu {
-    height: 22px !important;
-    margin-top: 5px !important;
-    margin-left: 0px !important;
-}
-
-#header-img {
-    display: inline !important;
-    text-indent: 0px !important;
+/* Make sure the tab menu is aligned correctly on each page */
+#header .tabmenu {  
+    margin-top: 0px !important;
+    border-width: 0px !important; 
+    border-style: none !important;
+    display: block !important;
     float: left !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0px 0px 0px 20px !important;
+    margin-left: 0px !important;
+    position: relative !important;
+    top: 5px !important;
+    left: 15px !important;
+    z-index: 97 !important;
+    overflow: visible !important;
 }
 
-#header-bottom-left .tabmenu li a, #header-img {
-    font-size: 16px !important;
-    font-weight: normal !important;
-    padding: 5px 5px 5px 5px !important;
-    background: none !important;
-    color: black !important;
-}
-
-#header-bottom-left .tabmenu a:hover, #header-img:hover {
+#header-bottom-left ul.tabmenu a:hover {
     color: #0046af !important;
 }
 
-#header-bottom-left .tabmenu .selected a {
+#header-bottom-left ul.tabmenu li {
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+
+#header-bottom-left ul.tabmenu li a {
+    background-color: #f5f5f5 !important;
+    background: none !important;
+    border: none !important;
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+    padding-top: 0px !important;
+}
+
+#header-bottom-left ul.tabmenu li.selected a {
     background: none !important;
     border: none !important;
     color: red !important;
@@ -893,7 +900,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: #9B5FC9 !important;
 }
 
-.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header-bottom-right a:hover, .res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
+.res-nightmode #progressIndicator p, .res-nightmode #header-bottom-right a:hover, .res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
 	color: white !important;
 }
 
