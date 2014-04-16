@@ -284,11 +284,11 @@ form#login_login-main.login-form.login-form-side {
 
 .login-form-side input[type=text] {
     margin: 0px 0px 0px 0px !important;   
+    width: 144px !important;    
 }
 
 .login-form-side input[type=password] {
     margin: 0px 0px 0px 6px !important;   
-
 }
 
 .login-form-side input:focus {
@@ -792,8 +792,15 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 /***************************
 ********* Voting ***********
 ****************************/
-.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, .res-nightmode .arrow.up, .res-nightmode .arrow.down,  .res-nightmode .arrow.up:hover, .res-nightmode .arrow.down:hover, .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
+.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, 
+    .res-nightmode .arrow.up, .loggedin.res-nightmode .arrow.up,  .res-nightmode .arrow.up.login-required,
+    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
+    .res-nightmode .arrow.up:hover, .loggedin.res-nightmode .arrow.up:hover, .res-nightmode .arrow.up.login-required:hover,
+    .res-nightmode .arrow.down:hover, .loggedin.res-nightmode .arrow.down:hover, .res-nightmode .arrow.down.login-required:hover, 
+    .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.downmod, 
+    .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
     background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;
+
 }
 
 .arrow {
@@ -801,28 +808,32 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     height: 14px !important;
 }
 
-.arrow, .res-nightmode .arrow {
-	margin-top: 2px !important;	
+.arrow, .res-nightmode .arrow, .loggedin.res-nightmode .arrow {
+    margin-top: 2px !important; 
 }
 
-.arrow.up, .res-nightmode .arrow.up, .loggedin .arrow.up:hover, .loggedin.res-nightmode .arrow.up:hover {
+.arrow.up, .arrow.up.login-required, .loggedin .arrow.up:hover, 
+    .res-nightmode .arrow.up,  .loggedin.res-nightmode .arrow.up, .res-nightmode .arrow.up.login-required,
+     .loggedin.res-nightmode .arrow.up:hover,.res-nightmode .arrow.up.login-required:hover {
     background-position: -0px -642px !important;
     background-repeat: no-repeat !important;
     cursor: pointer;
 }
 
-.arrow.down, .res-nightmode .arrow.down, .loggedin .arrow.down:hover, .loggedin.res-nightmode .arrow.down:hover {
+.arrow.down, .arrow.down.login-required, .loggedin .arrow.down:hover,
+    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
+    .loggedin.res-nightmode .arrow.down:hover,.res-nightmode .arrow.down.login-required:hover {
     background-position: -15px -656px !important;
     background-repeat: no-repeat !important;
     cursor: pointer;
 }
 
-.arrow.upmod, .res-nightmode .arrow.upmod {
+.arrow.upmod, .res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.upmod {
     background-position: -0px -656px !important;
     background-repeat: no-repeat !important;
 }
 
-.arrow.downmod, .res-nightmode .arrow.downmod {
+.arrow.downmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.downmod  {
     background-position: -15px -642px !important;
     background-repeat: no-repeat !important;
 }
@@ -876,23 +887,29 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 /********************************
 **** RES Nightmode specific *****
 *********************************/
-.res-nightmode, .res-nightmode #header, .res-nightmode #header-bottom-right, .res-nightmode #header-bottom-left, .res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side button, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, .res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ol, .res-nightmode .side li, .res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
+.res-nightmode, .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, .res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, .res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ol, .res-nightmode .side li, .res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
     /* basic style: dark gray background, white text */
     background-color: #171717 !important;
     color: white !important;
     box-shadow: none !important;
+}    
+
+.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
+     background-color: #041b09 !important;
 }
 
-.res-nightmode #RESConsole input, .res-nightmode button {
+.res-nightmode button, .res-nightmode input[type="submit"]{
+     color: white !important;
+     background-color: #606060 !important;
+        border: 1px solid #444444;
+    border-radius: 3px;
+}
+    
+ .res-nightmode #RESConsole input {
     background-color: inherit !important;
     color: inherit !important;
-}
-
-.res-nightmode #login_login-main button{
-    background-color: white !important;
-    color: black !important;
-}
-
+ } 
+    
 .res-nightmode .drop-choices a.choice:hover {
     background-color: #222 !important;
     color: #8ad !important;
@@ -912,11 +929,11 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: #9B5FC9 !important;
 }
 
-.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header-bottom-right a:hover, .res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
-	color: white !important;
+.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
+    color: white !important;
 }
 
-.res-nightmode #header-bottom-left .tabmenu li.selected a, .res-nightmode .RESDashboardComponentHeader ul li.active, .res-nightmode .widgetSortButtons li.active, .res-nightmode .widgetStateButtons li.active  {
+.res-nightmode #header #header-bottom-left .tabmenu li.selected a, .res-nightmode .RESDashboardComponentHeader ul li.active, .res-nightmode .widgetSortButtons li.active, .res-nightmode .widgetStateButtons li.active  {
     color: orangeRed !important;
 }
 
@@ -928,7 +945,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: #999 !important;
 }
 
-.res-nightmode #header-bottom-left .tabmenu a:hover, .res-nightmode a, .res-nightmode .thing .title:hover, .res-nightmode .thing .title.loggedin:hover, .res-nightmode .tagline a:hover, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .single-page a.title, .res-nightmode .single-page .thing .title.loggedin.click:visited, .res-nightmode .single-page .thing .title.loggedin:visited, .res-nightmode .menuarea .drop-choices form:hover, .res-nightmode .menuarea .drop-choices a:hover, .res-nightmode .menuarea a:hover, .res-nightmode .menuarea .drop-choices a.choice:hover, .res-nightmode .drop-choices a:hover {
+.res-nightmode #header #header-bottom-left .tabmenu a:hover, .res-nightmode a, .res-nightmode .thing .title:hover, .res-nightmode .thing .title.loggedin:hover, .res-nightmode .tagline a:hover, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .single-page a.title, .res-nightmode .single-page .thing .title.loggedin.click:visited, .res-nightmode .single-page .thing .title.loggedin:visited, .res-nightmode .menuarea .drop-choices form:hover, .res-nightmode .menuarea .drop-choices a:hover, .res-nightmode .menuarea a:hover, .res-nightmode .menuarea .drop-choices a.choice:hover, .res-nightmode .drop-choices a:hover {
     color: #88AADD !important;
 }
 
@@ -936,7 +953,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: #C1D6F5 !important
 }
 
-.res-nightmode input {
+.res-nightmode input[type="text"] {
     background-color: black !important;
 }
 
@@ -991,6 +1008,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 .res-nightmode .flair, .res-nightmode .linkflairlabel {
+    color: #DDDDDD !important;  
     background-color: #222 !important;
     border-color:#333 !important;
 }
@@ -1010,9 +1028,13 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     border:none !important;
 }
 
-.res-nightmode blockquote, .res-nightmode .md blockquote, .res-nightmode .help blockquote, .res-nightmode .usertext.border .usertext-body blockquote {
-    background-color: #2a2a2a !important;
+.res-nightmode blockquote, .res-nightmode .md blockquote,  .res-nightmode .side blockquote, .res-nightmode .help blockquote, .res-nightmode .usertext.border .usertext-body blockquote {
+    background-color: #171717  !important;
     border-left-color: #555555 !important;
+}
+    
+.res-nightmode .md blockquote li {
+    margin: 0px !important;
 }
 
 .res-nightmode .markdownEditor a:hover {
@@ -1026,15 +1048,20 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 .res-nightmode .keyHighlight .usertext-body, .res-nightmode .keyHighlight .usertext-body .md, .res-nightmode .keyHighlight .usertext-body .md p, .res-nightmode .keyHighlight .noncollapsed, 
-	.res-nightmode .keyHighlight .noncollapsed .md, .res-nightmode .keyHighlight .noncollapsed .md p {
+    .res-nightmode .keyHighlight .noncollapsed .md, .res-nightmode .keyHighlight .noncollapsed .md p {
     background: none !important;
     outline: none !important;
 }
 
 .res-nightmode #header {
     border: 0px solid #F5F5F5 !important;
-    border-bottom: solid 1px #323232 !important;
+    border-bottom: solid 2px #323232 !important;
+    padding: 0px 0px 5px 0px !important;
 }
+    
+.res-nightmode #header #header-bottom-left {
+     padding-bottom: 5px !important;
+} 
 
 .res-nightmode .side .sidebox {
     border: 0px solid black !important;
@@ -1045,7 +1072,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 .res-nightmode  .infobar{
-	border: 1px solid #F5F5F5 !important;
+    border: 1px solid #F5F5F5 !important;
 }
 
 .res-nightmode #login_login-main {
@@ -1093,7 +1120,11 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 .res-nightmode .with-listing-chooser.listing-chooser-collapsed .content{
-	margin-left: 15px !important; /* otherwise a small part of the sidebar border will be cut off */
+    margin-left: 15px !important; /* otherwise a small part of the sidebar border will be cut off */
+}
+
+.res-nightmode .login-form-side input[type=text] {
+    width: 147px !important;    
 }
 
 /********************************
@@ -1102,6 +1133,10 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 #RESConsole input[type="button"], #RESConsole input[type="submit"] {
     background-color: rgb(16, 122, 196) !important;
     color: white !important;
+}
+
+.login-form-section button {
+    margin: 7px !important;
 }
 
 /********************************
