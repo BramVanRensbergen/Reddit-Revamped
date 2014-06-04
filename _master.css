@@ -82,7 +82,8 @@ div.footer-parent, /* entire footer */
 #BigEditor h3, /* title for RES big editor for messages */
 .bottommenu.debuginfo, /* pi debug info */
 #progressIndicator img, /* NER next-page-is-loading indicator, colors do not match with theme */
-.res .nav-buttons /* prev/next page and multi links at bottom of a page-list when using res */
+.res .nav-buttons, /* prev/next page and multi links at bottom of a page-list when using res */
+.promoted, .promotedlink /* promoted entry / ad at the top of page listings */    
 {    
   display: none !important;
 }
