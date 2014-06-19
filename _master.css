@@ -902,9 +902,20 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     box-shadow: none !important;
 }    
 
+/* HEADER */
 .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
-     background-color: #041b09 !important;
+     background-color: #222 !important;
 }
+
+.res-nightmode #header {
+    border: 0px solid #F5F5F5 !important;
+    border-bottom: solid 1px #323232 !important;
+}
+    
+.res-nightmode #header #header-bottom-left {
+     padding-bottom: 5px !important; 
+} 
+
 
 .res-nightmode button, .res-nightmode input[type="submit"]{
      color: white !important;
@@ -1060,16 +1071,6 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background: none !important;
     outline: none !important;
 }
-
-.res-nightmode #header {
-    border: 0px solid #F5F5F5 !important;
-    border-bottom: solid 2px #323232 !important;
-    padding: 0px 0px 5px 0px !important;
-}
-    
-.res-nightmode #header #header-bottom-left {
-     padding-bottom: 5px !important;
-} 
 
 .res-nightmode .side .sidebox {
     border: 0px solid black !important;
