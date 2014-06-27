@@ -1,0 +1,17 @@
+reddit-revamped-css-style
+=========================
+
+A RES-friendly, clean, and minimal Reddit style for both Chrome and Firefox. Supports RES night mode.
+
+Should be used with the <a href = "https://userstyles.org/">Stylish</a> Firefox/Chrome addon. Install using the <a href ="https://userstyles.org/styles/90951/reddit-revamped">userstyles entry</a> for this style.
+
+Based on a previous version of <a href = "http://userstyles.org/styles/71917/aerial-a-css-style-for-reddit-res-compatible">Reddit Aerial.</a>
+
+Caution:
+
+    Some of the removed elements had functionality, most notably the top subreddit bar and the footer.
+    The layout will not work properly on lower resolutions.
+    As with most custom styles, this does not work with Subreddit-specific styles! -> make sure they are always turned off in your Reddit settings! (Or just untick "Use subreddit style" in each subreddit.) No way around this.
+    Alignment might be a bit off if you are not using RES.
+
+Suggestions/comments/feedback are welcome at /u/DemonicSquirrel or mail@bramvanrensbergen.com
