@@ -1,4 +1,4 @@
-reddit-revamped-css-style
+Reddit Revamped
 =========================
 
 A RES-friendly, clean, and minimal Reddit style for both Chrome and Firefox. Supports RES night mode.
