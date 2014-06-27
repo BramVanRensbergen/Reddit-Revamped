@@ -16,3 +16,5 @@ Caution: <ul>
 </ul>
 
 Suggestions/comments/feedback are welcome at <a href = "http://www.reddit.com/u/DemonicSquirrel">/u/DemonicSquirrel</a> or at  <a href="mailto:mail@bramvanrensbergen.com">mail@bramvanrensbergen.com</a>.
+
+Licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution NonCommercial ShareAlike 4.0</a> license.
