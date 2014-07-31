@@ -845,7 +845,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background-repeat: no-repeat !important;
 }
 
-.score.likes  { /* .link .score.likes */
+.score.likes  { 
     color: #ff4500 !important;
 }
 
@@ -860,11 +860,6 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 .score.dislikes, .res_post_downs {
     color: #9494FF !important;
 }
-
-
-/* .noncollapsed .score.unvoted { */
-/*     color: #888 !important; */
-/* } */
 
 .midcol {
     margin: 0px !important;
@@ -890,6 +885,10 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     min-width: 22px !important;
     position: relative !important;
     top: 19.9px !important;
+}
+
+span.score {
+	font-weight: normal !important;
 }
 
 /********************************
