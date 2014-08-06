@@ -728,6 +728,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     font-family: inherit !important;
     font-size: 13px !important;
     font-style: italic !important;
+    width: 98%;
     -moz-transition: all 0.1s linear 0s !important;
     -webkit-transition: all 0.1s linear 0s !important;
 }
