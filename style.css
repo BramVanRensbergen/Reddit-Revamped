@@ -1135,13 +1135,29 @@ span.score {
     width: 147px !important;    
 }
 
-/********************************
-************ Varia **************
-*********************************/
-#RESConsole input[type="button"], #RESConsole input[type="submit"] {
-    background-color: rgb(16, 122, 196) !important;
-    color: white !important;
+/**********************************
+********** RES CONSOLE ************
+***********************************/
+#RESConsoleContainer input, #RESConsoleTopBar, #RESConsoleContent {
+    color: black !important;
+    background-color: white !important;
 }
+
+#RESConsoleContainer .moduleButton.enabled, #RESMenu li{
+     color: black !important;
+}
+    
+#RESLogo{
+     display: none !important;
+}
+
+#RESConsoleTopBar{
+    background-color: white !important;    
+} 
+
+/****************************
+********** VARIA ************
+*****************************/  
 
 .login-form-section button {
     margin: 7px !important;
@@ -1150,6 +1166,7 @@ span.score {
 /********************************
 ******** Unordered **************
 *********************************/
+
 #srLeftContainer {
     display: inline !important;
 }
