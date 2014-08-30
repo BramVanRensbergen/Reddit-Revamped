@@ -82,7 +82,6 @@ div.footer-parent, /* entire footer */
 #BigEditor h3, /* title for RES big editor for messages */
 .bottommenu.debuginfo, /* pi debug info */
 #progressIndicator img, /* NER next-page-is-loading indicator, colors do not match with theme */
-.res .nav-buttons, /* prev/next page and multi links at bottom of a page-list when using res */
 .promoted, .promotedlink /* promoted entry / ad at the top of page listings */    
 {    
   display: none !important;
@@ -648,6 +647,17 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
      margin-left: 28px !important;
      vertical-align: top !important;
 }
+
+
+.nav-buttons {
+	margin-left:  55px !important;
+	margin-top: 45px !important;
+	margin-bottom: 30px !important;
+	font-style: italic !important;
+	font-size: 14px !important;
+}
+
+
 
 /***************************
 ******* COMMENTS-PAGE ******
@@ -1222,13 +1232,6 @@ span.score {
 
 .comments-page .link.last-clicked {
     opacity: 1 !important;
-}
-
-.nextprev {
-    margin-left:  6px !important;
-    margin-top: 15px !important;
-    font-size: 14px !important;
-    font-style: italic !important;
 }
 
 .imgCaptions, .imgCredits, .RESGalleryLabel {
