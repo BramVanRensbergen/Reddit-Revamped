@@ -526,11 +526,6 @@ sup, sub, .commentarea .expando-button {
     white-space: normal !important;
 }
 
-
-.menuarea .drop-choices {
-    font-size: 14px !important;
-}
-
 .loggedin .commentarea .menuarea {
    margin-bottom: 10px !important;
 }
@@ -559,7 +554,6 @@ sup, sub, .commentarea .expando-button {
     display: inline !important;
     position: static !important;
     box-shadow: none !important;
-    font-size: 16px !important;
     white-space: normal !important;
     background: transparent !important;
     border: 0px !important;
@@ -569,14 +563,9 @@ sup, sub, .commentarea .expando-button {
     display: inline !important;
 }
 
-.menuarea .drop-choices a:hover, .messages-page .menuarea a:hover {
+.menuarea .drop-choices a:hover, .messages-page .menuarea a:hover, #REScommentNavToggle div:hover {
     background: none !important;
-    color: #0046af !important;
-    text-decoration: none !important;
-}
-
-.menuarea .drop-choices a {
-    margin-left: 10px !important;
+    text-decoration: underline !important;
 }
 
 input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menuarea .drop-choices form a.choice.selected {
@@ -584,15 +573,35 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: orangeRed !important;
 }
 
-.menuarea .dropdown-title {
-    font-size: 14px !important;
-    font-style: normal !important;
-    line-height: 24px !important;
-    color: #8897ae !important;
-}
-
 .menuarea .spacer {
     display: block !important;
+}
+
+#REScommentNavToggle {
+    margin-left: -6px !important;
+    vertical-align: bottom !important;
+    height: 19px !important;
+    margin-bottom: 2px !important;
+}
+
+#REScommentNavToggle span {
+    display: none !important;
+}
+
+.menuarea .spacer span:first-child, #REScommentNavToggle span:first-child {
+    display: inline !important;
+    margin-top: 1px !important;
+    font-style: normal !important;
+    font-size: 13px !important;
+    margin-right: 10px !important;
+    color: #a7b3c5 !important;
+}
+
+.menuarea .drop-choices a, #REScommentNavToggle div {
+    font-size: 14px !important;
+    margin-left: 10px !important;
+    color: grey !important;
+    color: #369 !important;
 }
 
 /**********************************
@@ -656,7 +665,6 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 	font-style: italic !important;
 	font-size: 14px !important;
 }
-
 
 
 /***************************
@@ -947,8 +955,8 @@ span.score {
 .res-nightmode button, .res-nightmode input[type="submit"]{
      color: white !important;
      background-color: #606060 !important;
-        border: 1px solid #444444;
-    border-radius: 3px;
+     border: 1px solid #444444;
+     border-radius: 3px;
 }
     
  .res-nightmode #RESConsole input {
@@ -975,7 +983,9 @@ span.score {
     color: #9B5FC9 !important;
 }
 
-.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
+.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, 
+    .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, 
+    #REScommentNavToggle div, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
     color: white !important;
 }
 
@@ -1417,31 +1427,6 @@ span[class="hover pagename redditname"], span[class="hover pagename redditname"]
 
 .RESSubscriptionButton:hover {
     background-color: whiteSmoke !important;
-}
-
-#REScommentNavToggle {
-    margin-left: -6px !important;
-    vertical-align: bottom !important;
-    height: 19px !important;
-    margin-bottom: 2px !important;
-}
-
-#REScommentNavToggle span {
-    display: none !important;
-}
-
-#REScommentNavToggle span:first-child {
-    display: block !important;
-    margin-top: 1px !important;
-    font-style: normal !important;
-    font-size: 13px !important;
-    margin-right: 10px !important;
-    color: #a7b3c5 !important;
-}
-
-#REScommentNavToggle div {
-    font-size: 14px !important;
-    margin-left: 10px !important;
 }
 
 .res div.usertext-edit > div {
