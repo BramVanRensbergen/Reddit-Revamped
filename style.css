@@ -1017,6 +1017,10 @@ span.score {
     background-color: #222 !important;
 }
 
+.res-nightmode .BELeft.RESDialogSmall, .res-nightmode .BERight.RESDialogSmall {
+  background-color: rgb(102, 102, 102) !important;
+}
+
 .res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
     background-color:#777 !important;
 }
