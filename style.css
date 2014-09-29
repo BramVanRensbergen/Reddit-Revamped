@@ -723,6 +723,23 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background-color: #ddd !important;
 }
 
+.commentingAs {
+    margin-right: 40px !important;
+}
+
+#BigEditor .commentingAs, #BigEditor .RESMacroWrappingSpan {
+    margin: 2px !important;
+}
+
+/* Fix the formatting buttons being displayed double. */
+#BigEditor .BELeft .markdownEditor-wrapper {
+    display: none !important;
+}
+
+#BigEditor .BELeft .RESDialogContents .markdownEditor-wrapper {
+    display: inline !important;
+}
+
 /***********************
 ******* SEARCH *********
 ***********************/
