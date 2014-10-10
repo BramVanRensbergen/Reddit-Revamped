@@ -758,18 +758,20 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 #search input[type="text"] {
-    height: 19px !important;
+    height: 25px !important;
+    width: 98% !important;
     color: black !important;
     font-family: inherit !important;
     font-size: 13px !important;
-    font-style: italic !important;
-    width: 98%;
+    font-style: italic !important;    
     -moz-transition: all 0.1s linear 0s !important;
     -webkit-transition: all 0.1s linear 0s !important;
 }
 
 #searchexpando {
     padding: 7px 10px !important;
+    margin: 10px 0px !important;
+    width: 91% !important;
     border: 1px solid #ff4500 !important;
     border-radius: 4px !important;
     font-size: 12px !important;
@@ -777,11 +779,23 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     box-shadow: #888 1px 1px 5px 0px !important;
     border-style: none !important;
     border-color: gray !important;
-    line-height: 1.7em !important;
 }
 
+#searchexpando input[type="submit"]{
+    display: none !important;
+}
+
+#searchexpando input {
+    margin: 0px 7px 0px 0px !important;
+}
+
+#searchexpando br {
+    margin-bottom: 5px !important;
+}
+    
 #searchexpando p {
-    margin: 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 7px !important;
 }
 
 /* search page itself */
@@ -1033,10 +1047,6 @@ span.score {
     background-color: #1A1A1A !important;
 }
 
-.res-nightmode #searchexpando {
-    background-color: #26313A !important;
-}
-
 .res-nightmode .RES-keyNav-activeElement {
     background-color: #3D3D3D !important;
 }
@@ -1065,6 +1075,12 @@ span.score {
 .eb-se, .res-nightmode .expando-button.selftext.expanded:hover, .eb-seh, .res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, 
 .res-nightmode .eb-vch, .res-nightmode .expando-button.video.expanded, .res-nightmode .eb-ve, .res-nightmode .expando-button.video.expanded:hover, .res-nightmode .eb-veh, .res-nightmode .expando-button.image {
     background-image: url(http://c.thumbs.redditmedia.com/n8fFm75rDzKvc8A8.png) !important;
+}
+
+.res-nightmode #searchexpando {
+    background-color: #26313A !important;
+    box-shadow: #88AADD 1px 1px 5px 0px !important;
+
 }
 
 .res-nightmode .flair, .res-nightmode .linkflairlabel {
