@@ -680,6 +680,10 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     margin-left: 5px !important;
 }
 
+.commentarea .flat-list.buttons:hover {
+    background: transparent !important;
+}
+
 .commentarea div.collapsed, .commentarea div.collapsed a.expand { /* keep div as part of selector */
     font-size: 11px !important;
     font-style: italic !important;
