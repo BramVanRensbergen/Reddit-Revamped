@@ -763,7 +763,7 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
 }
 
 #search input[type="text"] {
-    height: 25px !important;
+    padding: 6px !important;
     width: 98% !important;
     color: black !important;
     font-family: inherit !important;
