@@ -84,7 +84,8 @@ div.footer-parent, /* entire footer */
 #progressIndicator img, /* NER next-page-is-loading indicator, colors do not match with theme */
 .promoted, .promotedlink, /* promoted entry / ad at the top of page listings */    
 .hohoho-header, /*link in top bar to secret santa */
-.sidebox.hohoho .morelink /* sidebar link to secret santa */
+.sidebox.hohoho .morelink, /* sidebar link to secret santa */
+.sidebox.holiday_shopping /* sidebar link to marketplace */
 {    
   display: none !important;
 }
