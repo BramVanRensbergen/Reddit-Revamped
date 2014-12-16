@@ -67,25 +67,25 @@ a[href$="/spoiler"]:hover, a[href$="#spoiler"]:hover {
 /****************************
 ***** REMOVED ELEMENTS ******
 ****************************/    
-#header span.pagename, /* remove page name e.g. 'Gaming' */
-#sr-header-area, /* bar that contains subreddit links */
-.giftgold, .goldvertisement, .gilded-comments-link, /* gold related */
-.trophy-area, /* trophy box */
-.account-activity-box, /* link to account activity */
-.listing-chooser .contents h3, /* 'multireddits' title */
-div.footer-parent, /* entire footer */
-.panestack-title, /* name of display (eg top 500 comments) on comment page */
-.side .create, /* create your own subreddit link */
-.reddiquette, /* reddiquette link below comment box */
-.shortlink, /* shortlink in right sidebar */
+#header span.pagename, 			/* remove page name e.g. 'Gaming' */
+#sr-header-area, 				/* bar that contains subreddit links */
+.giftgold, .goldvertisement, .gilded-comments-link, .gilded-link, /* gold related */
+.trophy-area, 					/* trophy box */
+.account-activity-box, 			/* link to account activity */
+.listing-chooser .contents h3, 	/* 'multireddits' title */
+div.footer-parent, 				/* entire footer */
+.panestack-title, 				/* name of display (eg top 500 comments) on comment page */
+.side .create, 					/* create your own subreddit link */
+.reddiquette, 					/* reddiquette link below comment box */
+.shortlink, 					/* shortlink in right sidebar */
 .thumbnail.self, .thumbnail.default,
-#BigEditor h3, /* title for RES big editor for messages */
-.bottommenu.debuginfo, /* pi debug info */
-#progressIndicator img, /* NER next-page-is-loading indicator, colors do not match with theme */
-.promoted, .promotedlink, /* promoted entry / ad at the top of page listings */    
-.hohoho-header, /*link in top bar to secret santa */
-.sidebox.hohoho .morelink, /* sidebar link to secret santa */
-.sidebox.holiday_shopping /* sidebar link to marketplace */
+#BigEditor h3, 					/* title for RES big editor for messages */
+.bottommenu.debuginfo, 			/* pi debug info */
+#progressIndicator img, 		/* NER next-page-is-loading indicator, colors do not match with theme */
+.promoted, .promotedlink, 		/* promoted entry / ad at the top of page listings */    
+.hohoho-header, 				/*link in top bar to secret santa */
+.sidebox.hohoho .morelink, 		/* sidebar link to secret santa */
+.sidebox.holiday_shopping 		/* sidebar link to marketplace */				
 {    
   display: none !important;
 }
