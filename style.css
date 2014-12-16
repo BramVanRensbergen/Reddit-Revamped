@@ -85,7 +85,8 @@ div.footer-parent, 				/* entire footer */
 .promoted, .promotedlink, 		/* promoted entry / ad at the top of page listings */    
 .hohoho-header, 				/*link in top bar to secret santa */
 .sidebox.hohoho .morelink, 		/* sidebar link to secret santa */
-.sidebox.holiday_shopping 		/* sidebar link to marketplace */				
+.sidebox.holiday_shopping, 		/* sidebar link to marketplace */
+.debuginfo						/* info on server that rendered	the page */			
 {    
   display: none !important;
 }
