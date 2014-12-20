@@ -255,11 +255,17 @@ div.footer-parent, 				/* entire footer */
     border: 1px solid #B4B4B4 !important;
     border-radius: 4px !important;
     height: auto !important;
-    padding: 6px 9px !important;
     line-height: 1.4em !important;
     -moz-transition: all 0.2s ease-out 0s !important;
     -webkit-transition: all 0.2s ease-out 0s !important;
+    padding: 0px !important;    
+    width: 98% !important;
 }
+    
+/* links to submit */
+.morelink a.login-required { 
+      padding: 6px !important;
+} 
 
 .morelink:hover {
     background-color: #FFCAB6 !important;
@@ -1004,7 +1010,7 @@ span.score {
     color: inherit !important;
  } 
     
-.res-nightmode .drop-choices a.choice:hover {
+.res-nightmode .drop-choices a.choice:hover { 
     background-color: #222 !important;
     color: #8ad !important;
 }
