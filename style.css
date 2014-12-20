@@ -993,6 +993,11 @@ span.score {
     color: white !important;
     box-shadow: none !important;
 }    
+
+
+.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle {
+    background-color: inherit !important;       
+}
     
 /* HEADER */
 .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
@@ -1079,10 +1084,6 @@ span.score {
 
 .res-nightmode .BELeft.RESDialogSmall, .res-nightmode .BERight.RESDialogSmall {
   background-color: rgb(102, 102, 102) !important;
-}
-
-.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr {
-    background-color: inherit !important;       
 }
 
 .res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
