@@ -205,8 +205,9 @@ div.footer-parent, 				/* entire footer */
 /***************************
 ******* RIGHT SIDEBAR ******
 ****************************/
-.add-sr { /* add new subreddit to multireddit form */ 
-	margin-top: 5px !important; 
+.side {
+    padding-left: 18px !important;
+    margin-right: 10px !important;
 }
 
 .titlebox {
@@ -323,6 +324,10 @@ form#login_login-main.login-form.login-form-side {
     margin-right: -3px !important;
 }
 
+.add-sr { /* add new subreddit to multireddit form */ 
+	margin-top: 5px !important; 
+}
+
 .multi-details .remove-sr {
     margin-left: 6px !important;
 }
@@ -330,6 +335,7 @@ form#login_login-main.login-form.login-form-side {
 .multi-details .add-rec {
     margin: 0px !important;
 }
+
 
 /*****************************
 ******* CONTENT GENERAL ******
@@ -1595,31 +1601,6 @@ span[class="hover pagename redditname"], span[class="hover pagename redditname"]
 
 .usertext.border .usertext-body hr {
     margin-top: 7px !important;
-}
-
-.side {
-    background-color: white !important;
-    padding-left: 18px !important;
-    width: 23% !important;
-    max-width: 300px !important;
-    z-index: 30 !important;
-    margin-right: 10px !important;
-}
-
-.side .titlebox .md {
-    font-size: 13px !important;
-}
-
-.side, .side p, .side li, .side h3, .side .md {
-    text-align: left !important;
-}
-
-.side .usertext-body li {
-    margin-bottom: 2px !important;
-}
-
-.side form.usertext {
-    margin-top: 15px !important;
 }
 
 .author.flairselectable, span.flair, .link .flair, .flairselectbtn {
