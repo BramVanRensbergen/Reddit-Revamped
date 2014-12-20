@@ -1241,6 +1241,10 @@ span.score {
     margin-left: 15px !important; /* otherwise a small part of the sidebar border will be cut off */
 }
 
+.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
+     border-radius: 3px !important;
+}
+
 /**********************************
 ********** RES CONSOLE ************
 ***********************************/
