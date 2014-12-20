@@ -82,12 +82,13 @@ div.footer-parent, 				/* entire footer */
 #BigEditor h3, 					/* title for RES big editor for messages */
 .bottommenu.debuginfo, 			/* pi debug info */
 #progressIndicator img, 		/* NER next-page-is-loading indicator, colors do not match with theme */
-.promoted, .promotedlink, 		/* promoted entry / ad at the top of page listings */    
+.promoted, .promotedlink,		/* promoted entry / ad at the top of page listings */    
 .hohoho-header, 				/* link in top bar to secret santa */
 .sidebox.hohoho .morelink, 		/* sidebar link to secret santa */
 .sidebox.holiday_shopping, 		/* sidebar link to marketplace */
 .debuginfo,						/* info on server that rendered	the page */		
-.searchpane-toggle-hide			/* link to hide search box on search page */	
+.searchpane-toggle-hide,		/* link to hide search box on search page */
+#sponsorship, #ad_main 			/* ad in sidebar */	
 {    
   display: none !important;
 }
