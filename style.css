@@ -982,7 +982,6 @@ span.score {
     box-shadow: none !important;
 }    
     
-
 /* HEADER */
 .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
      background-color: #222 !important;
@@ -1070,7 +1069,7 @@ span.score {
   background-color: rgb(102, 102, 102) !important;
 }
 
-.res-nightmode .side .sidebox {
+.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr {
     background-color: inherit !important;       
 }
 
