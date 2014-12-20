@@ -88,7 +88,7 @@ div.footer-parent, 				/* entire footer */
 .sidebox.holiday_shopping, 		/* sidebar link to marketplace */
 .debuginfo,						/* info on server that rendered	the page */		
 .searchpane-toggle-hide,		/* link to hide search box on search page */
-#sponsorship, #ad_main 			/* ad in sidebar */	
+#sponsorship, #ad_main, #ad_sponsorship 			/* ad in sidebar */	
 {    
   display: none !important;
 }
