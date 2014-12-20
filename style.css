@@ -317,6 +317,10 @@ form#login_login-main.login-form.login-form-side {
     margin-right: -3px !important;
 }
 
+.multi-details .remove-sr {
+    margin-left: 6px !important;
+}
+
 
 /*****************************
 ******* CONTENT GENERAL ******
