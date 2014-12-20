@@ -1002,7 +1002,7 @@ span.score {
 }    
 
 
-.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle {
+.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic {
     background-color: inherit !important;       
 }
     
