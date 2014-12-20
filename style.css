@@ -321,6 +321,9 @@ form#login_login-main.login-form.login-form-side {
     margin-left: 6px !important;
 }
 
+.multi-details .add-rec {
+    margin: 0px !important;
+}
 
 /*****************************
 ******* CONTENT GENERAL ******
