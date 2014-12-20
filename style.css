@@ -997,6 +997,9 @@ span.score {
      padding-bottom: 5px !important; 
 } 
 
+.res-nightmode #search input[type="submit"] {
+     background-color: #171717 !important;
+}
 
 .res-nightmode button, .res-nightmode input[type="submit"]{
      color: white !important;
@@ -1065,6 +1068,10 @@ span.score {
 
 .res-nightmode .BELeft.RESDialogSmall, .res-nightmode .BERight.RESDialogSmall {
   background-color: rgb(102, 102, 102) !important;
+}
+
+.res-nightmode .side .sidebox {
+    background-color: inherit !important;       
 }
 
 .res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
