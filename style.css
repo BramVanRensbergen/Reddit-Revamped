@@ -965,12 +965,17 @@ span.score {
 /********************************
 **** RES Nightmode specific *****
 *********************************/
-.res-nightmode, .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, .res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, .res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ol, .res-nightmode .side li, .res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
+.res-nightmode, .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, 
+	.res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
+	.res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ol, .res-nightmode .side li, .res-nightmode #sr-more-link, 
+	.res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode .thing.even,
+    .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
     /* basic style: dark gray background, white text */
     background-color: #171717 !important;
     color: white !important;
     box-shadow: none !important;
 }    
+    
 
 /* HEADER */
 .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
