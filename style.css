@@ -658,6 +658,13 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     color: #369 !important;
 }
 
+.drop-choices .RES-sort-button, .drop-choices .RES-sort-button:hover {
+    display: none !important;
+    width: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
 /**********************************
 ******* LISTING PAGE LAYOUT *******
 **********************************/
@@ -751,12 +758,6 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background-color: #ddd !important;
 }
 
-.drop-choices .RES-sort-button, .drop-choices .RES-sort-button:hover {
-    display: none !important;
-    width: 0px !important;
-    padding: 0px !important;
-    margin: 0px !important;
-}
 
 
 /******************************
@@ -1021,10 +1022,10 @@ span.score {
 }    
 
 
-.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic {
+.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic, .res-nightmode .voteWeight {
     background-color: inherit !important;       
 }
-    
+
 /* HEADER */
 .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
      background-color: #222 !important;
