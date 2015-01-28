@@ -384,10 +384,10 @@ form#login_login-main.login-form.login-form-side {
 }
 
 .title {
-    color: #0046af !important;
+   	color: #0079d3 !important;
 }
 
-.title:visited{
+.title:visited {
     color: #551A8B !important;
 }
 
@@ -758,7 +758,11 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background-color: #ddd !important;
 }
 
-
+.single-page a.title, .single-page .thing .title.loggedin.click:visited, .single-page .thing .title.loggedin:visited {
+    font-size: 17px !important;
+    font-style: italic !important;
+    line-height: 1.3em !important;
+}
 
 /******************************
 ******* CREATE A COMMENT ******
@@ -2198,13 +2202,6 @@ p.sponsored-tagline {
 
 .fancy-toggle-button a:hover, .fancy-toggle-button .add:hover, .fancy-toggle-button .remove:hover, .RESDashboardToggle:hover, .res #authorInfoToolTip .blueButton:hover, .RESFilterToggle:hover, .pretty-button.positive:hover, .pretty-button.negative:hover, .RESshortcutside:hover {
     background-color: gray !important;
-}
-
-.single-page a.title, .single-page .thing .title.loggedin.click:visited, .single-page .thing .title.loggedin:visited {
-    font-size: 17px !important;
-    font-style: italic !important;
-    color: #0046af !important;
-    line-height: 1.3em !important;
 }
 
 input.btn {
