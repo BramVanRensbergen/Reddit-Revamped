@@ -751,6 +751,13 @@ input[type="hidden"], .drop-choices a.choice.selected, body.res-nightmode .menua
     background-color: #ddd !important;
 }
 
+.drop-choices .RES-sort-button, .drop-choices .RES-sort-button:hover {
+    display: none !important;
+    width: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
 
 /******************************
 ******* CREATE A COMMENT ******
