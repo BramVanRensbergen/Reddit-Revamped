@@ -445,6 +445,7 @@ blockquote, .md blockquote, .help blockquote {
     border-bottom-right-radius: 6px !important;
     margin: 3px 0px 8px 0px !important;
     padding: 6px 11px 2px 9px !important;
+    color: black !important;
 }
 
 .usertext-body table, .usertext-body td, .usertext-body thead, .usertext-body th, .usertext-body hr {
