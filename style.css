@@ -406,17 +406,20 @@ form#login_login-main.login-form.login-form-side {
 .md.wiki {
     max-width: 15000px !important;
 }
-
-.RES-keyNav-activeElement {
+    
+.listing-page.RES-keyNav-activeElement {
     outline-width: 0px !important;
     border-radius: 3px !important;
     background-color: #f0f4fb !important;
-}
+}    
 
-.RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, .RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed,
-    .res-nightmode .RES-keyNav-activeElement .usertext-body, .res-nightmode .RES-keyNav-activeElement .usertext-body .md, 
-    .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, .res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li {
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
+	.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li,
+ 	.res-nightmode .RES-keyNav-activeElement,.res-nightmode .RES-keyNav-activeElement .usertext-body, 
+ 	.res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, 
+ 	.res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed  {
     background-color: inherit !important;
+    color: inherit !important    
 }
 
 .link .usertext .md {
@@ -1078,7 +1081,8 @@ span.score {
     color: #777 !important;
 }
 
-.res-nightmode .entry p.tagline:first-of-type, .res-nightmode .entry time, .res-nightmode h2 {
+.res-nightmode .entry p.tagline, .res-nightmode .entry .RES-keyNav-activeElement p.tagline, 
+    .res-nightmode .entry time, .res-nightmode h2 {
     color: #999 !important;
 }
 
@@ -1114,7 +1118,7 @@ span.score {
     background-color: #1A1A1A !important;
 }
 
-.res-nightmode .RES-keyNav-activeElement {
+.res-nightmode.listing-page .RES-keyNav-activeElement {
     background-color: #3D3D3D !important;
 }
 
