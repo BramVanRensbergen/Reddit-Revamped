@@ -157,7 +157,7 @@
 		background-color: #f5f5f5 !important;  
 		font-size: 11px !important;
 		position: absolute !important;
-		top: 0px !important;  /* put the user info box on the top line of the header */
+		top: 3px !important;  /* put the user info box on the top line of the header */
 		right: 0px !important;    
 		padding: 6px 4px 5px 4px !important;
 		margin: 0px !important;
