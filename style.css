@@ -374,6 +374,10 @@
    		padding: 10px !important;
 	}
 			
+	.comments-page .content {
+		margin-right: 60px !important;
+	}			
+			
 	.with-listing-chooser .content {
 	    margin-left: 150px !important;
 	}
@@ -657,7 +661,6 @@
 	}
 	
 	#REScommentNavToggle {
-	    margin-left: -6px !important;
 	    vertical-align: bottom !important;
 	    height: 19px !important;
 	    margin-bottom: 2px !important;
