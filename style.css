@@ -703,7 +703,7 @@
 	}
 	
 	.listing-page .thing, .related-page .thing{  /* entries */
-	    padding-left: 0px !important;
+	    padding: 10px 0px !important;
 	    margin-left: 20px !important;
 	}
 	
