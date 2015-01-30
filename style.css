@@ -331,7 +331,7 @@
 	}
 	
 	.login-form-side input[type=text], .login-form-side input[type=password] {
-		width: 140px !important;   
+		width: 120px !important;   
 		margin: 0px !important;
 	}
 	
