@@ -1,5 +1,36 @@
 @-moz-document domain('reddit.com') {
 	
+
+		
+	/****************************
+	***** REMOVED ELEMENTS ******
+	****************************/    
+	#header span.pagename, 			/* remove page name e.g. 'Gaming' */
+	#sr-header-area, 				/* bar that contains subreddit links */
+	.giftgold, .goldvertisement, .gilded-comments-link, .gilded-link, /* gold related */
+	.trophy-area, 					/* trophy box */
+	.account-activity-box, 			/* link to account activity */
+	.listing-chooser .contents h3, 	/* 'multireddits' title */
+	div.footer-parent, 				/* entire footer */
+	.panestack-title, 				/* name of display (eg top 500 comments) on comment page */
+	.side .create, 					/* create your own subreddit link */
+	.reddiquette, 					/* reddiquette link below comment box */
+	.shortlink, 					/* shortlink in right sidebar */
+	.thumbnail.self, .thumbnail.default,
+	#BigEditor h3, 					/* title for RES big editor for messages */
+	.bottommenu.debuginfo, 			/* pi debug info */
+	#progressIndicator img, 		/* NER next-page-is-loading indicator, colors do not match with theme */
+	.promoted, .promotedlink,		/* promoted entry / ad at the top of page listings */    
+	.hohoho-header, 				/* link in top bar to secret santa */
+	.sidebox.hohoho .morelink, 		/* sidebar link to secret santa */
+	.sidebox.holiday_shopping, 		/* sidebar link to marketplace */
+	.debuginfo,						/* info on server that rendered	the page */		
+	.searchpane-toggle-hide,		/* link to hide search box on search page */
+	#sponsorship, #ad_main, #ad_sponsorship 			/* ad in sidebar */	
+	{    
+	  display: none !important;
+	}
+	
 	/***********************
 	******** MAIN **********
 	***********************/	
@@ -63,34 +94,11 @@
 	    min-height: -o-calc(100% - 36px) !important;
 	    min-height: calc(100% - 36px) !important;
 	}
-		
-	/****************************
-	***** REMOVED ELEMENTS ******
-	****************************/    
-	#header span.pagename, 			/* remove page name e.g. 'Gaming' */
-	#sr-header-area, 				/* bar that contains subreddit links */
-	.giftgold, .goldvertisement, .gilded-comments-link, .gilded-link, /* gold related */
-	.trophy-area, 					/* trophy box */
-	.account-activity-box, 			/* link to account activity */
-	.listing-chooser .contents h3, 	/* 'multireddits' title */
-	div.footer-parent, 				/* entire footer */
-	.panestack-title, 				/* name of display (eg top 500 comments) on comment page */
-	.side .create, 					/* create your own subreddit link */
-	.reddiquette, 					/* reddiquette link below comment box */
-	.shortlink, 					/* shortlink in right sidebar */
-	.thumbnail.self, .thumbnail.default,
-	#BigEditor h3, 					/* title for RES big editor for messages */
-	.bottommenu.debuginfo, 			/* pi debug info */
-	#progressIndicator img, 		/* NER next-page-is-loading indicator, colors do not match with theme */
-	.promoted, .promotedlink,		/* promoted entry / ad at the top of page listings */    
-	.hohoho-header, 				/* link in top bar to secret santa */
-	.sidebox.hohoho .morelink, 		/* sidebar link to secret santa */
-	.sidebox.holiday_shopping, 		/* sidebar link to marketplace */
-	.debuginfo,						/* info on server that rendered	the page */		
-	.searchpane-toggle-hide,		/* link to hide search box on search page */
-	#sponsorship, #ad_main, #ad_sponsorship 			/* ad in sidebar */	
-	{    
-	  display: none !important;
+	
+	input {
+	    font-family: inherit !important;
+	    font-variant: normal !important;
+	    font-style: italic !important;
 	}
 	
 	/***********************
@@ -363,7 +371,10 @@
 	.multi-details .add-rec {
 	    margin: 0px !important;
 	}
-	
+		
+	.titlebox h1 {
+	    font-family: inherit !important;
+	}
 	
 	/*****************************
 	******* CONTENT GENERAL ******
@@ -406,10 +417,6 @@
 	
 	.guider {
 	    display: none !important;
-	}
-	
-	.tagline, .tagline span, .flat-list.buttons {
-	    font-size: 11px !important;
 	}
 	
 	.title {
@@ -550,8 +557,16 @@
 	.link {
 	    margin-top: 7px !important;
 	    margin-bottom: 7px !important;
+	}	
+	
+	.link .flat-list.buttons { /* 'xx comments save hide' */
+	    font-size: 12px !important;
+	}	
+				
+	.noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li {
+	    display: inline !important;
 	}
-
+	
 	.RESDialogContents {
 		margin: 0px 0px 10px 0px !important;
 	    border: 0px solid #D4DFEF !important;
@@ -580,6 +595,16 @@
 	    width: 300px !important;
 	}
 	
+	.imgCaptions, .imgCredits, .RESGalleryLabel {
+	    font-size: 14px !important;
+	    font-style: italic !important;
+	}
+	
+	.entry .buttons li a:hover, .morecomments a:hover {
+	    color: #0046af !important;
+	    text-decoration: none !important;
+	}	
+	
 	/************************
 	******* MENU AREA ******* 
 	*************************
@@ -603,7 +628,7 @@
 	    color: #8897AE !important;
 	    font-size: 13px !important;
 	    font-style: italic !important;    
-	    margin: 15px 6px !important;
+	    margin: 15px 7px 15px 9px !important;
 	    overflow: hidden !important;  
 	    padding: 4px 8px 4px 8px !important;
 	    white-space: normal !important;
@@ -693,6 +718,10 @@
 	    margin: 0px !important;
 	}
 	
+	#REScommentNavToggle #navigateBysubmitter { /* first element of this row, align with first element of row above */ 
+		margin-left: 2px !important;
+	}
+	
 	/**********************************
 	******* LISTING PAGE LAYOUT *******
 	**********************************/
@@ -701,8 +730,7 @@
 	}
 	
 	.listing-page .thing, .related-page .thing{  /* entries */
-	    padding: 10px 0px !important;
-	    margin-left: 0px !important;
+	    padding: 3px 0px 3px 20px !important;
 	}
 	
 	.NERPageMarker, #progressIndicator, .infobar, #NERFail{
@@ -744,8 +772,7 @@
 	.related-page .commentarea .buttons {
 	     margin-left: 28px !important;
 	     vertical-align: top !important;
-	}
-	
+	}	
 	
 	.nav-buttons {
 		margin-left:  55px !important;
@@ -754,16 +781,35 @@
 		font-style: italic !important;
 		font-size: 14px !important;
 	}
+		
+	.domain {
+	    font-size: 0px !important; /* remove parenthesis around domain */
+	}
+	
+	.domain a {
+	    font-size: 12px !important;
+	    font-style: italic !important;
+	    color: #999999 !important;
+	}
+	
+	.domain a:hover {
+	    color: #0046af !important;
+	    text-decoration: none !important;
+	}
 	
 	
 	/***************************
 	******* COMMENTS-PAGE ******
 	***************************/
 	
-	.comments-page .thing{
-	    margin-left: 6px !important;    
+	.comments-page .thing.comment {
+	    margin: 6px !important;    
 	}
-	
+
+	.comments-page .sitetable .self .midcol { /* score on a self post, leave some extra space */
+	    margin-right: 16px !important;
+	}
+
 	.commentarea .flat-list {
 	    top: 1px !important;
 	    margin-left: 5px !important;
@@ -779,9 +825,9 @@
 	}
 	
 	.commentarea div.collapsed { /* keep div as part of selector */
-	    padding: 5px 27px !important;
+	    padding: 5px !important;
 	}
-	
+
 	.viewSource textarea {
 	    background-color: #ddd !important;
 	}
@@ -792,16 +838,54 @@
 	    line-height: 1.3em !important;
 	}
 	
+	time.edited-timestamp { /* the star next to the timestamp for edited comments */
+	    display: inline-block !important;
+	    width: 11px !important;
+	    height: 9px !important;
+	    background-position: -52px -658px !important;
+	    background-repeat: no-repeat !important;
+	    text-indent: -9999px !important;
+	    margin: 1px !important;
+	}
+				
+	a.expand, .comment .expand {
+			font-size: 15px !important;
+	}
+	
+	a.expand:hover, .comment .expand:hover {
+	    background-color: #0046af !important;
+	    color: white !important;
+
+	}	
+		
+	.morecomments, .morecomments a {
+			font-style: italic !important;
+	    color: #888 !important;
+	}
+	
+	.commentarea .buttons, .profile-page .noncollapsed .buttons, .message .buttons {
+	    width: 10px !important;
+	    overflow: visible !important;
+	}
+	
+	.commentarea h1 {
+	    border-bottom: none !important;
+	    margin-bottom: 6px !important;
+	    margin-top: 0px !important;
+	    padding-bottom: 0px !important;
+	}
+	
+	.commentarea h1:before { 
+	    content:"#" !important;
+	}
+	
 	/******************************
 	******* CREATE A COMMENT ******
 	******************************/
 	
 	.usertext-edit {
-	    width: auto !important;
-	    max-width: 615px !important;
-	    margin-top: 6px !important;
-	    margin-bottom: 10px !important;
-	    padding-left: 0px !important;
+			max-width: 615px !important;
+			width: auto !important;
 	}
 	
 	.usertext-edit textarea {
@@ -954,17 +1038,13 @@
 	    .res-nightmode .arrow.down:hover, .loggedin.res-nightmode .arrow.down:hover, .res-nightmode .arrow.down.login-required:hover, 
 	    .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.downmod, 
 	    .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
-	    background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;
-	
+	    background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;	
 	}
 	
 	.arrow {
 	    width: 15px !important;
 	    height: 14px !important;
-	}
-	
-	.arrow, .res-nightmode .arrow, .loggedin.res-nightmode .arrow {
-	    margin-top: 2px !important; 
+		margin: 4px auto 3px auto !important;
 	}
 	
 	.arrow.up, .arrow.up.login-required, .loggedin .arrow.up:hover, 
@@ -1022,21 +1102,127 @@
 	    margin-top: 2px !important;
 	}
 	
-	.link .rank {
-	    font-family: inherit !important;
-	    font-size: 10px !important;
-	}
-	
 	.rank {
-	    margin: 0px 2px 1px 0px !important;
+	    margin: 23px 2px 1px 0px !important;
 	    width: auto !important;
 	    min-width: 22px !important;
-	    position: relative !important;
-	    top: 19.9px !important;
+			font-family: inherit !important;
+	    font-size: 10px !important;
 	}
 	
 	span.score {
 		font-weight: normal !important;
+	}
+	
+	/********************************
+	******** tagline & flair ********
+	*********************************/
+			
+	.tagline, .tagline span {
+			font-style: italic !important;
+	    font-size: 11px !important;
+	}
+	
+	.tagline .author, .tagline .userattrs {
+	    font-style: normal !important;
+	}
+	
+	.commentarea div.collapsed .tagline .author, .commentarea div.collapsed .tagline .score, .commentarea div.collapsed .tagline time, .commentarea div.collapsed .tagline .numchildren {
+		color: gray !important;
+	}
+
+	span.flair { /* keep span as part of selecter */
+	    border-radius: 2px !important;
+	    font-style: normal !important;
+	    padding: 2px 3px !important;
+	}
+	
+	.link .linkflairlabel {
+	    font-size: 12px !important;
+	}
+	
+	.tagline .friend {
+	    color: orangeRed !important;
+	}
+	
+	.author.friend {
+	    background-color: orangeRed !important;
+	}
+	
+	.tagline .submitter {
+	    color: #0046af !important;
+	}
+	
+	.author.submitter {
+	    background-color: #0046af !important;
+	}
+	
+	.tagline .moderator {
+	    color: #282 !important;
+	}
+	
+	.author.moderator {
+	    background-color: #282 !important;
+	}
+	
+	.tagline .admin {
+	    color: #d70000 !important;
+	}
+	
+	.author.admin {
+	    background-color: #d70000 !important;
+	}
+	
+	.author.friend.submitter {
+	    background: linear-gradient(90deg, #0046af 50%, orangeRed 50%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.submitter.moderator {
+	    background: linear-gradient(90deg, #0046af 50%, #282 50%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.friend.moderator {
+	    background: linear-gradient(90deg, orangeRed 50%, #282 50%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.submitter.admin {
+	    background: linear-gradient(90deg, #0046af 50%, #d70000 50%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.friend.admin {
+	    background: linear-gradient(90deg, orangeRed 50%, #d70000 50%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.friend.submitter.moderator {
+	    background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #282 66%, #282 99%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.friend.submitter.admin {
+	    background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #d70000 66%, #d70000 99%) !important;
+	    background-size: 100% 100% !important;
+	}
+	
+	.author.submitter, body .author.admin, body .author.moderator, body .author.friend {
+	    color: white !important;
+	    border-radius: 2px !important;
+	    padding: 2px 3px !important;
+	}
+	
+	.entry .tagline .author.submitter:hover, .entry .tagline .author.admin:hover, .entry .tagline .author.moderator:hover, 		.entry .tagline .author.friend:hover {
+	    color: white !important;
+	    background: none !important;
+	    background-color: gray !important;
+	}
+	
+	.collapsed .author {
+	    background-color: transparent !important;
+	    color: gray !important;
 	}
 	
 	/********************************
@@ -1118,7 +1304,7 @@
 	
 	.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, 
 	    .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, 
-	    .res-nightmode #REScommentNavToggle div, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"] {
+	    .res-nightmode #REScommentNavToggle div, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"], .res-nightmode .blueButton {
 	    color: white !important;
 	}
 	
@@ -1130,8 +1316,7 @@
 	    color: #777 !important;
 	}
 	
-	.res-nightmode .entry p.tagline, .res-nightmode .entry .RES-keyNav-activeElement p.tagline, 
-	    .res-nightmode .entry time, .res-nightmode h2 {
+	.res-nightmode .entry p.tagline, .res-nightmode .entry .RES-keyNav-activeElement p.tagline, .res-nightmode .entry time, .res-nightmode h2 {
 	    color: #999 !important;
 	}
 	
@@ -1329,6 +1514,7 @@
 	    background-color: white !important;    
 	} 
 	
+	
 	/****************************
 	********** VARIA ************
 	*****************************/  
@@ -1337,340 +1523,19 @@
 	    margin: 7px !important;
 	}
 	
-	/********************************
-	******** Unordered **************
-	*********************************/
-	
-	#srLeftContainer {
-	    display: inline !important;
-	}
-	
-	.titlebox h1 {
-	    font-family: inherit !important;
-	}
-	
-	.link .tagline {
-	    font-style: italic !important;
-	    font-size: 11px !important;
-	}
-	
-	.link .flat-list.buttons {
-	    font-size: 12px !important;
-	}
-	
-	.noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li {
-	    display: inline !important;
-	}
-	
-	.domain a {
-	    font-size: 12px !important;
-	    font-style: italic !important;
-	    color: #999999 !important;
-	}
-	.domain {
-	    font-size: 0px !important;
-	}
-	
-	.domain a:hover {
-	    color: #0046af !important;
-	    text-decoration: none !important;
-	}
-	
-	.linklisting .expando {
-	    margin-bottom: 0px !important;
-	}
-	
-	.link.last-clicked {
-	    border: 0px !important;
-	    opacity: 0.5 !important;
-	    -moz-transition: opacity 0.3s ease-in 0s !important;
-	    -webkit-transition: opacity 0.3s ease-in 0s !important;
-	}
-	
-	.link.last-clicked:hover {
-	    opacity: 1 !important;
-	    -moz-transition: opacity 0.3s ease-in 0s !important;
-	    -webkit-transition: opacity 0.3s ease-in 0s !important;
-	}
-	
-	.comments-page .link.last-clicked {
-	    opacity: 1 !important;
-	}
-	
-	.imgCaptions, .imgCredits, .RESGalleryLabel {
-	    font-size: 14px !important;
-	    font-style: italic !important;
-	}
-	
-	.comment .score {
-	    font-size: 11px !important;
-	}
-	
-	.tagline {
-	    font-style: italic !important;
-	}
-	
-	.tagline .author, .tagline .userattrs {
-	    font-style: normal !important;
-	}
-	
-	time.edited-timestamp {
-	    display: inline-block !important;
-	    width: 11px !important;
-	    height: 9px !important;
-	    background-position: -52px -658px !important;
-	    background-repeat: no-repeat !important;
-	    text-indent: -9999px !important;
-	    margin-left: 2px !important;
-	    margin-right: 1px !important;
-	}
-	
-	.tagline .linkflairlabel {
-	    font-size: 11px !important;
-	}
-	
-	.flair {
-	    border-radius: 2px !important;
-	    font-style: normal !important;
-	    padding: 2px 3px !important;
-	}
-	
-	.link .linkflairlabel {
-	    font-size: 12px !important;
-	}
-	
-	
-	a.expand, .comment .expand {
-	    font-size: 15px !important;
-	    padding-left: 0px !important;
-	    margin-right :3px !important;
-	}
-	
-	a.expand:hover, .comment .expand:hover {
-	    background-color: #0046af !important;
-	    color: white !important;
-	    margin-top: 0px !important;
-	    margin-right: 2px !important;
-	    padding-left: 1px !important; 
-	    padding-right: 1px !important;
-	}
-	
-	
-	.noncollapsed time {
-	    font-style: italic !important;
-	}
-	
-	.morecomments, .morecomments a {
-	    font-size: 12px !important;
-	    font-style: italic !important;
-	    color: #888 !important;
-	    position: relative !important;
-	    bottom: 1px !important;
-	}
-	
-	.commentarea .buttons, .profile-page .noncollapsed .buttons, .message .buttons {
-	    font-size: 11px !important;
-	    font-style: normal !important;
-	    font-weight: bold !important;
-	    white-space: normal !important;
-	    width: 10px !important;
-	    overflow: visible !important;
-	}
-	
-	.commentarea .buttons, .profile-page .noncollapsed .buttons {
-	    position: relative !important;
-	    margin-left: 11px !important;
-	    vertical-align: sub !important;
-	}
-	
-	.buttons:hover li {
-	    display: inline-block !important;
-	    background-color: white !important;
-	}
-	
-	.keyHighlight .buttons:hover li {
-	    background-color: #faf9f7 !important;
-	}
-	
-	.comments-page .linklisting .keyHighlight .buttons:hover li {
-	    background: none !important;
-	}
-	
-	.promotedlink .buttons:hover li {
-	    display: inline !important;
-	}
-	
-	.entry .buttons li a:hover, .morecomments a:hover {
-	    color: #0046af !important;
-	    text-decoration: none !important;
-	}
-	
-	div.child {
-	    margin-left: 15px !important;
-	}
-	
-	.profile-page .entry, .profile-page .entry.unvoted, .profile-page .entry.voted {
-	    margin-top: 0px !important;
-	}
-	
-	.morechildren {
-	    margin-bottom: 8px !important;
-	}
-	.morechildren .entry {
-	    margin-left: 7px !important;
-	}
-	
-	.commentarea .arrow.down, .commentarea .arrow.downmod, .profile-page .comment .arrow.down, .profile-page .comment .arrow.downmod, .messages-page .arrow.down, .messages-page .arrow.downmod, .click-gadget .arrow.down, .click-gadget .arrow.downmod {
-	    margin-top: 6px !important;
-	}
-	
-	.commentarea .tagline, .profile-page .tagline {
-	    float: left !important;
-	    font-size: 11px !important;
-	    display: inline !important;
-	}
-	.message .tagline, .message .parent-link {
-	    font-size: 11px !important;
-	    padding-left: 0px !important;
-	    font-style: italic !important;
-	}
-	
 	.md div.madeVisible {
 	    overflow-x: visible !important;
 	    overflow-y: visible !important;
-	}
-	
-	span[class="hover pagename redditname"], span[class="hover pagename redditname"] a {
-	    font-size: 18px !important;
-	}
-	
-	.comments-page .thumbnail.self {
-	    display: none !important;
-	}
-	
-	.comments-page .sitetable .self .midcol {
-	    margin-right: 8px !important;
-	}
-	
-	.RESSubscriptionButton {
-	    font-size: 12px !important;
-	    font-weight: normal !important;
-	    font-style: italic !important;
-	    opacity: 0 !important;
-	    -Xmoz-transition: opacity 0.2s linear 0s !important;
-	    -Xwebkit-transition: opacity 0.2s linear 0s !important;
-	}
-	
-	.RESSubscriptionButton:hover {
-	    background-color: whiteSmoke !important;
-	}
-	
-	.res div.usertext-edit > div {
-	    margin-top: 4px !important;
 	}
 	
 	.res .sitetable .RESDialogSmall {
 	    margin-bottom: 30px !important;
 	}
 	
-	.commentarea h1 {
-	    border-bottom: none !important;
-	    margin-bottom: 6px !important;
-	    margin-top: 0px !important;
-	    padding-bottom: 0px !important;
-	}
-	
-	.commentarea h1:before { 
-	    content:"#" !important;
-	}
-	
-	.usertext.border .usertext-body {
-	    display: table !important;
-	    padding: 13px 0px 15px 0px !important;
-	    margin-bottom: 10px !important;
-	    background-color: #faf9f7 !important;
-	    border-radius: 5px !important;
-	    font-size: 110% !important;
-	    line-height: 1.6em !important;
-	    width: 100% !important;
-	    max-width: 2000px !important;
-	}
-	
-	.usertext.border .usertext-body .md, .usertext.border .usertext-body .md[style="max-width: 100% !important; "] {
-	    max-width: 34em !important;
-	    margin-left: auto !important;
-	    margin-right: auto !important;
-	    padding-left: 20px !important; 
-	    padding-right: 20px !important;
-	}
-	
-	.usertext.border .usertext-body p, .usertext.border .usertext-body h3 {
-	    font-size: 15px !important;
-	    line-height: 1.6em !important;
-	}
-	
-	.usertext.border .usertext-body h3 {
-	    margin-top: 8px !important; 
-	    margin-bottom:8px !important;
-	}
-	
-	.usertext.border .usertext-body p {
-	    margin-top: 0px !important; 
-	    margin-bottom: 0px !important;
-	    text-indent: 35px !important;
-	}
-	
-	.usertext.border .usertext-body .madeVisible {
-	    text-indent: 0px !important;
-	}
-	
-	.usertext.border .usertext-body li p, p code {
-	    text-indent: 0px !important;
-	}
-	
-	.usertext.border .usertext-body li {
-	    font-size: 15px !important;
-	    line-height: 1.6em !important;
-	    margin-bottom: 5px !important;
-	}
-	
-	.usertext.border .usertext-body ul {
-	    margin-top: 8px !important;
-	    margin-bottom: 8px !important;
-	    margin-right: 0px !important;
-	}
-	
-	.usertext.border .usertext-body pre, .usertext.border .usertext-body code {
-	    font-size: 14px !important;
-	}
-	
-	.usertext.border .usertext-body blockquote {
-	    margin-bottom: 10px !important;
-	    margin-top: 10px !important;
-	    padding: 8px 12px 8px 10px !important;
-	    background-color: #f0efed !important;
-	    border-left-color: #b7b7b5 !important;
-	}
-	
-	.usertext.border .usertext-body table, .usertext.border .usertext-body td, .usertext.border .usertext-body thead, .usertext.border .usertext-body th, .usertext.border .usertext-body hr {
-	    border-color: #b7b7b5 !important;
-	    font-size: 15px !important;
-	}
-	
-	.usertext.border .usertext-body hr {
-	    margin-top: 7px !important;
-	}
-	
-	.author.flairselectable, span.flair, .link .flair, .flairselectbtn {
-	    font-size: 11px !important;
-	}
-	
-	input {
-	    font-family: inherit !important;
-	    font-variant: normal !important;
-	    font-style: italic !important;
-	}
-	
+	/********************************
+	******** Unordered **************
+	*********************************/
+		
 	div.styleToggle {
 	    background-color: white !important;
 	    z-index: 400 !important;
@@ -1699,10 +1564,6 @@
 	    font-size: 11px !important;
 	    margin-bottom: 2px !important;
 	    font-style: italic !important;
-	}
-	
-	.profile-page .link .tagline {
-	    float: none !important;
 	}
 	
 	.profile-page .titlebox {
@@ -1738,9 +1599,6 @@
 	    margin-bottom: 2px !important;
 	}
 	
-	.subreddit .tagline, .subreddit .flat-list {
-	    font-size: 12px !important;
-	}
 	
 	.subreddit .description {
 	    margin-top: -5px !important;
@@ -1791,61 +1649,11 @@
 	    margin-bottom: 4px !important;
 	}
 	
-	.RESDashboardComponentContainer {
-		padding: 0px 10px 15px 5px !important;
-	}
-	
-	.RESDashboardComponent a.widgetPath {
-	    font-size: 16px !important;
-	    margin-top: 3px !important;
-	    font-style: italic !important;
-	}
-	
-	.RESDashboardComponent a.widgetPath:hover {
-	    overflow: visible !important;
-	    background-color: whiteSmoke !important;
-	}
-	
-	.RESDashboardComponentHeader {
-	    background-color: whiteSmoke !important;
-	    height: auto !important;
-	    min-height: 38px !important;
-	    display: inline-block !important;
-	    width: 100% !important;
-	}
-	
-	.RESDashboardComponentHeader ul li, ul.widgetSortButtons li, ul.widgetStateButtons li {
-	    background: none !important;
-	    border: none !important;
-	    padding: 0px !important;
-	    color: black !important;
-	    font-size: 15px !important;
-	}
-	
-	.RESDashboardComponentHeader ul li.active {
-	    color: orangeRed !important;
-	}
-	
-	.RESDashboardComponentHeader ul li:hover {
-	    color: #0046AF !important;
-	}
-	
-	.RESDashboardComponentHeader ul li.refresh {
-	    padding: 0px 6px 0px 6px !important;
-	    border: 1px solid #C7C7C7 !important;
-	    background-color: white !important;
-	    color: #6C6C6C !important;
-	}
-	
 	ul.widgetStateButtons li.updateTime {
 	    font-size: 11px !important;
 	    font-style: italic !important;
 	}
-	
-	.RESDashboardComponentHeader ul {
-	    font-family: inherit !important;
-	    height: 26px !important;
-	}
+
 	
 	#userTaggerTable, #userTaggerTable td, #newCommentsTable td {
 	    font-size: 13px !important;
@@ -2002,90 +1810,6 @@
 	    margin-right: 4px !important;
 	}
 	
-	.tagline .friend {
-	    color: orangeRed !important;
-	}
-	
-	.author.friend {
-	    background-color: orangeRed !important;
-	}
-	
-	.tagline .submitter {
-	    color: #0046af !important;
-	}
-	
-	.author.submitter {
-	    background-color: #0046af !important;
-	}
-	
-	.tagline .moderator {
-	    color: #282 !important;
-	}
-	
-	.author.moderator {
-	    background-color: #282 !important;
-	}
-	
-	.tagline .admin {
-	    color: #d70000 !important;
-	}
-	
-	.author.admin {
-	    background-color: #d70000 !important;
-	}
-	
-	.author.friend.submitter {
-	    background: linear-gradient(90deg, #0046af 50%, orangeRed 50%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.submitter.moderator {
-	    background: linear-gradient(90deg, #0046af 50%, #282 50%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.friend.moderator {
-	    background: linear-gradient(90deg, orangeRed 50%, #282 50%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.submitter.admin {
-	    background: linear-gradient(90deg, #0046af 50%, #d70000 50%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.friend.admin {
-	    background: linear-gradient(90deg, orangeRed 50%, #d70000 50%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.friend.submitter.moderator {
-	    background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #282 66%, #282 99%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.friend.submitter.admin {
-	    background: linear-gradient(90deg, #0046af, #0046af 33%, orangeRed 33%, orangeRed 66%, #d70000 66%, #d70000 99%) !important;
-	    background-size: 100% 100% !important;
-	}
-	
-	.author.submitter, body .author.admin, body .author.moderator, body .author.friend {
-	    color: white !important;
-	    border-radius: 2px !important;
-	    padding: 2px 3px !important;
-	}
-	
-	.entry .tagline .author.submitter:hover, .entry .tagline .author.admin:hover, .entry .tagline .author.moderator:hover, .entry .tagline .author.friend:hover {
-	    color: white !important;
-	    background: none !important;
-	    background-color: gray !important;
-	}
-	
-	.collapsed .author {
-	    background-color: transparent !important;
-	    color: gray !important;
-	}
-	
 	.newComments {
 	    color: #ff0000 !important;
 	}
@@ -2182,10 +1906,6 @@
 	
 	.organic-listing .link {
 	    margin-top: 0px !important;
-	}
-	
-	p.sponsored-tagline {
-	    display: none !important;
 	}
 	
 	.RESDialogSmall {
