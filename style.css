@@ -214,10 +214,30 @@
 	******* RIGHT SIDEBAR ******
 	****************************/
 	.side {
-	    padding-left: 18px !important;
-	    margin-right: 10px !important;
-	}
-	
+		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
+		right: -200px !important; /* set to 0 (instead of -200) to make sure the sidebar is always visible */ 
+		top: 0px !important;  
+		position: absolute !important;
+		width: 250px !important;  
+		z-index: 20;
+		-moz-transition-duration: .4s;
+		-webkit-transition-duration: .4s;
+		background-color: white !important;  
+		border-left: #0079d3 5px solid !important;
+		border-bottom: #0079d3 5px solid !important;
+		box-shadow: 40px 0px 50px 50px rgba(0,0,0, 0.6);
+		padding: 50px 30px !important;
+		margin: 0px !important;
+		margin-left: 10px !important;   
+	}    
+    
+	.side:hover {
+	  	-webkit-transition-duration: .3s;
+	  	-moz-transition-duration: .3s;
+		right: 0px !important;
+	  	opacity: 1 !important;
+	}    
+
 	.titlebox {
 	   font-size: small !important;    
 	}
@@ -350,7 +370,9 @@
 	******************************/
 	
 	.content {
-	    margin: 13px 10px !important;
+	    margin: 0px !important;
+   		margin-right: 50px !important; /* same as unhover .side width */
+   		padding: 10px !important;
 	}
 	
 	
@@ -406,13 +428,7 @@
 	.md.wiki {
 	    max-width: 15000px !important;
 	}
-	    
-	.listing-page.RES-keyNav-activeElement {
-	    outline-width: 0px !important;
-	    border-radius: 3px !important;
-	    background-color: #f0f4fb !important;
-	}    
-	
+
 	.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
 		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li,
 	 	.res-nightmode .RES-keyNav-activeElement,.res-nightmode .RES-keyNav-activeElement .usertext-body, 
@@ -421,6 +437,12 @@
 	    background-color: inherit !important;
 	    color: inherit !important    
 	}
+			    
+	.listing-page .RES-keyNav-activeElement {
+	    outline-width: 0px !important;
+	    border-radius: 3px !important;
+	    background-color: #f0f4fb !important;
+	}    	
 	
 	.link .usertext .md {
 	    background-color: transparent !important;
@@ -515,6 +537,7 @@
 	.entry {
 	    padding-left: 10px !important;
 	    margin-bottom: 5px !important;
+	    margin-right: 6px !important;
 	}
 	
 	.link {
@@ -898,7 +921,7 @@
 	    border: 1px solid #aaa !important;
 	    border-radius: 4px !important;
 	    margin-left: 6px !important;
-	    margin-right: 322px !important;
+	    margin-right: 6px !important;
 	}
 	
 	.search-summary {
@@ -1039,6 +1062,12 @@
 	.res-nightmode #header, .res-nightmode #header-bottom-left, .res-nightmode #header-bottom-right {
         margin-top: 0px !important;
     }	
+	
+	.res-nightmode .side {
+   		box-shadow: 40px 0px 50px 50px rgba(125,125,125, 0.2) !important;;
+   		border-left: #369 3px solid !important;
+  		border-bottom: #369 3px solid !important;
+	}
 	
 	.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic, .res-nightmode .voteWeight {
 	    background-color: inherit !important;       
