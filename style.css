@@ -215,7 +215,7 @@
 	****************************/
 	.side {
 		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
-		right: -250px !important; /* set to 0 (instead of -200) to make sure the sidebar is always visible */ 
+		right: -300px !important; /* set to 0 (instead of -200) to make sure the sidebar is always visible */ 
 		top: 0px !important;  
 		position: absolute !important;
 		width: 300px !important;  
@@ -369,10 +369,13 @@
 	******* CONTENT GENERAL ******
 	******************************/
 	
-	.content {
-	    margin: 0px !important;
-   		margin-right: 50px !important; /* same as unhover .side width */
+	.content, .with-listing-chooser.listing-chooser-collapsed .content {
+		margin: 0px 50px !important; 
    		padding: 10px !important;
+	}
+			
+	.with-listing-chooser .content {
+	    margin-left: 150px !important;
 	}
 	
 	
@@ -544,15 +547,7 @@
 	    margin-top: 7px !important;
 	    margin-bottom: 7px !important;
 	}
-	
-	.with-listing-chooser .content {
-	    margin-left: 150px !important;
-	}
-	
-	.with-listing-chooser.listing-chooser-collapsed .content {
-	    margin-left: 10px !important;
-	}
-	
+
 	.RESDialogContents {
 		margin: 0px 0px 10px 0px !important;
 	    border: 0px solid #D4DFEF !important;
@@ -704,7 +699,7 @@
 	
 	.listing-page .thing, .related-page .thing{  /* entries */
 	    padding: 10px 0px !important;
-	    margin-left: 20px !important;
+	    margin-left: 0px !important;
 	}
 	
 	.NERPageMarker, #progressIndicator, .infobar, #NERFail{
@@ -1048,7 +1043,7 @@
 		.res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
 		.res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ul, .res-nightmode .side ol, .res-nightmode .side li, 
 		.res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode .thing.even,
-	    .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
+		.res-nightmode .thing.odd, .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
 	    /* basic style: dark gray background, white text */
 	    background-color: #171717 !important;
 	    color: white !important;
@@ -1306,11 +1301,7 @@
 	    border: 2px dashed #353535 !important;
 	    color: #c0c0c0 !important;
 	}
-	
-	.res-nightmode .with-listing-chooser.listing-chooser-collapsed .content{
-	    margin-left: 15px !important; /* otherwise a small part of the sidebar border will be cut off */
-	}
-	
+
 	.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
 	     border-radius: 3px !important;
 	}
