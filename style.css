@@ -1,6 +1,10 @@
 @-moz-document domain('reddit.com') {
 	
-
+	.side {
+		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
+		right: -300px !important; /* set to 0 (instead of -300) to make sure the sidebar is always visible */ 
+		position: absolute !important; /* set to 'inline' (instead of 'absolute') to make sure the sidebar is always visible */ 
+	}
 		
 	/****************************
 	***** REMOVED ELEMENTS ******
@@ -101,6 +105,10 @@
 	    font-style: italic !important;
 	}
 	
+	br {
+		margin-bottom: 10px !important;
+	}
+		
 	/***********************
 	******* HEADER *********
 	***********************/
@@ -222,10 +230,7 @@
 	******* RIGHT SIDEBAR ******
 	****************************/
 	.side {
-		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
-		right: -300px !important; /* set to 0 (instead of -200) to make sure the sidebar is always visible */ 
 		top: 0px !important;  
-		position: absolute !important;
 		width: 300px !important;  
 		z-index: 20;
 		-moz-transition-duration: .4s;
@@ -376,235 +381,6 @@
 	    font-family: inherit !important;
 	}
 	
-	/*****************************
-	******* CONTENT GENERAL ******
-	******************************/
-	
-	.content, .with-listing-chooser.listing-chooser-collapsed .content {
-		margin: 0px 50px !important; 
-   		padding: 10px !important;
-	}
-			
-	.comments-page .content {
-		margin-right: 60px !important;
-	}			
-			
-	.with-listing-chooser .content {
-	    margin-left: 150px !important;
-	}
-	
-	
-	.comment .child {
-	    margin-bottom :0px !important;
-	    margin-top: 0px !important;
-	    margin-left: 7px !important;
-	    padding-left: 8px !important;
-	    border: 0px solid black !important;
-	}
-	
-	.nsfw-stamp acronym {
-	    color: white !important;
-	    background-color: #be0d3e !important;
-	    border: 1px solid #be0d3e !important;
-	    font-size: 11px !important;
-	    font-weight: bold !important;
-	    font-style: italic !important;
-	}
-	
-	.toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage, .toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage {
-	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
-	}
-	
-	.guider {
-	    display: none !important;
-	}
-	
-	.title {
-	   	color: #0079d3 !important;
-	}
-	
-	.title:visited {
-	    color: #551A8B !important;
-	}
-	
-	.commentarea .usertext-body, .profile-page .usertext-body, .message .usertext-body  {
-	    float: left !important;
-	    clear: left !important;
-	    text-align: justify !important;
-	    overflow-x: visible !important;
-	}
-	
-	.usertext-body, .commentarea .usertext-body, .profile-page .usertext-body, .message .md {
-	    max-width: 38em !important;
-	}
-	
-	/* no width limit on wiki pages */
-	.md.wiki {
-	    max-width: 15000px !important;
-	}
-
-	.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
-		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li,
-	 	.res-nightmode .RES-keyNav-activeElement,.res-nightmode .RES-keyNav-activeElement .usertext-body, 
-	 	.res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, 
-	 	.res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed  {
-	    background-color: inherit !important;
-	    color: inherit !important    
-	}
-			    
-	.listing-page .RES-keyNav-activeElement {
-	    outline-width: 0px !important;
-	    border-radius: 3px !important;
-	    background-color: #f0f4fb !important;
-	}    	
-	
-	.link .usertext .md {
-	    background-color: transparent !important;
-	    border-width: 0px !important;
-	    border-radius: 0px !important;
-	    padding-left: 0px !important;
-	    padding-right: 0px !important;
-	    max-width: 38em !important;
-	}
-	
-	.usertext.grayed .usertext-body {
-	    font-style:italic !important;
-	    padding: 3px 9px !important;
-	    margin-bottom: 8px !important;
-	    color: #555 !important;
-	}
-	
-	.md {
-	    font-size: 14px !important;
-	    overflow: visible !important;
-	}
-	
-	.usertext-body h3 {
-	    margin-top: 8px !important; 
-	    margin-bottom: 8px !important;
-	}
-	
-	blockquote, .md blockquote, .help blockquote {
-	    background-color: whiteSmoke !important;
-	    border-left-color: #bbb !important;
-	    border-left-width: 4px !important;
-	    border-top-right-radius: 6px !important; 
-	    border-bottom-right-radius: 6px !important;
-	    margin: 3px 0px 8px 0px !important;
-	    padding: 6px 11px 2px 9px !important;
-	    color: inherit !important;
-	}
-	
-	.usertext-body table, .usertext-body td, .usertext-body thead, .usertext-body th, .usertext-body hr {
-	    border-style: solid !important;
-	    border-color: gray !important;
-	    border-width: 0px !important;
-	    border-bottom-width: 1px !important;
-	    padding-top: 3px !important;
-	}
-	
-	.usertext-body hr {
-		height: 1px !important;
-		padding: 0px !important;
-		margin-top: 15px !important;
-		margin-bottom: 15px !important;
-	}
-	
-	.usertext-body td {
-	    padding: 7px !important;
-	    vertical-align: top !important;
-	}
-	
-	.usertext-body table {
-	    margin-left: 0px !important; 
-	    margin-right: 0px !important;
-	    margin-bottom: 11px !important;
-	}
-	
-	.md > * { 
-	    margin-bottom: 8px !important; 
-	} 
-	
-	.usertext-body ul {
-	    margin-bottom: 11px !important;
-	    margin-right: 0px !important;
-	    margin-left: 25px !important;
-	}
-	
-	.usertext-body li {
-	    margin-bottom: 7px !important;
-	    margin-left: 0px !important;
-	}
-	
-	sup, sub, .commentarea .expando-button {
-	    line-height: 0 !important;
-	}
-	
-	.md ol, .md ul, .md pre {
-	    margin-right: 0px !important;
-	}
-	
-	.thumbnail {
-	    border-radius: 2px !important;
-	}
-	
-	.entry {
-	    padding-left: 10px !important;
-	    margin-bottom: 5px !important;
-	    margin-right: 6px !important;
-	}
-	
-	.link {
-	    margin-top: 7px !important;
-	    margin-bottom: 7px !important;
-	}	
-	
-	.link .flat-list.buttons { /* 'xx comments save hide' */
-	    font-size: 12px !important;
-	}	
-				
-	.noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li {
-	    display: inline !important;
-	}
-	
-	.RESDialogContents {
-		margin: 0px 0px 10px 0px !important;
-	    border: 0px solid #D4DFEF !important;
-	    padding-top: 9px !important; 
-	    padding-bottom: 4px !important;
-	}
-	
-	.RESDialogSmall {
-	    border: none !important;
-	}
-	
-	.RESDialogSmall h3 {
-	    font-size: 16px !important;
-	    margin-top: 0px !important;
-	    margin-bottom: 7px !important;
-	    font-style: italic !important;
-	    position: static !important;
-	    background: none !important;
-	    border: none !important;
-	    height: auto !important;
-	    padding-left: 12px !important;
-	    padding-top: 10px !important;
-	}
-	
-	#compose-message input{
-	    width: 300px !important;
-	}
-	
-	.imgCaptions, .imgCredits, .RESGalleryLabel {
-	    font-size: 14px !important;
-	    font-style: italic !important;
-	}
-	
-	.entry .buttons li a:hover, .morecomments a:hover {
-	    color: #0046af !important;
-	    text-decoration: none !important;
-	}	
-	
 	/************************
 	******* MENU AREA ******* 
 	*************************
@@ -722,6 +498,264 @@
 		margin-left: 2px !important;
 	}
 	
+	/*****************************
+	******* CONTENT GENERAL ******
+	******************************/
+	
+	div.content, .with-listing-chooser.listing-chooser-collapsed div.content {
+		margin: 0px 50px !important; 
+   		padding: 10px !important;
+	}
+			
+	.with-listing-chooser .content {
+	    margin-left: 150px !important;
+	}	
+	
+	.usertext-body, .commentarea .usertext-body, .profile-page .usertext-body, .message .md {
+	    max-width: 38em !important;
+	}
+		
+	.nsfw-stamp acronym {
+	    color: white !important;
+	    background-color: #be0d3e !important;
+	    border: 1px solid #be0d3e !important;
+	    font-size: 11px !important;
+	    font-weight: bold !important;
+	    font-style: italic !important;
+	}
+	
+	.toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage, .toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage {
+	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
+	}
+	
+	.guider {
+	    display: none !important;
+	}
+	
+	.title {
+	   	color: #0079d3 !important;
+	}
+	
+	.title:visited {
+	    color: #551A8B !important;
+	}
+	
+	.commentarea .usertext-body, .profile-page .usertext-body, .message .usertext-body  {
+	    float: left !important;
+	    clear: left !important;
+	    text-align: justify !important;
+	    overflow-x: visible !important;
+	}
+		
+	/* no width limit on wiki pages */
+	.md.wiki {
+	    max-width: 15000px !important;
+	}
+
+	.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
+		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li,
+	 	.res-nightmode .RES-keyNav-activeElement,.res-nightmode .RES-keyNav-activeElement .usertext-body, 
+	 	.res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, 
+	 	.res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed  {
+	    background-color: inherit !important;
+	    color: inherit !important    
+	}
+			    
+	.listing-page .RES-keyNav-activeElement {
+	    outline-width: 0px !important;
+	    border-radius: 3px !important;
+	    background-color: #f0f4fb !important;
+	}    	
+		
+	sup, sub, .commentarea .expando-button {
+	    line-height: 0 !important;
+	}
+	
+	.md ol, .md ul, .md pre {
+	    margin-right: 0px !important;
+	}
+	
+	.thumbnail {
+	    border-radius: 2px !important;
+	}
+	
+	.entry {
+	    padding-left: 10px !important;
+	    margin-bottom: 5px !important;
+	    margin-right: 6px !important;
+	}
+	
+	.link {
+	    margin-top: 7px !important;
+	    margin-bottom: 7px !important;
+	}	
+	
+	.link .flat-list.buttons { /* 'xx comments save hide' */
+	    font-size: 12px !important;
+	}	
+				
+	.noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li {
+	    display: inline !important;
+	}
+	
+	.RESDialogContents {
+		margin: 0px 0px 10px 0px !important;
+	    border: 0px solid #D4DFEF !important;
+	    padding-top: 9px !important; 
+	    padding-bottom: 4px !important;
+	}
+	
+	.RESDialogSmall {
+	    border: none !important;
+	}
+	
+	.RESDialogSmall h3 {
+	    font-size: 16px !important;
+	    margin-top: 0px !important;
+	    margin-bottom: 7px !important;
+	    font-style: italic !important;
+	    position: static !important;
+	    background: none !important;
+	    border: none !important;
+	    height: auto !important;
+	    padding-left: 12px !important;
+	    padding-top: 10px !important;
+	}
+	
+	#compose-message input{
+	    width: 300px !important;
+	}
+	
+	.imgCaptions, .imgCredits, .RESGalleryLabel {
+	    font-size: 14px !important;
+	    font-style: italic !important;
+	}
+	
+	.entry .buttons li a:hover, .morecomments a:hover {
+	    color: #0046af !important;
+	    text-decoration: none !important;
+	}	
+	
+	/***************************
+	******* Text Content ******* 
+	****************************/
+	
+	.link .usertext .md {
+	    background-color: transparent !important;
+	    border-width: 0px !important;
+	    border-radius: 0px !important;
+	    padding-left: 0px !important;
+	    padding-right: 0px !important;
+	    max-width: 38em !important;
+	}
+	
+	.usertext.grayed .usertext-body {
+	    font-style:italic !important;
+	    padding: 3px 9px !important;
+	    margin-bottom: 8px !important;
+	    color: #555 !important;
+	}
+	
+	.md {
+	    font-size: 14px !important;
+	    max-width: 620px !important;
+	    text-align: justify !important;
+	    margin-top: 3px !important;
+	    overflow: visible !important;
+	}
+	
+	.md p {
+	    margin-top: 0px !important;
+	    margin-bottom: 6px !important;
+	}
+	
+	.usertext-body h3 {
+	    margin-top: 8px !important; 
+	    margin-bottom: 8px !important;
+	}
+	
+	blockquote, .md blockquote, .help blockquote {
+	    background-color: whiteSmoke !important;
+	    border-left-color: #bbb !important;
+	    border-left-width: 4px !important;
+	    border-top-right-radius: 6px !important; 
+	    border-bottom-right-radius: 6px !important;
+	    margin: 3px 0px 8px 0px !important;
+	    padding: 6px 11px 2px 9px !important;
+	    color: inherit !important;
+	}
+	
+	.usertext-body table, .usertext-body td, .usertext-body thead, .usertext-body th, .usertext-body hr {
+	    border-style: solid !important;
+	    border-color: gray !important;
+	    border-width: 0px !important;
+	    border-bottom-width: 1px !important;
+	    padding-top: 3px !important;
+	}
+	
+	.usertext-body hr {
+		height: 1px !important;
+		padding: 0px !important;
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+	}
+	
+	.usertext-body td {
+	    padding: 7px !important;
+	    vertical-align: top !important;
+	}
+	
+	.usertext-body table {
+	    margin-left: 0px !important; 
+	    margin-right: 0px !important;
+	    margin-bottom: 11px !important;
+	}
+	
+	.md > * { 
+	    margin-bottom: 8px !important; 
+	} 
+	
+	.usertext-body ul {
+	    margin-bottom: 11px !important;
+	    margin-right: 0px !important;
+	    margin-left: 25px !important;
+	}
+	
+	.usertext-body li {
+	    margin-bottom: 7px !important;
+	    margin-left: 0px !important;
+	}
+	
+	.usertext-body {
+		padding-left: 0px !important;
+	}
+
+	/* e.g., a permalinked comment */
+	.usertext.border .usertext-body {
+		background-color: inherit !important;
+	}
+	
+	.usertext.border .usertext-body pre, .usertext.border .usertext-body code {
+	    font-size: 14px !important;
+	}
+	
+	.usertext.border .usertext-body blockquote {
+	    margin-bottom: 10px !important;
+	    margin-top: 10px !important;
+	    padding: 8px 12px 8px 10px !important;
+	    background-color: #f0efed !important;
+	    border-left-color: #b7b7b5 !important;
+	}
+
+	.usertext.border .usertext-body table, .usertext.border .usertext-body td, .usertext.border .usertext-body thead, .usertext.border .usertext-body th, .usertext.border .usertext-body hr {
+	    border-color: #b7b7b5 !important;
+	    font-size: 15px !important;
+	}	
+
+	.usertext.border .usertext-body hr {
+	    margin-top: 7px !important;
+	}
+			
 	/**********************************
 	******* LISTING PAGE LAYOUT *******
 	**********************************/
@@ -801,6 +835,13 @@
 	/***************************
 	******* COMMENTS-PAGE ******
 	***************************/
+	.comments-page  div.content {
+		margin-right: 60px !important;
+	}	
+	
+	.comments-page .menuarea {
+		margin-left: 7px !important;
+	}
 	
 	.comments-page .thing.comment {
 	    margin: 6px !important;    
@@ -809,10 +850,18 @@
 	.comments-page .sitetable .self .midcol { /* score on a self post, leave some extra space */
 	    margin-right: 16px !important;
 	}
-
+	
+	.comment .child {
+	    margin-bottom :0px !important;
+	    margin-top: 0px !important;
+	    margin-left: 7px !important;
+	    padding-left: 8px !important;
+	    border: 0px solid black !important;
+	}
+	
 	.commentarea .flat-list {
 	    top: 1px !important;
-	    margin-left: 5px !important;
+	    margin-left: 0px !important;
 	}
 	
 	.commentarea .flat-list.buttons:hover li{
@@ -1532,6 +1581,7 @@
 	    margin-bottom: 30px !important;
 	}
 	
+	
 	/********************************
 	******** Unordered **************
 	*********************************/
@@ -1847,18 +1897,7 @@
 	.keyHighlight table, .keyHighlight td, .keyHighlight thead, .keyHighlight th, .keyHighlight hr {
 	    border-color: #7d7c79 !important;
 	}
-	
-	.md {
-	    max-width: 620px !important;
-	    text-align: justify !important;
-	    margin-top: 3px !important;
-	}
-	
-	.md p {
-	    margin-top: 0px !important;
-	    margin-bottom: 6px !important;
-	}
-	
+		
 	#srList tr {
 	    border-width: 0px !important;
 	    font-size: 11px !important;
