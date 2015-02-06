@@ -72,6 +72,7 @@
 	    font-family: Consolas, Monaco, monospace !important;
 	    font-size: 13px !important;
 	    white-space: pre-wrap !important;
+	    background-color: #ffffff !important;	    
 	}
 	
 	a[href$="/spoiler"], a[href$="#spoiler"] {
