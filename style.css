@@ -1309,10 +1309,6 @@
 	    padding-top: 6px !important;
 	}
 	
-	.res-nightmode #header, .res-nightmode #header-bottom-left, .res-nightmode #header-bottom-right {
-        margin-top: 0px !important;
-    }	
-	
 	.res-nightmode .side {
    		box-shadow: 0px 0px 50px 20px rgba(255,255,255, 0.04) !important;;
    		border-left: #369 3px solid !important;
@@ -1325,7 +1321,8 @@
 	
 	/* HEADER */
 	body.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
-	     background-color: #222 !important;
+	    background-color: #2D2D2D !important; /* #393939 */
+		margin-top: 0px !important;
 	}
 	
 	.res-nightmode #header {
