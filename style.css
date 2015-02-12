@@ -226,6 +226,22 @@
 	    margin-top: 0px !important;
 	}
 	
+	.listing-chooser ul li a, .listing-chooser ul li.create form {
+		line-height: 20px !important;
+		padding: 10px !important;
+	}
+	
+	.listing-chooser ul li a {
+		height: 22px !important;
+	}	
+
+	.listing-chooser .create {
+		padding: 0px !important;
+	}
+	
+	.listing-chooser .create .error {
+		margin: 0px !important;
+	}	
 	
 	/***************************
 	******* RIGHT SIDEBAR ******
