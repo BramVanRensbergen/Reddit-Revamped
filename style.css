@@ -3,7 +3,8 @@
 	.side {
 		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
 		position: absolute !important; /* set to 'inline' (instead of 'absolute') to make sure the sidebar is always visible */ 
-		margin-right: -300px !important; /* set to 0 (instead of -300) to make sure the sidebar is always visible */ 		
+		width: 0px !important; /* set to 300 (instead of 0) to make sure the sidebar is always visible */
+		overflow: hidden !important; /* set to visible (instead of 'hidden')  to make sure the sidebar is always visible */
 	}
 		
 	/****************************
@@ -248,11 +249,11 @@
 	****************************/
 	.side {
 		top: 0px !important;  
-		right: 0px !important;		
-		width: 300px !important;  
+		right: 0px !important; 
 		z-index: 20;
-		-moz-transition-duration: .4s;
-		-webkit-transition-duration: .4s;
+		-moz-transition: width 0s;
+		-webkit-transition: width 0s; /* For Safari 3.1 to 6.0 */
+    	transition: width 0s;
 		background-color: white !important;  
 		border-left: #0079d3 5px solid !important;
 		border-bottom: #0079d3 5px solid !important;
@@ -263,10 +264,9 @@
 	}    
     
 	.side:hover {
-	  	-webkit-transition-duration: .3s;
-	  	-moz-transition-duration: .3s;
-		right: 0px !important;
 	  	opacity: 1 !important;
+	  	width: 300px !important;
+		overflow: visible !important;
 	}    
 
 	.titlebox {
@@ -849,6 +849,9 @@
 	    text-decoration: none !important;
 	}
 	
+	.link.last-clicked {
+		border: 0px solid white !important;
+	}
 	
 	/***************************
 	******* COMMENTS-PAGE ******
