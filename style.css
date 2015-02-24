@@ -1369,6 +1369,10 @@
 	    color: #9B5FC9 !important;
 	}
 	
+	.res-nightmode.wiki-page .md {
+		color: white !important;
+	}
+	
 	.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, 
 	    .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, 
 	    .res-nightmode #REScommentNavToggle div, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"], .res-nightmode .blueButton {
