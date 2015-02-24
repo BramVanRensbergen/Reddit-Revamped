@@ -1399,6 +1399,10 @@
 	    color: #C1D6F5 !important
 	}
 	
+	.res-nightmode #login input {
+		background-color: white !important;
+	}
+	
 	.res-nightmode input[type="text"] {
 	    background-color: black !important;
 	}
