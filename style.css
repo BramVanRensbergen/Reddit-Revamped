@@ -1329,6 +1329,10 @@
 		margin-top: 0px !important;
 	}
 	
+	.res-nightmode pre, .res-nightmode code {
+		background: #2D2D2D !important; 
+	}
+	
 	.res-nightmode #header {
 	    border: 0px solid #F5F5F5 !important;
 	    border-bottom: solid 1px #323232 !important;
