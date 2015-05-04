@@ -1423,8 +1423,13 @@
 	
 	.res-nightmode #login input {
 		background-color: white !important;
+		color: black !important;
 	}
 	
+	.res-nightmode #login {
+		color: black !important;
+	}
+
 	.res-nightmode input[type="text"] {
 	    background-color: black !important;
 	}
