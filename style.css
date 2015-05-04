@@ -222,19 +222,19 @@
 		height: 100% !important;
 	}
 	
+	/* disable button description, and empty lines between description and button name */
+	.listing-chooser li .description,  .listing-chooser li br {
+		display: none !important;
+	}
+	
 	/* reduce spacing above "everything" in the multireddit sidebar */
 	.listing-chooser ul.other {
 	    margin-top: 0px !important;
 	}
 	
 	.listing-chooser ul li a, .listing-chooser ul li.create form {
-		line-height: 20px !important;
 		padding: 10px !important;
 	}
-	
-	.listing-chooser ul li a {
-		height: 22px !important;
-	}	
 
 	.listing-chooser .create {
 		padding: 0px !important;
