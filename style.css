@@ -270,7 +270,7 @@
 	}    
 	
 	/* recently viewed links */
-	.sidecontentbox .content {
+	.sidecontentbox .content, .with-listing-chooser .sidecontentbox .content {
 		margin-left: 0px !important;
 		border: 0px solid white !important;
 	}
