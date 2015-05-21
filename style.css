@@ -551,13 +551,23 @@
 	    max-width: 38em !important;
 	}
 		
-	.nsfw-stamp acronym {
+	.nsfw-stamp {
 	    color: white !important;
 	    background-color: #be0d3e !important;
 	    border: 1px solid #be0d3e !important;
 	    font-size: 11px !important;
-	    font-weight: bold !important;
-	    font-style: italic !important;
+		font-weight: bold !important;
+	    font-style: italic !important;			
+	}
+	
+  .nsfw-stamp acronym {
+		border: 0px solid #be0d3e !important; /* otherwise the text has a dotter underline */
+	}
+		
+	.buttons:hover li.nsfw-stamp, .res-nightmode .buttons:hover li.nsfw-stamp,
+	.RES-keyNav-activeElement .flat-list:hover li.nsfw-stamp {
+		color: white !important;
+		background-color: #be0d3e !important; /* otherwise the background color switches to background on hover */
 	}
 	
 	.toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage, .toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage {
@@ -589,7 +599,8 @@
 	}
 
 	.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
-		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, .RES-keyNav-activeElement .flat-list:hover li,
+		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, 
+		.RES-keyNav-activeElement .flat-list:hover li,
 	 	.res-nightmode .RES-keyNav-activeElement,.res-nightmode .RES-keyNav-activeElement .usertext-body, 
 	 	.res-nightmode .RES-keyNav-activeElement .usertext-body .md, .res-nightmode .RES-keyNav-activeElement .usertext-body .md p, 
 	 	.res-nightmode .commentarea .RES-keyNav-activeElement .noncollapsed  {
