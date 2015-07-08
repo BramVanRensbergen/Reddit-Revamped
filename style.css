@@ -641,7 +641,8 @@
 	    font-size: 12px !important;
 	}	
 				
-	.noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li {
+	 /* .noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li, .other-discussions-page .flat-list.buttons li */
+	.flat-list.buttons li {
 	    display: inline !important;
 	}
 	
@@ -884,6 +885,10 @@
 	
 	.link.last-clicked {
 		border: 0px solid white !important;
+	}
+	
+	.other-discussions-page .commentarea {
+		padding-left: 11px !important;
 	}
 	
 	/***************************
