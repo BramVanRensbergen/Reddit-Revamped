@@ -1402,7 +1402,7 @@
 	    color: #9B5FC9 !important;
 	}
 	
-	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p {
+	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p, .res-nightmode .thing .tagline .author.submitter {
 		color: white !important;
 	}
 	
