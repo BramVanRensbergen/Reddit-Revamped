@@ -1647,9 +1647,13 @@
 	    background-repeat: no-repeat !important;
 	}
 
-	/* in non-nightmode, currently using original toggle icons  */
+	.RESGalleryControls a, .RESUserTagImage, .RESGalleryControls a, .RESUserTagImage {
+	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
+	}
+	
+	/* in non-nightmode, currently using original expandos  */
 	/*
-		.expando-button.image, .expando-button.video-muted, .RESGalleryControls a, .RESUserTagImage, .RESGalleryControls a, .RESUserTagImage {
+		.expando-button.image, .expando-button.video-muted
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
