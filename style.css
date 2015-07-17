@@ -1785,6 +1785,14 @@
 	    margin-bottom: 30px !important;
 	}
 	
+	.messages-page .entry {
+		padding-left: 0px !important;
+		padding-top: 5px !important;
+	}
+	
+	.messages-page .entry .md,.messages-page .buttons  {
+		margin-left: 0px !important;
+	}
 	
 	/********************************
 	******** Unordered **************
