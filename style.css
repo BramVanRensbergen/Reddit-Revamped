@@ -1728,7 +1728,7 @@
 		background-position: 0px -48px !important;
 	}
 	
-	.res-nightmode .expando-button.image.expanded:hover, .res-nightmode .expando-button.video-muted.expanded {
+	.res-nightmode .expando-button.image.expanded:hover, .res-nightmode .expando-button.video-muted.expanded:hover {
 		background-position: 0px -72px !important;
 	}
 	
