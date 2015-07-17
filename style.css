@@ -1237,6 +1237,7 @@
 	
 	.link .linkflairlabel {
 	    font-size: 12px !important;
+	    max-width: 20em !important;	    
 	}
 	
 	.tagline .friend {
