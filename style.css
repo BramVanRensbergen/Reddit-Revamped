@@ -1397,7 +1397,7 @@
 	    color: #9B5FC9 !important;
 	}
 	
-	.res-nightmode.wiki-page .md {
+	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p {
 		color: white !important;
 	}
 	
@@ -1590,6 +1590,10 @@
 
 	.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
 	     border-radius: 3px !important;
+	}
+	
+	.res-nightmode .combined-search-page .search-result .search-expando.collapsed::before {
+		 background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #171717 100%) repeat scroll 0 0;
 	}
 
 	/**********************************
