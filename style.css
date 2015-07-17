@@ -570,10 +570,6 @@
 		background-color: #be0d3e !important; /* otherwise the background color switches to background on hover */
 	}
 	
-	.toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage, .toggleImage, .expando-button.image, .RESGalleryControls a, .RESUserTagImage {
-	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
-	}
-	
 	.guider {
 	    display: none !important;
 	}
@@ -1170,49 +1166,7 @@
 	
 	/***************************
 	********* Voting ***********
-	****************************/
-	.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, 
-	    .res-nightmode .arrow.up, .loggedin.res-nightmode .arrow.up,  .res-nightmode .arrow.up.login-required,
-	    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
-	    .res-nightmode .arrow.up:hover, .loggedin.res-nightmode .arrow.up:hover, .res-nightmode .arrow.up.login-required:hover,
-	    .res-nightmode .arrow.down:hover, .loggedin.res-nightmode .arrow.down:hover, .res-nightmode .arrow.down.login-required:hover, 
-	    .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.downmod, 
-	    .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
-	    background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;	
-	}
-	
-	.arrow {
-	    width: 15px !important;
-	    height: 14px !important;
-		margin: 4px auto 3px auto !important;
-	}
-	
-	.arrow.up, .arrow.up.login-required, .loggedin .arrow.up:hover, 
-	    .res-nightmode .arrow.up,  .loggedin.res-nightmode .arrow.up, .res-nightmode .arrow.up.login-required,
-	     .loggedin.res-nightmode .arrow.up:hover,.res-nightmode .arrow.up.login-required:hover {
-	    background-position: -0px -642px !important;
-	    background-repeat: no-repeat !important;
-	    cursor: pointer;
-	}
-	
-	.arrow.down, .arrow.down.login-required, .loggedin .arrow.down:hover,
-	    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
-	    .loggedin.res-nightmode .arrow.down:hover,.res-nightmode .arrow.down.login-required:hover {
-	    background-position: -15px -656px !important;
-	    background-repeat: no-repeat !important;
-	    cursor: pointer;
-	}
-	
-	.arrow.upmod, .res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.upmod {
-	    background-position: -0px -656px !important;
-	    background-repeat: no-repeat !important;
-	}
-	
-	.arrow.downmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.downmod  {
-	    background-position: -15px -642px !important;
-	    background-repeat: no-repeat !important;
-	}
-	
+	****************************/	
 	.score.likes  { 
 	    color: #ff4500 !important;
 	}
@@ -1526,16 +1480,6 @@
 	    background: inherit !important;
 	}
 	
-	.res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default, .res-nightmode .thumbnail.nsfw {
-	    background-image: url(http://c.thumbs.redditmedia.com/0ZkZPsviQScvt3an.png) !important;
-	}
-	
-	.res-nightmode .expando-button.selftext.collapsed, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .eb-sch, .res-nightmode .expando-button.selftext.expanded, 
-	.eb-se, .res-nightmode .expando-button.selftext.expanded:hover, .eb-seh, .res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, 
-	.res-nightmode .eb-vch, .res-nightmode .expando-button.video.expanded, .res-nightmode .eb-ve, .res-nightmode .expando-button.video.expanded:hover, .res-nightmode .eb-veh, .res-nightmode .expando-button.image {
-	    background-image: url(http://c.thumbs.redditmedia.com/n8fFm75rDzKvc8A8.png) !important;
-	}
-	
 	.res-nightmode #searchexpando {
 	    background-color: #26313A !important;
 	    box-shadow: #88AADD 1px 1px 5px 0px !important;
@@ -1646,6 +1590,153 @@
 
 	.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
 	     border-radius: 3px !important;
+	}
+
+	/**********************************
+	************* ICONS ***************
+	***********************************/
+	
+	.arrow.up, .arrow.down, .arrow.up:hover, .arrow.down:hover, .arrow.upmod, .arrow.downmod, 
+	    .res-nightmode .arrow.up, .loggedin.res-nightmode .arrow.up,  .res-nightmode .arrow.up.login-required,
+	    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
+	    .res-nightmode .arrow.up:hover, .loggedin.res-nightmode .arrow.up:hover, .res-nightmode .arrow.up.login-required:hover,
+	    .res-nightmode .arrow.down:hover, .loggedin.res-nightmode .arrow.down:hover, .res-nightmode .arrow.down.login-required:hover, 
+	    .res-nightmode .arrow.upmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.downmod, 
+	    .thumbnail.self, .thumbnail.default, .thumbnail.nsfw, time.edited-timestamp {
+	    background-image: url(http://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;	
+	}
+	
+	.arrow {
+	    width: 15px !important;
+	    height: 14px !important;
+		margin: 4px auto 3px auto !important;
+	}
+	
+	.arrow.up, .arrow.up.login-required, .loggedin .arrow.up:hover, 
+	    .res-nightmode .arrow.up,  .loggedin.res-nightmode .arrow.up, .res-nightmode .arrow.up.login-required,
+	     .loggedin.res-nightmode .arrow.up:hover,.res-nightmode .arrow.up.login-required:hover {
+	    background-position: -0px -642px !important;
+	    background-repeat: no-repeat !important;
+	    cursor: pointer;
+	}
+	
+	.arrow.down, .arrow.down.login-required, .loggedin .arrow.down:hover,
+	    .res-nightmode .arrow.down, .loggedin.res-nightmode .arrow.down, .res-nightmode .arrow.down.login-required,
+	    .loggedin.res-nightmode .arrow.down:hover,.res-nightmode .arrow.down.login-required:hover {
+	    background-position: -15px -656px !important;
+	    background-repeat: no-repeat !important;
+	    cursor: pointer;
+	}
+	
+	.arrow.upmod, .res-nightmode .arrow.upmod, .loggedin.res-nightmode .arrow.upmod {
+	    background-position: -0px -656px !important;
+	    background-repeat: no-repeat !important;
+	}
+	
+	.arrow.downmod, .res-nightmode .arrow.downmod, .loggedin.res-nightmode .arrow.downmod  {
+	    background-position: -15px -642px !important;
+	    background-repeat: no-repeat !important;
+	}
+
+	/* in non-nightmode, currently using original toggle icons  */
+	/*
+		.expando-button.image, .expando-button.video-muted, .RESGalleryControls a, .RESUserTagImage, .RESGalleryControls a, .RESUserTagImage {
+	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
+	}
+	
+	.expando-button.video-muted.collapsed {
+		background-position: 0px 0px !important;
+	}
+	
+	.expando-button.video-muted.collapsed:hover {
+		background-position: 0px -24px !important;
+	}
+	
+	.expando-button.video-muted.expanded {
+		background-position: 0px -48px !important;
+	}
+	
+	.expando-button.video-muted.expanded:hover {
+		background-position: 0px -72px !important;
+	}
+	
+	.expando-button.selftext, .expando-button.video {
+		 background-image: url(https://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;		
+	}
+	
+	.expando-button.video.collapsed {
+		background-position: 0px -538px !important;
+	}
+	
+	.expando-button.video.collapsed:hover {
+		background-position: -24px -538px !important;
+	}
+	
+	.expando-button.video.expanded {
+		background-position: -48px -538px !important;
+	}
+	
+	.expando-button.video.expanded:hover {
+		background-position: -24px -538px !important;
+	}
+	
+	.expando-button.selftext.collapsed {
+		background-position: -25px -513px !important;
+	}
+	
+	.expando-button.selftext.collapsed:hover {
+		background-position: -96px -421px !important;
+	}
+	
+	.expando-button.selftext.expanded {
+		background-position: -73px -513px !important;
+	}
+	
+	.expando-button.selftext.expanded:hover {
+		background-position: -49px -513px !important;
+	}
+*/
+
+	/*.res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default, .res-nightmode .thumbnail.nsfw {
+	    background-image: url(http://c.thumbs.redditmedia.com/0ZkZPsviQScvt3an.png) !important;
+	}*/
+	
+	.res-nightmode .expando-button.selftext.collapsed, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .eb-sch, .res-nightmode .expando-button.selftext.expanded, 
+.res-nightmode .expando-button.selftext.expanded:hover, .res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, 
+	.res-nightmode .eb-vch, .res-nightmode .expando-button.video.expanded, .res-nightmode .eb-ve, .res-nightmode .expando-button.video.expanded:hover, .res-nightmode .eb-veh, .res-nightmode .expando-button.image, .res-nightmode .expando-button.toggleImage.collapsed, .res-nightmode .expando-button.toggleImage.expanded {
+	  background-image: url(http://c.thumbs.redditmedia.com/n8fFm75rDzKvc8A8.png) !important;
+	}
+	
+	.res-nightmode .expando-button.image.collapsed, .res-nightmode .expando-button.video-muted.collapsed {
+		background-position: 0px 0px !important;
+	}
+	
+	.res-nightmode .expando-button.image.collapsed:hover, .res-nightmode .expando-button.video-muted.collapsed:hover {
+		background-position: 0px -24px !important;
+	}
+	
+	.res-nightmode .expando-button.image.expanded,.res-nightmode .expando-button.video-muted.expanded {
+		background-position: 0px -48px !important;
+	}
+	
+	.res-nightmode .expando-button.image.expanded:hover, .res-nightmode .expando-button.video-muted.expanded {
+		background-position: 0px -72px !important;
+	}
+	
+	.res-nightmode .expando-button.gallery.collapsed {
+		background-position: 0px -288px !important;
+	}
+	
+	.res-nightmode .expando-button.gallery.collapsed:hover {
+		background-position: 0px -312px !important;
+	}
+	
+	.res-nightmode .expando-button.gallery.expanded {
+		background-position: 0px -336px !important;
+	}
+	
+	.res-nightmode .expando-button.gallery.expanded:hover {
+		background-position: 0px -360px !important;
 	}
 
 	/**********************************
