@@ -655,8 +655,12 @@
 	
 	.RESDialogSmall {
 	    border: none !important;
+	    box-shadow: #888 1px 1px 5px 0px !important;
+	    border-width: 0px !important;
+	    border-radius: 4px !important;
+	    font-size: 13px !important;
 	}
-	
+
 	.RESDialogSmall h3 {
 	    font-size: 16px !important;
 	    margin-top: 0px !important;
@@ -670,6 +674,30 @@
 	    padding-top: 10px !important;
 	}
 	
+	#quickMessage {
+		background-color: rgba(0, 0, 0, 0.85) !important;;
+	}
+	
+	#quickMessageDialog {
+		padding-bottom: 10px !important;
+	}
+	
+	.RESDialogSmall input[type="button"], #quickMessageDialog .fullMessageForm {
+		position: absolute !important;		
+		bottom: 11px !important;
+		padding: 3px 5px !important;		
+	}
+	
+	.RESDialogSmall input[type="button"] {
+		background-color: #5cc410 !important;
+		right: 12px !important;
+	}
+	
+	#quickMessageDialog .fullMessageForm {		
+		left: 74px !important;
+		height: 17px !important;
+	}
+		
 	#compose-message input{
 	    width: 300px !important;
 	}
@@ -2020,13 +2048,6 @@
 	    margin-top: 0px !important;
 	}
 	
-	.RESDialogSmall {
-	    box-shadow: #888 1px 1px 5px 0px !important;
-	    border-width: 0px !important;
-	    border-radius: 4px !important;
-	    font-size: 13px !important;
-	}
-	
 	.keyNavAnnotation {
 	    font-size: 70% !important;
 	    vertical-align: super !important;
@@ -2064,11 +2085,7 @@
 	.fancy-toggle-button a:hover, .fancy-toggle-button .add:hover, .fancy-toggle-button .remove:hover, .RESDashboardToggle:hover, .res #authorInfoToolTip .blueButton:hover, .RESFilterToggle:hover, .pretty-button.positive:hover, .pretty-button.negative:hover, .RESshortcutside:hover {
 	    background-color: gray !important;
 	}
-	
-	input.btn {
-		padding: 2px 5px !important;
-	}
-	
+
 	.message .entry .parent {
 		margin: 5px 0px 10px 0px !important;
 	    padding: 7px 10px !important;
