@@ -1541,6 +1541,10 @@
 	    background-color: black !important;
 	}
 	
+	.res-nightmode .correspondent {
+		background-color: white !important;
+	}
+	
 	.res-nightmode .comment .md p a[href$="/spoiler"]:hover, .res-nightmode .comment .md p a[href$="#spoiler"]:hover, .res-nightmode .drop-choices, .res-nightmode #srList, .res-nightmode #srList tr:hover, .res-nightmode .styleToggle  {
 	    background-color: #222 !important;
 	}
