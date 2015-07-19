@@ -1465,21 +1465,16 @@
 	.res-nightmode #quickMessageDialog input[type=button] {
 		background-color: #4BA00D !important;
 	}
-	
-	.res-nightmode .submit textarea, .res-nightmode .submit #url, .res-nightmode .submit #sr-autocomplete, .res-nightmode .usertext-edit textarea, .res-nightmode .usertext-edit .RESDialogSmall .md, .res-nightmode .RESDialogSmall    {
+
+	#quickMessageDialog {
 		background-color: #000 !important;
 		color: rgb(204, 204, 204) !important;
 	}
-
+	
 	.res-nightmode .usertext-edit textarea:hover    {
 		background-color: #777 !important;
 		color: #fff !important;
 	}	
-	
-	.res-nightmode .submit textarea, .res-nightmode .submit #url, .res-nightmode .submit #sr-autocomplete, .res-nightmode .usertext-edit textarea, .res-nightmode .usertext-edit .RESDialogSmall .md, .res-nightmode .RESDialogSmall    {
-		background-color: #000 !important;
-		color: #CCCCCC !important;
-	}
 
 	.res-nightmode .usertext-edit textarea:hover    {
 		background-color: #777 !important;
