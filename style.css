@@ -691,6 +691,8 @@
 		color: #fff !important;
 		background-color: #777 !important;
 		right:11px !important;
+		padding-top: 2px !important;
+		margin-top: 5px !important;
 	}
 	
 	#quickMessage {
@@ -1110,6 +1112,39 @@
 	#BigEditor .BELeft .RESDialogContents .markdownEditor-wrapper {
 	    display: inline !important;
 	}
+	
+	/* save and big editor buttons */
+	.usertext-edit .save, .RESBigEditorPop {
+		border: 1px solid #CCC !important;
+		margin: 5px 5px 10px 0px !important;;
+		padding: 4px 6px !important;;
+	}
+	
+	.RESBigEditorPop {
+		margin-left: 20px !important;
+	}
+	
+	/* formatting help button */
+	.usertext-edit	.help-toggle {
+		padding-top: 7px !important;
+	}
+	
+	#BigPreview {
+		padding-top: 10px !important;		
+	}
+	
+	/* align with right side of edit box */
+	.RESCharCounter {
+		position: relative !important;
+		right: -112px !important;
+	}
+	
+	/* align with right side of edit box */
+	.usertext-edit .RESMacroDropdownTitle {
+		position: relative !important;
+		right: -120px !important;
+		top: -10px !important;
+	} 
 	
 	/***********************
 	******* SEARCH *********
@@ -1619,6 +1654,11 @@
 	
 	.res-nightmode  .infobar{
 	    border: 1px solid #F5F5F5 !important;
+	}
+	
+	/* save & big editor buttons beneath comment box */
+	.res-nightmode .RESBigEditorPop , .res-nightmode .usertext-edit .save {
+		border: 1px solid #666666 !important;
 	}
 	
 	.res-nightmode #login_login-main {
@@ -2373,7 +2413,7 @@
 	.expando-button, .expando-button.image {
 	    cursor: default !important;
 	}
-		
+			
 	#noresults.error {
 	    display: inline-block !important;
 	    font-size: 17px !important;
