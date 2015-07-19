@@ -278,6 +278,14 @@
 		overflow: visible !important;
 	}    
 	
+	.side .md h1, h2 {
+		font-size: medium !important;
+	}
+
+	.side .md h3, h4, h5, h6 {
+		font-size: small !important;
+	}
+		
 	/* recently viewed links */
 	.sidecontentbox .content, .with-listing-chooser .sidecontentbox .content {
 		margin-left: 0px !important;
@@ -298,10 +306,6 @@
 
 	.titlebox {
 	   font-size: small !important;    
-	}
-	
-	.titlebox .karma, .titlebox h1 {
-	    font-size: medium !important;   
 	}
 	
 	.linkinfo {
@@ -2369,7 +2373,7 @@
 	.expando-button, .expando-button.image {
 	    cursor: default !important;
 	}
-	
+		
 	#noresults.error {
 	    display: inline-block !important;
 	    font-size: 17px !important;
