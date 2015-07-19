@@ -1416,6 +1416,16 @@
 	
 	.res-nightmode .submit textarea, .res-nightmode .submit #url, .res-nightmode .submit #sr-autocomplete, .res-nightmode .usertext-edit textarea, .res-nightmode .usertext-edit .RESDialogSmall .md, .res-nightmode .RESDialogSmall    {
 		background-color: #000 !important;
+		color: rgb(204, 204, 204) !important;
+	}
+
+	.res-nightmode .usertext-edit textarea:hover    {
+		background-color: #777 !important;
+		color: #fff !important;
+	}	
+	
+	.res-nightmode .submit textarea, .res-nightmode .submit #url, .res-nightmode .submit #sr-autocomplete, .res-nightmode .usertext-edit textarea, .res-nightmode .usertext-edit .RESDialogSmall .md, .res-nightmode .RESDialogSmall    {
+		background-color: #000 !important;
 		color: #CCCCCC !important;
 	}
 
@@ -1540,8 +1550,7 @@
 	
 	.res-nightmode #searchexpando {
 	    background-color: #26313A !important;
-	    box-shadow: #88AADD 1px 1px 5px 0px !important;
-	
+	    box-shadow: #88AADD 1px 1px 5px 0px !important;	
 	}
 	
 	.res-nightmode .flair, .res-nightmode .linkflairlabel {
