@@ -710,13 +710,13 @@
 	
 	#quickMessageDialog .gearIcon {
 		float: right;
-		margin-top: 2px !important;
+		margin-top: 9px !important;
 		margin-right: 50px !important;
 	} 
 	
 	.RESDialogSmall input[type="button"], #quickMessageDialog .fullMessageForm {
 		position: absolute !important;		
-		bottom: 11px !important;
+		bottom: 8px !important;
 		padding: 3px 5px !important;		
 	}
 	
