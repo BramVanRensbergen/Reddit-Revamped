@@ -696,24 +696,6 @@
 		margin-top: 5px !important;
 	}
 	
-	#quickMessage {
-		background-color: rgba(0, 0, 0, 0.85) !important;;
-	}
-	
-	#quickMessageDialog {
-		padding-bottom: 10px !important;
-	}
-	
-	#quickMessageDialogBody:hover {
-		background-color: #777 !important;
-	}
-	
-	#quickMessageDialog .gearIcon {
-		float: right;
-		margin-top: 9px !important;
-		margin-right: 50px !important;
-	} 
-	
 	.RESDialogSmall input[type="button"], #quickMessageDialog .fullMessageForm {
 		position: absolute !important;		
 		bottom: 8px !important;
@@ -723,16 +705,7 @@
 	.RESDialogSmall input[type="button"] {
 		background-color: #5cc410 !important;
 		right: 12px !important;
-	}
-	
-	#quickMessageDialog .fullMessageForm {		
-		left: 74px !important;
-		height: 17px !important;
-	}
-		
-	#compose-message input{
-	    width: 300px !important;
-	}
+	}	
 	
 	.imgCaptions, .imgCredits, .RESGalleryLabel {
 	    font-size: 14px !important;
@@ -1515,7 +1488,8 @@
 	    color: #9B5FC9 !important;
 	}
 	
-	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p, .res-nightmode .thing .tagline .author.submitter {
+	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p, 
+	.res-nightmode .thing .tagline .author.submitter, .res-nightmode .entry .md,  .res-nightmode .entry .md ul {
 		color: white !important;
 	}
 	
@@ -1868,6 +1842,54 @@
 	.res-nightmode .expando-button.gallery.expanded:hover {
 		background-position: 0px -360px !important;
 	}
+	
+	/**********************************
+	************ MESSAGES *************
+	***********************************/
+	#quickMessage {
+		background-color: rgba(0, 0, 0, 0.85) !important;;
+	}
+	
+	#quickMessageDialog {
+		padding-bottom: 10px !important;
+	}
+	
+	#quickMessageDialogBody:hover {
+		background-color: #777 !important;
+	}
+	
+	#quickMessageDialog .gearIcon {
+		float: right;
+		margin-top: 9px !important;
+		margin-right: 50px !important;
+	} 
+	
+	#quickMessageDialog .fullMessageForm {		
+		left: 74px !important;
+		height: 17px !important;
+	}
+		
+	#compose-message input{
+	    width: 300px !important;
+	}
+	
+	.messages-page .entry {
+		padding-left: 0px !important;
+		padding-top: 5px !important;
+	}
+	
+	.messages-page .entry .md,.messages-page .buttons  {
+		margin-left: 0px !important;
+	}
+	
+	.message.message-parent .entry {
+		border-left: 0px solid white !important;;
+	}
+	
+	.messages-page .correspondent .RESUserTag {
+		position: relative !important;
+		top: -1px !important;
+	}
 
 	/**********************************
 	********** RES CONSOLE ************
@@ -1905,20 +1927,7 @@
 	
 	.res .sitetable .RESDialogSmall {
 	    margin-bottom: 30px !important;
-	}
-	
-	.messages-page .entry {
-		padding-left: 0px !important;
-		padding-top: 5px !important;
-	}
-	
-	.messages-page .entry .md,.messages-page .buttons  {
-		margin-left: 0px !important;
-	}
-	
-	.message.message-parent .entry {
-		border-left: 0px solid white !important;;
-	}
+	}		
 	
 	/********************************
 	******** Unordered **************
