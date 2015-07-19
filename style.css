@@ -1246,6 +1246,10 @@
 	    margin-bottom: 10px !important;
 	}
 	
+	.combined-search-page .search-result .search-expando.collapsed {
+    	max-height: 55px !important;;
+	}
+	
 	/***************************
 	********* Voting ***********
 	****************************/	
