@@ -943,6 +943,8 @@
 	    font-size: 12px !important;
 	    font-style: italic !important;
 	    color: #999999 !important;
+	    position: relative !important;
+		top: -5px !important;
 	}
 	
 	.domain a:hover {
