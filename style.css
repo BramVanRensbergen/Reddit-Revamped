@@ -203,6 +203,15 @@
 	 	display: inline-block !important; 
 	}
 	
+	#RESAccountSwitcherIcon {
+		padding-top: 5px !important;
+	}
+	
+	#RESAccountSwitcherIcon .downArrow {
+		margin-top: 0px !important;
+		padding-top: 0px !important;
+	}		
+	
 	#RESMainGearOverlay {
 	 	top: 7px !important;
 	}
