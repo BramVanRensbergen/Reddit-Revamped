@@ -674,6 +674,12 @@
 	    padding-top: 10px !important;
 	}
 	
+	.RESCloseButton {
+		color: #fff !important;
+		background-color: #777 !important;
+		right:11px !important;
+	}
+	
 	#quickMessage {
 		background-color: rgba(0, 0, 0, 0.85) !important;;
 	}
@@ -681,6 +687,26 @@
 	#quickMessageDialog {
 		padding-bottom: 10px !important;
 	}
+	
+	#quickMessageDialogBody {
+		color: #fff !important;
+		background-color: #000  !important;
+	}
+	
+	#quickMessageDialogBody:hover {
+		background-color: #777 !important;
+	}
+	
+	#quickMessageDialogFrom {
+		color: #fff !important;
+		background-color: #777 !important;
+	}
+	
+	#quickMessageDialog .gearIcon {
+		float: right;
+		margin-top: 2px !important;
+		margin-right: 50px !important;
+	} 
 	
 	.RESDialogSmall input[type="button"], #quickMessageDialog .fullMessageForm {
 		position: absolute !important;		
@@ -1369,6 +1395,24 @@
 	
 	.res-nightmode #search input[type="submit"] {
 	     background-color: #171717 !important;
+	}
+	
+	.res-nightmode .blueButton {
+		 background-color: #004B7D !important;
+	}
+	
+	.res-nightmode #quickMessageDialog input[type=button] {
+		background-color: #4BA00D !important;
+	}
+	
+	.res-nightmode .submit textarea, .res-nightmode .submit #url, .res-nightmode .submit #sr-autocomplete, .res-nightmode .usertext-edit textarea, .res-nightmode .usertext-edit .RESDialogSmall .md, .res-nightmode .RESDialogSmall    {
+		background-color: #000 !important;
+		color: #CCCCCC !important;
+	}
+
+	.res-nightmode .usertext-edit textarea:hover    {
+		background-color: #777 !important;
+		color: #fff !important;
 	}
 	
 	.res-nightmode button, .res-nightmode input[type="submit"]{
