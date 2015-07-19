@@ -548,7 +548,7 @@
 	}
 	
 	.messages-page .menuarea {
-		padding: 6px 8px 4px 20px !important;
+		padding: 8px 8px 4px 20px !important;
 	}
 	
 	/*****************************
@@ -1909,6 +1909,10 @@
 	
 	.messages-page .entry .md,.messages-page .buttons  {
 		margin-left: 0px !important;
+	}
+	
+	.message.message-parent .entry {
+		border-left: 0px solid white !important;;
 	}
 	
 	/********************************
