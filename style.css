@@ -1913,15 +1913,15 @@
 	    background-color: white !important;
 	}
 	
-	#RESConsoleContainer .moduleButton.enabled, #RESMenu li{
+	#RESConsoleContainer .moduleButton.enabled, #RESMenu li {
 	     color: black !important;
 	} 
 	    
-	#RESLogo{
+	#RESLogo {
 	     display: none !important;
 	}
 	
-	#RESConsoleTopBar{
+	#RESConsoleTopBar {
 	    background-color: white !important;    
 	} 
 	
