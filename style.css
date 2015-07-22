@@ -1907,6 +1907,7 @@
 	/**********************************
 	********** RES CONSOLE ************
 	***********************************/
+	
 	#RESConsoleContainer input, #RESConsoleTopBar, #RESConsoleContent {
 	    color: black !important;
 	    background-color: white !important;
