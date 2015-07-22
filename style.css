@@ -1924,7 +1924,37 @@
 	    background-color: white !important;    
 	} 
 	
+	/*****************************
+	******* Subreddit Page *******
+	*****************************/  
 	
+	.subreddits-page .subreddit .score.likes {
+	    color: gray !important;
+	}
+		
+	.subreddits-page .subreddit .usertext .md {
+		border: 0px solid white !important;
+		background: none !important;
+		padding: 0px !important;
+
+	}
+	
+	.subreddits-page .subreddit .midcol {
+		margin-right: 30px !important;
+	}
+	
+	.subreddits-page	.subreddit .flat-list.buttons, 	.subreddits-page .infobar {
+		display: none !important;
+	}
+	
+	.subreddits-page .searchpane {
+		margin-bottom: 15px !important;
+	}
+
+	.subreddits-page .thing {
+		margin: 25px 0px !important;
+	}
+		
 	/****************************
 	********** VARIA ************
 	*****************************/  
@@ -1995,47 +2025,6 @@
 	    border: none !important;
 	    font-size: 13px !important;
 	    color: black !important;
-	}
-	
-	.subreddit .usertext .md {
-	    background: none !important;
-	    padding: 7px 7px 2px 7px !important;
-	    border-style: solid !important;
-	    font-size: 13px !important;
-	    margin-top: 8px !important;
-	}
-	
-	.subreddit .usertext-body li {
-	    margin-bottom: 2px !important;
-	}
-	
-	
-	.subreddit .description {
-	    margin-top: -5px !important;
-	}
-	
-	.subreddit .midcol {
-	    width: auto !important;
-	    min-width: 9em !important;
-	}
-	
-	.subreddit .fancy-toggle-button {
-	    margin-right: 5px !important;
-	}
-	
-	.subreddit .entry.likes .description {
-	    display: none !important;
-	}
-	
-	.subreddit .entry.likes, .subreddit .remove {
-	    font-style: italic !important;
-	}
-	
-	.subreddit .score.likes {
-	    color: gray !important;
-	}
-	.subreddit .entry.likes:hover, .subreddit .remove:hover {
-	    opacity: 1 !important;
 	}
 	
 	span.column.centered {
