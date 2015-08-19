@@ -1395,6 +1395,7 @@
 	/********************************
 	**** RES Nightmode specific *****
 	*********************************/
+	/* GENERAL */	
 	.res-nightmode, .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, 
 		.res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
 		.res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ul, .res-nightmode .side ol, .res-nightmode .side li, 
@@ -1406,39 +1407,192 @@
 	    box-shadow: none !important;
 	}    
 		
+	.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic, 
+		.res-nightmode .voteWeight {
+	    background-color: inherit !important;       
+	}
+	
+	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p, 
+		.res-nightmode .thing .tagline .author.submitter, .res-nightmode .entry .md,  .res-nightmode .entry .md ul,
+		.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, 
+		.res-nightmode .usertext-body .md, .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, 
+		.res-nightmode .title, .res-nightmode .menuarea a, .res-nightmode #REScommentNavToggle div, 
+		.res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"], .res-nightmode .blueButton {
+		color: white !important;
+	}
+	
+	.res-nightmode #header #header-bottom-left .tabmenu a:hover, .res-nightmode a, .res-nightmode .thing .title:hover, 
+		.res-nightmode .thing .title.loggedin:hover, .res-nightmode .tagline a:hover, .res-nightmode .wired a, 
+		.res-nightmode .side a, .res-nightmode .single-page a.title, .res-nightmode .single-page .thing .title.loggedin.click:visited, 
+		.res-nightmode .single-page .thing .title.loggedin:visited, .res-nightmode .menuarea .drop-choices form:hover, 
+		.res-nightmode .menuarea .drop-choices a:hover, .res-nightmode .menuarea a:hover, .res-nightmode .menuarea .drop-choices a.choice:hover, 
+		.res-nightmode .drop-choices a:hover {
+	    color: #88AADD !important;
+	}
+	
+	.res-nightmode .comment .md p a[href$="/spoiler"]:hover, .res-nightmode .comment .md p a[href$="#spoiler"]:hover, 
+		.res-nightmode .drop-choices, .res-nightmode #srList, .res-nightmode #srList tr:hover, .res-nightmode .styleToggle  {
+	    background-color: #222 !important;
+	}
+		
+	.res-nightmode pre, .res-nightmode code {
+		background: #2D2D2D !important; 
+	}
+			
+	.res-nightmode a.expand:hover, .comment .res-nightmode .expand:hover {
+	    background-color: #8AD !important;
+	    color: black !important;
+	}
+
+	.res-nightmode .flair, .res-nightmode .linkflairlabel {
+	    color: #DDDDDD !important;  
+	    background-color: #222 !important;
+	    border-color:#333 !important;
+	}
+
+	.res-nightmode .side .morelink, .res-nightmode .menuarea, .res-nightmode .menuarea, .res-nightmode .commentarea .menuarea, .res-nightmode .searchpane.raisedbox, .res-nightmode .searchfacets {
+	    background-color: #26313A !important; 
+	    border: 1px solid #384F67 !important;
+	}
+
+	.res-nightmode .usertext.border .usertext-body {
+	    background-color:#1b1b1b !important;
+	    border:none !important;
+	}
+	
+	.res-nightmode blockquote, .res-nightmode .md blockquote,  .res-nightmode .side blockquote, .res-nightmode .help blockquote, .res-nightmode .usertext.border .usertext-body blockquote {
+	    background-color: #171717  !important;
+	    border-left-color: #555555 !important;
+	}
+	    
+	.res-nightmode .md blockquote li {
+	    margin: 0px !important;
+	}
+	
+	.res-nightmode .keyHighlight .usertext-body, .res-nightmode .keyHighlight .usertext-body .md, .res-nightmode .keyHighlight .usertext-body .md p, .res-nightmode .keyHighlight .noncollapsed, 
+	    .res-nightmode .keyHighlight .noncollapsed .md, .res-nightmode .keyHighlight .noncollapsed .md p {
+	    background: none !important;
+	    outline: none !important;
+	}
+	
+	/* HEADER */
 	.res-nightmode #header-bottom-left {
 	    padding-top: 6px !important;
 	}
 	
+	body.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
+	    background-color: #2D2D2D !important; /* #393939 */
+		margin-top: 0px !important;
+	}
+		
+	.res-nightmode #header {
+	    border: 0px solid #F5F5F5 !important;
+	    border-bottom: solid 1px #323232 !important;
+	}
+	
+	.res-nightmode #header #header-bottom-left .tabmenu li.selected a {
+	    color: orangeRed !important;
+	}
+	
+	
+	/* SIDEBARS */
 	.res-nightmode .side {
    		box-shadow: 0px 0px 50px 20px rgba(255,255,255, 0.04) !important;;
    		border-left: #369 3px solid !important;
   		border-bottom: #369 3px solid !important;
 	}
 	
-	.res-nightmode .side .sidebox, .res-nightmode .subreddits .remove-sr, .res-nightmode .flairtoggle, .res-nightmode #siteTable_organic, .res-nightmode .voteWeight {
-	    background-color: inherit !important;       
+	.res-nightmode .side .sidebox {
+	    border: 0px solid black !important;
+	}
+		
+	.res-nightmode .linkinfo {
+	    border: 0px solid #DDDDDD !important;   
 	}
 	
-	/* HEADER */
-	body.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
-	    background-color: #2D2D2D !important; /* #393939 */
-		margin-top: 0px !important;
+	.res-nightmode  .infobar {
+	    border: 1px solid #F5F5F5 !important;
 	}
 	
-	.res-nightmode pre, .res-nightmode code {
-		background: #2D2D2D !important; 
+	.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
+	     border-radius: 3px !important;
 	}
 	
-	.res-nightmode #header {
-	    border: 0px solid #F5F5F5 !important;
-	    border-bottom: solid 1px #323232 !important;
+	
+	/* MENU AREA */	
+	.res-nightmode .menuarea .drop-choices a.choice:hover {
+	    background-color: transparent !important;
 	}
 	
-	.res-nightmode #search input[type="submit"] {
-	     background-color: #171717 !important;
+	.res-nightmode .drop-choices a.choice:hover { 
+	    background-color: #222 !important;
+	    color: #8ad !important;
 	}
 	
+	.res-nightmode .drop-choices, .res-nightmode table#srList, .res-nightmode .RESDropdownList {
+	    box-shadow: none !important;
+	    border: 1px solid #888 !important;
+	    border-radius: 4px !important;
+	    border-top-left-radius: 0px !important;
+	    padding: 5px !important;
+	    font-size: 12px !important;
+	}
+	
+	.res-nightmode .menuarea .drop-choices {
+	    border: none !important;
+	    font-size: 16px !important;
+	    background: transparent !important;
+	}
+	
+	
+	/* LISTING PAGE */
+	.res-nightmode .title:visited {
+	    color: #9B5FC9 !important;
+	}
+	
+	.res-nightmode .entry .domain a {
+	    color: #777 !important;
+	}
+	
+	.res-nightmode .entry p.tagline, .res-nightmode .entry .RES-keyNav-activeElement p.tagline, .res-nightmode .entry time, .res-nightmode h2 {
+	    color: #999 !important;
+	}
+	
+	.res-nightmode .NERPageMarker, .res-nightmode #progressIndicator {
+	    background-color: #3D3D3D !important; /* 999999 */
+	    border: 1px solid black !important;
+	    opacity: 1 !important;
+	}
+	
+	.res-nightmode #progressIndicator a {
+	    color: #C1D6F5 !important
+	}
+	
+	.res-nightmode.listing-page .RES-keyNav-activeElement {
+	    background-color: #3D3D3D !important;
+	}
+	
+	
+	/* COMMENTS PAGE */
+	.res-nightmode .usertext-edit .RESDialogSmall > h3 {
+		background: none !important;
+	}
+		
+	.res-nightmode .contest-mode {
+		color: #8897ae !important;
+		border: 0px solid white !important;
+	}
+	
+	.res-nightmode .markdownEditor a:hover {
+	    background-color: white !important;
+	}	
+	
+	.res-nightmode .usertext-buttons button, .res-nightmode .RESBigEditorPop  {
+		/* save, cancel, big editor button beneath comment box */
+		border: 1px solid #666666 !important;
+	}
+	
+	/* MESSAGING */
 	.res-nightmode .blueButton {
 		 background-color: #004B7D !important;
 	}
@@ -1472,11 +1626,52 @@
 		color: #fff !important;
 	}
 	
+	.res-nightmode .correspondent {
+		background-color: white !important;
+	}
+	
+	
+	/* GENERAL INPUT AND LOGIN */
+	.res-nightmode #login input {
+		background-color: white !important;
+		color: black !important;
+	}
+	
+	.res-nightmode #login {
+		color: black !important;
+	}
+
+	.res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
+	    background-color:#777 !important;
+	}
+	
+	.res-nightmode input[type="text"] {
+	    background-color: black !important;
+	}
+			
 	.res-nightmode button, .res-nightmode input[type="submit"]{
 	     color: white !important;
 	     background-color: #171717 !important;
 	     border: 1px solid #444444;
 	     border-radius: 3px;
+	}	
+	
+	.res-nightmode #login_login-main .submit, .res-nightmode .buttons:hover li, .res-nightmode .usertext-body {
+	    background-color: inherit !important;
+	}
+	
+	.res-nightmode #login_login-main {
+	    border-top-width: 0px !important;
+	    border-right-width: 0px !important;
+	    border-left-width: 0px !important;
+	    border-bottom-width: 0px !important;
+	    background-color: inherit !important;
+	}
+	
+	
+	/* RES-SPECIFIC MENUS */
+	.res-nightmode .RESDialogSmall { 
+	    background: none !important;
 	}
 	
 	.res-nightmode .RESCloseButton {
@@ -1488,117 +1683,28 @@
 	    background-color: inherit !important;
 	    color: inherit !important;
 	 } 
-	    
-	.res-nightmode .drop-choices a.choice:hover { 
-	    background-color: #222 !important;
-	    color: #8ad !important;
-	}
-	
-	.res-nightmode a.expand:hover, .comment .res-nightmode .expand:hover {
-	    background-color: #8AD !important;
-	    color: black !important;
-	}
-	
-	.res-nightmode .comment .md p a[href$="/spoiler"], .res-nightmode .comment .md p a[href$="#spoiler"] {
-	    background-color:#999 !important;
-	    color: #999 !important;
-	}
-	
-	.res-nightmode .title:visited {
-	    color: #9B5FC9 !important;
-	}
-	
-	.res-nightmode.wiki-page .md, .res-nightmode .combined-search-page .search-result .search-result-body p, 
-	.res-nightmode .thing .tagline .author.submitter, .res-nightmode .entry .md,  .res-nightmode .entry .md ul {
-		color: white !important;
-	}
-	
-	.res-nightmode #progressIndicator p, .res-nightmode #header-img, .res-nightmode #header #header-bottom-right a:hover, .res-nightmode .usertext-body .md, 
-	    .res-nightmode #remember-me label, .res-nightmode #header #header-bottom-left .tabmenu li a, .res-nightmode .title, .res-nightmode .menuarea a, 
-	    .res-nightmode #REScommentNavToggle div, .res-nightmode .side .subscribe-button a, .res-nightmode input[type="submit"], .res-nightmode .blueButton {
-	    color: white !important;
-	}
-	
-	.res-nightmode #header #header-bottom-left .tabmenu li.selected a, .res-nightmode .RESDashboardComponentHeader ul li.active, .res-nightmode .widgetSortButtons li.active, .res-nightmode .widgetStateButtons li.active  {
-	    color: orangeRed !important;
-	}
-	
-	.res-nightmode .entry .domain a {
-	    color: #777 !important;
-	}
-	
-	.res-nightmode .entry p.tagline, .res-nightmode .entry .RES-keyNav-activeElement p.tagline, .res-nightmode .entry time, .res-nightmode h2 {
-	    color: #999 !important;
-	}
-	
-	.res-nightmode #header #header-bottom-left .tabmenu a:hover, .res-nightmode a, .res-nightmode .thing .title:hover, .res-nightmode .thing .title.loggedin:hover, .res-nightmode .tagline a:hover, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .single-page a.title, .res-nightmode .single-page .thing .title.loggedin.click:visited, .res-nightmode .single-page .thing .title.loggedin:visited, .res-nightmode .menuarea .drop-choices form:hover, .res-nightmode .menuarea .drop-choices a:hover, .res-nightmode .menuarea a:hover, .res-nightmode .menuarea .drop-choices a.choice:hover, .res-nightmode .drop-choices a:hover {
-	    color: #88AADD !important;
-	}
-	
-	.res-nightmode #progressIndicator a {
-	    color: #C1D6F5 !important
-	}
-	
-	.res-nightmode .contest-mode {
-		color: #8897ae !important;
-		border: 0px solid white !important;
-	}
-	
-	.res-nightmode #login input {
-		background-color: white !important;
-		color: black !important;
-	}
-	
-	.res-nightmode #login {
-		color: black !important;
-	}
-
-	.res-nightmode input[type="text"] {
-	    background-color: black !important;
-	}
-	
-	.res-nightmode .correspondent {
-		background-color: white !important;
-	}
-	
-	.res-nightmode .comment .md p a[href$="/spoiler"]:hover, .res-nightmode .comment .md p a[href$="#spoiler"]:hover, .res-nightmode .drop-choices, .res-nightmode #srList, .res-nightmode #srList tr:hover, .res-nightmode .styleToggle  {
-	    background-color: #222 !important;
-	}
-	
-	.res-nightmode .BELeft.RESDialogSmall, .res-nightmode .BERight.RESDialogSmall {
+	 
+	 .res-nightmode .BELeft.RESDialogSmall, .res-nightmode .BERight.RESDialogSmall {
 	  	background-color: rgb(102, 102, 102) !important;
-	}
-	
-	.res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
-	    background-color:#777 !important;
 	}
 	
 	.res-nightmode #RESDashboardAddComponent {
 	    background-color: #041b09 !important;
+	    border: 1px solid #171717 !important;
 	}
 	
 	.res-nightmode .keyHighlight .buttons:hover li {
 	    background-color: #1A1A1A !important;
 	}
 	
-	.res-nightmode.listing-page .RES-keyNav-activeElement {
-	    background-color: #3D3D3D !important;
-	}
-	
-	.res-nightmode .menuarea .drop-choices a.choice:hover {
-	    background-color: transparent !important;
-	}
-	
-	.res-nightmode #login_login-main .submit, .res-nightmode .buttons:hover li, .res-nightmode .usertext-body {
-	    background-color: inherit !important;
-	}
-	
-	.res-nightmode .RESDialogSmall, .res.res-nightmode .usertext-edit .RESDialogSmall > h3, .res-nightmode a[href$="/spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover {
-	    background: none !important;
-	}
-	
 	.res-nightmode #authorInfoToolTip, .res-nightmode #RESHoverContainer {
 	    background: inherit !important;
+	}
+	
+	
+	/* SEARCH */	
+	.res-nightmode #search input[type="submit"] {
+	     background-color: #171717 !important;
 	}
 	
 	.res-nightmode #searchexpando {
@@ -1606,120 +1712,15 @@
 	    box-shadow: #88AADD 1px 1px 5px 0px !important;	
 	}
 	
-	.res-nightmode .flair, .res-nightmode .linkflairlabel {
-	    color: #DDDDDD !important;  
-	    background-color: #222 !important;
-	    border-color:#333 !important;
-	}
-	
-	.res-nightmode .side .morelink, .res-nightmode .menuarea, .res-nightmode .menuarea, .res-nightmode .commentarea .menuarea, .res-nightmode .searchpane.raisedbox, .res-nightmode .searchfacets {
-	    background-color: #26313A !important; 
-	    border: 1px solid #384F67 !important;
-	}
-	
-	.res-nightmode .keyHighlight {
-	    background-color: rgba(0, 0, 0, .18) !important;
-	    outline-color: rgba(0, 0, 0, .18) !important;
-	}
-	
-	.res-nightmode .usertext.border .usertext-body {
-	    background-color:#1b1b1b !important;
-	    border:none !important;
-	}
-	
-	.res-nightmode blockquote, .res-nightmode .md blockquote,  .res-nightmode .side blockquote, .res-nightmode .help blockquote, .res-nightmode .usertext.border .usertext-body blockquote {
-	    background-color: #171717  !important;
-	    border-left-color: #555555 !important;
-	}
-	    
-	.res-nightmode .md blockquote li {
-	    margin: 0px !important;
-	}
-	
-	.res-nightmode .markdownEditor a:hover {
-	    background-color: white !important;
-	}
-	
-	.res-nightmode .NERPageMarker, .res-nightmode #progressIndicator {
-	    background-color: #3D3D3D !important; /* 999999 */
-	    border: 1px solid black !important;
-	    opacity: 1 !important;
-	}
-	
-	.res-nightmode .keyHighlight .usertext-body, .res-nightmode .keyHighlight .usertext-body .md, .res-nightmode .keyHighlight .usertext-body .md p, .res-nightmode .keyHighlight .noncollapsed, 
-	    .res-nightmode .keyHighlight .noncollapsed .md, .res-nightmode .keyHighlight .noncollapsed .md p {
-	    background: none !important;
-	    outline: none !important;
-	}
-	
-	.res-nightmode .side .sidebox {
-	    border: 0px solid black !important;
-	}
-	
-	.res-nightmode .linkinfo {
-	    border: 0px solid #DDDDDD !important;   
-	}
-	
-	.res-nightmode  .infobar{
-	    border: 1px solid #F5F5F5 !important;
-	}
-	
-	/* save, cancel, big editor button beneath comment box */
-	.res-nightmode .usertext-buttons button, .res-nightmode .RESBigEditorPop  {
-		border: 1px solid #666666 !important;
-	}
-	
-	.res-nightmode #login_login-main {
-	    border-top-width: 0px !important;
-	    border-right-width: 0px !important;
-	    border-left-width: 0px !important;
-	    border-bottom-width: 0px !important;
-	    background-color: inherit !important;
-	}
-	
-	.res-nightmode .RESDashboardComponent {
-	    border: 1px solid #171717 !important;
-	}
-	
-	.res-nightmode a[href$="/spoiler"], .res-nightmode a[href$="#spoiler"] {
-	    outline: 1px solid #333 !important;
-	    background-color: black !important;
-	    background-image: webkit-linear-gradient(-45deg, transparent 25%, #333 25%, #333 50%, transparent 50%, transparent 75%, #333 75%, #333 100%, transparent) !important;
-	    background-size: 10px 10px !important;
-	    color: rgba(255, 255, 255, 0.0) !important;
-	}
-	
-	.res-nightmode .drop-choices, .res-nightmode table#srList, .res-nightmode .RESDropdownList {
-	    box-shadow: none !important;
-	    border: 1px solid #888 !important;
-	    border-radius: 4px !important;
-	    border-top-left-radius: 0px !important;
-	    padding: 5px !important;
-	    font-size: 12px !important;
-	}
-	
-	.res-nightmode .menuarea .drop-choices {
-	    border: none !important;
-	    font-size: 16px !important;
-	    background: transparent !important;
-	}
-	
-	.res-nightmode .sponsorshipbox div {
-	    opacity: 0.8 !important;
-	}
-	
 	.res-nightmode #noresults.error { 
 	    border: 2px dashed #353535 !important;
 	    color: #c0c0c0 !important;
-	}
-
-	.res-nightmode .sidebox, .res-nightmode .sidebox .morelink {
-	     border-radius: 3px !important;
 	}
 	
 	.res-nightmode .combined-search-page .search-result .search-expando.collapsed::before {
 		 background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #171717 100%) repeat scroll 0 0;
 	}
+	
 
 	/**********************************
 	************* ICONS ***************
