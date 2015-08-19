@@ -1026,6 +1026,17 @@
 	    content:"#" !important;
 	}
 	
+	.contest-mode {
+		display: inline !important;
+		color: #424242 !important;
+		background-color: inherit !important;
+		border: 0px solid white !important;
+		font-style: normal !important;
+		margin: 0px !important;
+		padding: 0px !important;
+		line-height: 30px !important;
+	}
+	
 	/******************************
 	******* CREATE A COMMENT ******
 	******************************/
@@ -1493,7 +1504,7 @@
 	    color: #999 !important;
 	}
 	
-	.res-nightmode .title:visited{
+	.res-nightmode .title:visited {
 	    color: #9B5FC9 !important;
 	}
 	
@@ -1526,6 +1537,11 @@
 	
 	.res-nightmode #progressIndicator a {
 	    color: #C1D6F5 !important
+	}
+	
+	.res-nightmode .contest-mode {
+		color: #8897ae !important;
+		border: 0px solid white !important;
 	}
 	
 	.res-nightmode #login input {
