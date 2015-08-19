@@ -468,6 +468,9 @@
 	
 	.menuarea .spacer {
 	    font-size: 17px !important;
+	    float: left;
+    	clear: left;
+    	display:inline
 	}
 	
 	.comments-page .menuarea .spacer {
@@ -1027,7 +1030,6 @@
 	}
 	
 	.contest-mode {
-		display: inline !important;
 		color: #424242 !important;
 		background-color: inherit !important;
 		border: 0px solid white !important;
