@@ -1039,10 +1039,14 @@
 		line-height: 30px !important;
 	}
 	
-	.archived-infobar { /* bar that states the comment page is archived */ 
+	.reddit-infobar { /* bar that states the comment page is archived or locked */ 
 		margin-left: 7px !important;
 		margin-right: 7px !important;
 	}
+	
+	.reddit-infobar .md p {
+		margin: 0px !important;
+	}	
 	
 	/******************************
 	******* CREATE A COMMENT ******
