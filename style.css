@@ -1445,6 +1445,19 @@
 		.res-nightmode .drop-choices, .res-nightmode #srList, .res-nightmode #srList tr:hover, .res-nightmode .styleToggle  {
 	    background-color: #222 !important;
 	}
+	
+	/* spoiler: black text, no outline */
+	.res-nightmode a[href$="/spoiler"], .res-nightmode a[href$="#spoiler"] {
+		color: black !important;
+		background-color: black !important;
+		background-image: none !important;
+		outline: none !important;
+	}
+	
+	/* hovered spoiler: default text and background */
+	.res-nightmode a[href$="/spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover{
+		color: white !important;
+	}
 		
 	.res-nightmode pre, .res-nightmode code {
 		background: #2D2D2D !important; 
