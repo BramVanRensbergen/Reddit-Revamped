@@ -1499,6 +1499,10 @@
 	    outline: none !important;
 	}
 	
+	.res-nightmode .interstitial-message .md { /* message that you need to be 18 to view NSFW subreddits */
+		color: white !important;
+	}
+	
 	/* HEADER */
 	.res-nightmode #header-bottom-left {
 	    padding-top: 6px !important;
