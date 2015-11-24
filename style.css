@@ -32,6 +32,7 @@
 	.debuginfo,						/* info on server that rendered	the page */		
 	.searchpane-toggle-hide,		/* link to hide search box on search page */
 	.sr-interest-bar,				/* box to find 'interesting' subreddits, displayed on front page */
+	.newsletterbar,					/* box to sign up to newsletter, at top of front page */
 	#sponsorship, #ad_main, #ad_sponsorship 			/* ad in sidebar */	
 	{    
 	  display: none !important;
