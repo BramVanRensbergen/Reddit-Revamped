@@ -566,6 +566,11 @@
 		margin: 0px 50px !important; 
    		padding: 10px !important;
 	}
+	
+	div.content.policy-page{
+		margin: 0px auto !important;
+		padding-left: 100px !important;
+	}
 			
 	.with-listing-chooser .content {
 	    margin-left: 150px !important;
@@ -1498,6 +1503,14 @@
 	    .res-nightmode .keyHighlight .noncollapsed .md, .res-nightmode .keyHighlight .noncollapsed .md p {
 	    background: none !important;
 	    outline: none !important;
+	}
+	
+	.res-nightmode .policy-page p, .res-nightmode .policy-page ul{
+		color: white !important;
+	}
+	
+	.res-nightmode .policy-page .md p em {
+		color: black !important;
 	}
 	
 	.res-nightmode .interstitial-message .md { /* message that you need to be 18 to view NSFW subreddits */
