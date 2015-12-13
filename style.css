@@ -4,17 +4,12 @@
 	******* USER OPTIONS  *******
 	****************************/    
 	
-	.side {
-		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
-		position: absolute !important; /* set to 'inline' (instead of 'absolute') to make sure the sidebar is always visible */ 
-		width: 0px !important; /* set to 300 (instead of 0) to make sure the sidebar is always visible */
-		overflow: hidden !important; /* set to visible (instead of 'hidden')  to make sure the sidebar is always visible */
-	}
+	/* comment out or remove the following line to permanently display the right sidebar */
+	.side {opacity: 0 !important;	position: absolute !important; width: 0px !important; overflow: hidden !important;}
 	
-	/* comment out or remove the following three lines to restore the subreddit bar at the top of each page, containing your subscribed subreddits */
-	#sr-header-area {display: none;}	
-	#header {height: 25px !important;}
-	#header-bottom-right {top: 2px !important;}
+	/* comment out or remove the following line to restore the subreddit bar at the top of each page, containing your subscribed subreddits */
+	#sr-header-area {display: none;} #header {height: 25px !important;} #header-bottom-right {top: 2px !important;}
+	
 		
 	/****************************
 	***** REMOVED ELEMENTS ******
@@ -127,7 +122,7 @@
 	/* reduce header height to match actual contents */
 	#header { 
 	    min-height: 25px !important; 
-	    height: 38px;
+	    height: 38px; /* likely overwritten by the user option at the top of the document */ 
 	    padding-bottom: 8px !important;
 	    background-color: #f5f5f5 !important;
 	    border: 1px solid #f5f5f5 !important;
@@ -191,7 +186,7 @@
 		background-color: #f5f5f5 !important;  
 		font-size: 11px !important;
 		position: absolute !important;
-		top: 16px;
+		top: 16px; /* likely overwritten by the user option at the top of the document */ 
 		right: 0px !important;    
 		padding: 6px 4px 0px 4px !important;
 		margin: 0px !important;
@@ -275,6 +270,10 @@
 	******* RIGHT SIDEBAR ******
 	****************************/
 	.side {
+		opacity: 1;	 /* likely overwritten by the user option at the top of the document */ 
+		position: inline; /* likely overwritten by the user option at the top of the document */ 
+		width: 300px; /* likely overwritten by the user option at the top of the document */ 
+		overflow: visible; /* likely overwritten by the user option at the top of the document */ 
 		top: 0px !important;  
 		right: 0px !important; 
 		z-index: 20;
