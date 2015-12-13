@@ -1,5 +1,9 @@
 @-moz-document domain('reddit.com') {
 	
+	/****************************
+	******* USER OPTIONS  *******
+	****************************/    
+	
 	.side {
 		opacity: 0 !important;	 /* set to 1 (instead of 0) to make sure the sidebar is always visible */ 
 		position: absolute !important; /* set to 'inline' (instead of 'absolute') to make sure the sidebar is always visible */ 
@@ -17,7 +21,6 @@
 	.account-activity-box, 			/* link to account activity */
 	.listing-chooser .contents h3, 	/* 'multireddits' title */
 	div.footer-parent, 				/* entire footer */
-	.panestack-title, 				/* name of display (eg top 500 comments) on comment page */
 	.side .create, 					/* create your own subreddit link */
 	.reddiquette, 					/* reddiquette link below comment box */
 	.shortlink, 					/* shortlink in right sidebar */
@@ -457,7 +460,7 @@
 	    color: #8897AE !important;
 	    font-size: 13px !important;
 	    font-style: italic !important;    
-	    margin: 15px 7px 15px 9px !important;
+	    margin: 5px 7px 15px 9px !important;
 	    overflow: hidden !important;  
 	    padding: 4px 8px 4px 8px !important;
 	    white-space: normal !important;
@@ -556,6 +559,23 @@
 	
 	.messages-page .menuarea {
 		padding: 8px 8px 4px 20px !important;
+	}
+	
+	.panestack-title {
+		border-bottom: 0px solid white !important;		
+	}
+	
+	.panestack-title .title, 	#REScommentSubToggle {
+		font-size: 13px !important;
+	}
+	
+		
+	.menuarea li {
+	    font-size: 16px !important;
+	    font-weight: normal !important;
+	    color: black !important;
+	    padding-right: 17px !important;
+	    font-style: italic !important;
 	}
 	
 	/*****************************
@@ -1629,9 +1649,12 @@
 	    background-color: white !important;
 	}	
 	
-	.res-nightmode .usertext-buttons button, .res-nightmode .RESBigEditorPop  {
-		/* save, cancel, big editor button beneath comment box */
+	.res-nightmode .usertext-buttons button, .res-nightmode .RESBigEditorPop, .res-nightmode .RESSubscriptionButton {		
 		border: 1px solid #666666 !important;
+	}
+	
+	.res-nightmode .usertext-buttons button:hover, .res-nightmode .RESBigEditorPop:hover, .res-nightmode .RESSubscriptionButton:hover {		
+		background-color: #666 !important;
 	}
 	
 	/* MESSAGING */
@@ -2400,14 +2423,6 @@
 	    border: 2px solid #D4DFEF !important;
 	    border-radius: 4px !important;
 	    opacity: 0.8 !important;
-	}
-	
-	.menuarea li {
-	    font-size: 16px !important;
-	    font-weight: normal !important;
-	    color: black !important;
-	    padding-right: 17px !important;
-	    font-style: italic !important;
 	}
 	
 	.message .subject .correspondent, .message .subject .correspondent.rounded {
