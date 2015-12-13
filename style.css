@@ -129,11 +129,15 @@
 	    box-shadow: #888 0px 0px 5px 0px !important;
 	}
 	
+	#header-bottom-right, #header-bottom-left, #sr-header-area, .res-nightmode #header-bottom-right, .res-nightmode #header-bottom-left, .res-nightmode #sr-header-area,
+		#RESShortcutsEditContainer, #RESShortcutsSort, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash,#RESShortcutsLeft {
+		background-color: inherit !important;
+	}
+	
 	#sr-header-area {
 		border-bottom: 0px solid white !important;
 		font-size: 12px !important;
 		margin-bottom: -3px !important;
-		background-color: #f5f5f5 !important;
 	}
 	
 	#header-bottom-left {
@@ -183,7 +187,6 @@
 	
 	#header-bottom-right {
 		background: none !important;  
-		background-color: #f5f5f5 !important;  
 		font-size: 11px !important;
 		position: absolute !important;
 		top: 16px; /* likely overwritten by the user option at the top of the document */ 
@@ -1443,8 +1446,7 @@
 	**** RES Nightmode specific *****
 	*********************************/
 	/* GENERAL */	
-	.res-nightmode, .res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, 
-		.res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
+	.res-nightmode, .res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
 		.res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ul, .res-nightmode .side ol, .res-nightmode .side li, 
 		.res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode .thing.even,
 		.res-nightmode .thing.odd, .res-nightmode input[type="text"],  .res-nightmode .login-form input[name*="passwd"] {
@@ -1548,13 +1550,18 @@
 	}
 	
 	/* HEADER */
+	.res-nightmode #header {
+		background-color: #2D2D2D !important; /* #393939 */	
+	}
+	
 	.res-nightmode #header-bottom-left {
 	    padding-top: 6px !important;
 	}
 	
-	body.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left{
-	    background-color: #2D2D2D !important; /* #393939 */
+	.res-nightmode #header, .res-nightmode #header #header-bottom-right, .res-nightmode #header #header-bottom-left, .res-nightmode #sr-header-area{
 		margin-top: 0px !important;
+		color: white !important;
+		box-shadow: none !important;
 	}
 		
 	.res-nightmode #header {
