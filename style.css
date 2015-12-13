@@ -10,12 +10,16 @@
 		width: 0px !important; /* set to 300 (instead of 0) to make sure the sidebar is always visible */
 		overflow: hidden !important; /* set to visible (instead of 'hidden')  to make sure the sidebar is always visible */
 	}
+	
+	/* comment out or remove the following three lines to restore the subreddit bar at the top of each page, containing your subscribed subreddits */
+	#sr-header-area {display: none;}	
+	#header {height: 25px !important;}
+	#header-bottom-right {top: 2px !important;}
 		
 	/****************************
 	***** REMOVED ELEMENTS ******
 	****************************/    
 	#header span.pagename, 			/* remove page name e.g. 'Gaming' */
-	#sr-header-area, 				/* bar that contains subreddit links */
 	.giftgold, .goldvertisement, .gilded-comments-link, .gilded-link, /* gold related */
 	.trophy-area, 					/* trophy box */
 	.account-activity-box, 			/* link to account activity */
@@ -123,11 +127,18 @@
 	/* reduce header height to match actual contents */
 	#header { 
 	    min-height: 25px !important; 
-	    height: 25px !important;
+	    height: 38px;
 	    padding-bottom: 8px !important;
 	    background-color: #f5f5f5 !important;
 	    border: 1px solid #f5f5f5 !important;
 	    box-shadow: #888 0px 0px 5px 0px !important;
+	}
+	
+	#sr-header-area {
+		border-bottom: 0px solid white !important;
+		font-size: 12px !important;
+		margin-bottom: -3px !important;
+		background-color: #f5f5f5 !important;
 	}
 	
 	#header-bottom-left {
@@ -180,9 +191,9 @@
 		background-color: #f5f5f5 !important;  
 		font-size: 11px !important;
 		position: absolute !important;
-		top: 2px !important;  /* put the user info box on the top line of the header */
+		top: 16px;
 		right: 0px !important;    
-		padding: 6px 4px 5px 4px !important;
+		padding: 6px 4px 0px 4px !important;
 		margin: 0px !important;
 	}
 	
