@@ -1865,11 +1865,7 @@
 		 background-image: url(https://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;		
 	}
 	
-	.RESGalleryControls a, .res-nightmode .RESGalleryControls a {
-	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
-	}
-	
-	.RESUserTagImage {
+	.RESUserTagImage, .RESGalleryControls a {
 		background-image: none !important;
 	}
 	
@@ -2194,21 +2190,24 @@
 	}
 	
 	.res-nightmode #RESConsoleContainer #SearchRES-input {
-		    border: 1px solid #ABCCE3 !important;
+		border: 1px solid #ABCCE3 !important;
 	}
 
-	.res-nightmode #RESConsoleContainer .toggleButton .toggleOn, .res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOff {
+	.res-nightmode #RESConsoleContainer .toggleButton .toggleOn, .res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOff, 
+	.res-nightmode .toggleButton .toggleOn, .res-nightmode .toggleButton.enabled .toggleOff{
 		background-color: #DDD !important;
 		color: #636363 !important;
 	}
 	
-	.res-nightmode #RESConsoleContainer .toggleButton .toggleOff {
+	.res-nightmode #RESConsoleContainer .toggleButton .toggleOff,
+	.res-nightmode .toggleButton .toggleOff {
 		background: none !important;
 		background-color: #D02020 !important;
 		color: white !important;
 	}
 	
-	.res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOn {
+	.res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOn,
+	.res-nightmode .toggleButton.enabled .toggleOn{
 		background: none !important;
 		background-color: #107AC4 !important;
 		color: white !important;
