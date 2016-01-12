@@ -1,7 +1,7 @@
 @-moz-document domain('reddit.com') {
 	
 	/****************************
-	******* USER OPTIONS  *******
+	******* User Options  *******
 	****************************/    
 	
 	/* comment out or remove the following line to permanently display the right sidebar */
@@ -12,7 +12,7 @@
 	
 		
 	/****************************
-	***** REMOVED ELEMENTS ******
+	***** Removed Elements ******
 	****************************/    
 	#header span.pagename, 			/* remove page name e.g. 'Gaming' */
 	.giftgold, .goldvertisement, .gilded-comments-link, .gilded-link, /* gold related */
@@ -41,7 +41,7 @@
 	}
 	
 	/***********************
-	******** MAIN **********
+	******** Main **********
 	***********************/	
 	body, #main, input, button, .wikipage, .wikipage h1, .wikipage h2, .wikipage h3, .wikipage h4, .flat-vert.title {
 	    background-color: white !important;
@@ -116,7 +116,7 @@
 	}
 		
 	/***********************
-	******* HEADER *********
+	******* Header *********
 	***********************/
 	
 	/* reduce header height to match actual contents */
@@ -240,7 +240,7 @@
 	
 	
 	/**************************
-	******* LEFT SIDEBAR ******
+	******* Left Sidebar ******
 	***************************/
 	
 	.with-listing-chooser .listing-chooser {  
@@ -272,7 +272,7 @@
 	}	
 	
 	/***************************
-	******* RIGHT SIDEBAR ******
+	******* Right Sidebar ******
 	****************************/
 	.side {
 		opacity: 1;	 /* likely overwritten by the user option at the top of the document */ 
@@ -453,7 +453,7 @@
 	}
 	
 	/************************
-	******* MENU AREA ******* 
+	******* Menu Area ******* 
 	*************************
 	(links from / sorted by / navigate by / etc)
 	*/
@@ -584,6 +584,9 @@
 		font-size: 13px !important;
 	}
 	
+	#REScommentSubToggle {
+		padding: 5px 5px !important;
+	}	
 		
 	.menuarea li {
 	    font-size: 16px !important;
@@ -594,7 +597,7 @@
 	}
 	
 	/*****************************
-	******* CONTENT GENERAL ******
+	******* Content General ******
 	******************************/
 	
 	div.content, .with-listing-chooser.listing-chooser-collapsed div.content {
@@ -741,10 +744,14 @@
 		padding: 3px 5px !important;		
 	}
 	
-	.RESDialogSmall input[type="button"] {
+	.RESDialogSmall input[type="button"], .RESDialogSmall input[type="submit"] {
 		background-color: #5cc410 !important;
 		right: 12px !important;
 	}	
+	
+	#userTaggerToolTip {
+		padding-bottom: 20px !important;
+	}
 	
 	.imgCaptions, .imgCredits, .RESGalleryLabel {
 	    font-size: 14px !important;
@@ -884,9 +891,9 @@
 	    margin-top: 7px !important;
 	}
 			
-	/**********************************
-	******* LISTING PAGE LAYOUT *******
-	**********************************/
+	/*****************************
+	******* Listing Page   *******
+	******************************/
 	.sitetable {
 	    padding: 0px !important;
 	}
@@ -970,7 +977,7 @@
 	}
 	
 	/***************************
-	******* COMMENTS-PAGE ******
+	******* Comments Page ******
 	***************************/
 	.comments-page  div.content {
 		margin-right: 60px !important;
@@ -1085,7 +1092,7 @@
 	}	
 	
 	/******************************
-	******* CREATE A COMMENT ******
+	******* Create a Comment ******
 	******************************/
 	
 	.usertext-edit {
@@ -1178,7 +1185,7 @@
 	} 
 	
 	/***********************
-	******* SEARCH *********
+	******* Search *********
 	***********************/
 	
 	/* search box in right sidebar, on most pages */
@@ -1847,13 +1854,84 @@
 	    background-repeat: no-repeat !important;
 	}
 
-	.RESGalleryControls a, .RESUserTagImage, .RESGalleryControls a, .RESUserTagImage {
+	/* expandos */
+	.expando-button.image, .expando-button.video-muted, .expando-button.video-muted.collapsed,
+	.res-nightmode .expando-button.image, .res-nightmode .expando-button.video-muted, .res-nightmode .expando-button.video-muted.collapsed{
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
-	/* in non-nightmode, currently using original expandos  */
-	/*
-		.expando-button.image, .expando-button.video-muted
+	.expando-button.selftext, .expando-button.video,
+	.res-nightmode .expando-button.selftext, .res-nightmode .expando-button.video{
+		 background-image: url(https://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;		
+	}
+	
+	.RESGalleryControls a, .res-nightmode .RESGalleryControls a {
+	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
+	}
+	
+	.RESUserTagImage {
+		background-image: none !important;
+	}
+	
+	.expando-button.selftext.collapsed {
+		background-position: -25px -513px !important;
+	}
+	
+	.expando-button.selftext.collapsed:hover {
+		background-position: -96px -421px !important;
+	}
+	
+	.expando-button.selftext.expanded {
+		background-position: -73px -513px !important;
+	}
+	
+	.expando-button.selftext.expanded:hover {
+		background-position: -49px -513px !important;
+	}
+
+	.expando-button.video-muted.collapsed {
+		background-position: 0px 0px !important;
+	}
+	
+	.expando-button.video-muted.collapsed:hover {
+		background-position: 0px -24px !important;
+	}
+	
+	.expando-button.video-muted.expanded {
+		background-position: 0px -48px !important;
+	}
+	
+	.expando-button.video-muted.expanded:hover {
+		background-position: 0px -72px !important;
+	}
+	
+	.expando-button.video.collapsed {
+		background-position: 0px -538px !important;
+	}
+	
+	.expando-button.video.collapsed:hover {
+		background-position: -24px -538px !important;
+	}
+	
+	.expando-button.video.expanded {
+		background-position: -48px -538px !important;
+	}
+	
+	.expando-button.video.expanded:hover {
+		background-position: -24px -538px !important;
+	}
+
+	/*  previous settings
+	.RESGalleryControls a, .RESGalleryControls a {
+	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
+	}
+	
+	.RESUserTagImage {
+		background-image: none !important;
+	}
+	
+	
+	.expando-button.image, .expando-button.video-muted {
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
@@ -1908,12 +1986,13 @@
 	.expando-button.selftext.expanded:hover {
 		background-position: -49px -513px !important;
 	}
-*/
+
 
 	/*.res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default, .res-nightmode .thumbnail.nsfw {
 	    background-image: url(http://c.thumbs.redditmedia.com/0ZkZPsviQScvt3an.png) !important;
 	}*/
 	
+	/*
 	.res-nightmode .expando-button.selftext.collapsed, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .eb-sch, .res-nightmode .expando-button.selftext.expanded, 
 .res-nightmode .expando-button.selftext.expanded:hover, .res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, 
 	.res-nightmode .eb-vch, .res-nightmode .expando-button.video.expanded, .res-nightmode .eb-ve, .res-nightmode .expando-button.video.expanded:hover, .res-nightmode .eb-veh, .res-nightmode .expando-button.image, .res-nightmode .expando-button.toggleImage.collapsed, .res-nightmode .expando-button.toggleImage.expanded {
@@ -1953,7 +2032,7 @@
 	}
 	
 	/**********************************
-	************ MESSAGES *************
+	************ Messages *************
 	***********************************/
 	#quickMessage {
 		background-color: rgba(0, 0, 0, 0.85) !important;;
@@ -2001,7 +2080,7 @@
 	}
 
 	/**********************************
-	********** RES CONSOLE ************
+	********** RES Console ************
 	***********************************/
 	#RESConsoleTopBar {
 	  	background-color: white !important;    
@@ -2047,6 +2126,7 @@
 		top: 8px !important;
 		height: 27.5px !important;
 		width: 27.5px !important;
+		padding-top: 1px !important;		
 	}
 	
 	#RESConsoleContainer input, #RESConsoleTopBar, #RESConsoleContent {
@@ -2195,7 +2275,7 @@
 	}
 		
 	/****************************
-	********** VARIA ************
+	********** Varia ************
 	*****************************/  
 	
 	.login-form-section button {
