@@ -733,12 +733,7 @@
 	    padding-left: 12px !important;
 	    padding-top: 10px !important;
 	}
-	
-	.RESCloseButton {
-		right:11px !important;
-		padding-top: 2px !important;
-		margin-top: 5px !important;
-	}
+
 	
 	.RESDialogSmall input[type="button"], #quickMessageDialog .fullMessageForm {
 		position: absolute !important;		
@@ -2008,12 +2003,18 @@
 	/**********************************
 	********** RES CONSOLE ************
 	***********************************/
+	#RESConsoleTopBar {
+	  	background-color: white !important;    
+		padding-top: 12px !important;
+		padding-bottom: 11px !important;
+		border: 0px solid white !important;
+		border-bottom: 1px solid lightgray !important;
+	} 
 	
-	#RESConsoleContainer input, #RESConsoleTopBar, #RESConsoleContent {
-	    color: black !important;
-	    background-color: white !important;
+	#RESConsoleContent {
+		margin-top: 20px !important;
 	}
-	
+			
 	#RESConsoleContainer .moduleButton.enabled, #RESMenu li {
 	     color: black !important;
 	} 
@@ -2021,10 +2022,146 @@
 	#RESLogo {
 	     display: none !important;
 	}
+			
+	/* #RESConsoleContainer button */
+	 #RESConsoleContainer button, #RESConsoleContainer .addRowButton, #RESConsoleContainer .RESCloseButton,
+	 .res-nightmode #RESConsoleContainer button, .res-nightmode  #RESConsoleContainer .addRowButton, .res-nightmode  #RESConsoleContainer .RESCloseButton{
+		background-color: white !important;
+		color: #5C616C !important;
+		border: 1px solid #CCC !important;
+		margin: 0px !important;		
+		padding: 2px 8px !important;
+		margin: 0px !important;
+	}
 	
-	#RESConsoleTopBar {
-	    background-color: white !important;    
-	} 
+	 #RESConsoleContainer #moduleOptionsSave {
+		margin-right: 10px !important;
+		margin-top: -4px !important;
+	}
+	
+	#RESConsoleContainer button:hover , #RESConsoleContainer .addRowButton:hover{
+		background-color: #DDD !important;
+	}
+	
+	.RESCloseButton {
+		top: 8px !important;
+		height: 27.5px !important;
+		width: 27.5px !important;
+	}
+	
+	#RESConsoleContainer input, #RESConsoleTopBar, #RESConsoleContent {
+	    color: black !important;
+	    background-color: white !important;
+	}
+
+	#SearchRES-input {		
+		padding-left: 8px !important;
+	}
+	
+	#RESConsoleContainer #SearchRES-input-submit {
+		background-color: transparent !important;
+		border: none !important;
+		margin-right: 5px !important;
+	}
+	
+	#RESConsoleContainer input[type="radio"] {
+		vertical-align: middle !important;;
+	}
+	
+	#RESConsoleContainer input[type="text"] {
+		padding-left: 5px !important;
+	}
+	
+	#RESConsoleContainer code {
+		background-color: inherit !important;
+	}
+	
+	#RESConfigPanelModulesPane {
+		padding-right: 10px !important;
+	}
+	
+	#RESConfigPanelOptions {
+		border: none !important;
+	}
+	
+	#RESConsoleContainer .optionContainer {
+		border: none !important;
+		background: inherit !important;
+		padding: 20px 0px !important;
+	}
+
+	#RESConsoleContainer .optionContainer:first-child ~ .optionContainer {
+		border-top: 1px solid lightgray !important;
+	}
+	
+	#RESConsoleContainer .optionsTable tr:nth-child(2n) {
+		background-color: inherit !important;
+	}
+	
+	#moduleOptionsSaveStatus {
+		background-color: #FFFACD !important;
+		color: black !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer .RESConfigPanelCategory.active .categoryButton {
+		background: #F5F5F5 none repeat scroll 0% 0% !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer .categoryButton, .res-nightmode #RESConsoleContainer #RESConfigPanelModulesList ul,
+	.res-nightmode #RESConsoleContainer #RESConfigPanelModulesList h3 {
+		border-color: #E6E6E6 !important;
+		color: #505050 !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer #SearchRES-input {
+		    border: 1px solid #ABCCE3 !important;
+	}
+
+	.res-nightmode #RESConsoleContainer .toggleButton .toggleOn, .res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOff {
+		background-color: #DDD !important;
+		color: #636363 !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer .toggleButton .toggleOff {
+		background: none !important;
+		background-color: #D02020 !important;
+		color: white !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer .toggleButton.enabled .toggleOn {
+		background: none !important;
+		background-color: #107AC4 !important;
+		color: white !important;
+	}
+
+	.res-nightmode #RESConsoleContainer .optionsTable th {
+		background-color: #96BFE8 !important;
+		color: white !important;		
+	}	
+	
+	.res-nightmode .optionContainer {
+		background-color: inherit !important;
+	}
+	.res-nightmode #RESConsoleContainer {
+		background-color: white !important;
+	}
+
+	.res-nightmode #RESConsoleContainer #moduleOptionsScrim {
+		background-color: rgba(255, 255, 255, 0.701961);
+	}	
+	
+	.res-nightmode #RESConsoleContainer .token-input-list-facebook {
+		background-color: inherit !important;
+	}
+	
+	.res-nightmode #RESConsoleContainer #token-input-subredditStylesWhitelist {
+		border: none !important;
+	}
+			
+	.res-nightmode #RESConsoleContainer .token-input-list-facebook {
+		border: 1px solid #96BFE8 !important;
+	}
+
 	
 	/*****************************
 	******* Subreddit Page *******
