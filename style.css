@@ -1783,10 +1783,9 @@
 	    background-color: #1A1A1A !important;
 	}
 	
-	.res-nightmode #authorInfoToolTip, .res-nightmode #RESHoverContainer {
+	.res-nightmode .RESHoverInfoCard {
 	    background: inherit !important;
-	}
-	
+	}	
 	
 	/* SEARCH */	
 	.res-nightmode #search input[type="submit"] {
@@ -2288,6 +2287,23 @@
 	
 	.res .sitetable .RESDialogSmall {
 	    margin-bottom: 30px !important;
+	}
+	
+	#RESHoverInfoSubscriptionButton, .RESHoverInfoCard .res-fancy-toggle-button, #authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,
+	.RESHoverTitle .fancy-toggle-button a {
+		border-width: 0px !important;
+		background-image: none !important;
+		font-style: normal !important;
+		font-weight: normal !important;
+		font-size: 12px !important;
+	}
+	
+	#RESHoverInfoSubscriptionButton, #subTooltipButtons .res-fancy-toggle-button {
+		background-color: #00A523 !important;
+	}
+	
+	#authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,	.RESHoverTitle .fancy-toggle-button a {
+		background-color: #107AC4 !important;;
 	}
 	
 	/********************************
