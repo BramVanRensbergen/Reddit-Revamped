@@ -976,6 +976,24 @@
 		padding-left: 11px !important;
 	}
 	
+	/* upcoming links, possibly at the top of a listing page */
+	#siteTable_organic {
+	    background-color: inherit !important;    
+	}
+	
+	#siteTable_organic .thing {
+	    padding-top: 16px !important;
+	}
+	
+	.res-nightmode #siteTable_organic .thing {
+	     background-color: #373737 !important;
+	
+	}
+	
+	#siteTable_organic .help-hoverable {
+	    bottom: 10px !important
+	}
+	
 	/***************************
 	******* Comments Page ******
 	***************************/
@@ -2289,6 +2307,7 @@
 	    margin-bottom: 30px !important;
 	}
 	
+	/* hover tooltip */
 	#RESHoverInfoSubscriptionButton, .RESHoverInfoCard .res-fancy-toggle-button, #authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,
 	.RESHoverTitle .fancy-toggle-button a {
 		border-width: 0px !important;
@@ -2305,6 +2324,15 @@
 	#authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,	.RESHoverTitle .fancy-toggle-button a {
 		background-color: #107AC4 !important;;
 	}
+	
+	
+	.spot-nextprev button {
+	width: 21px !important;
+    height: 21px  !important;    
+    background-color: white !important;
+}
+
+
 	
 	/********************************
 	******** Unordered **************
