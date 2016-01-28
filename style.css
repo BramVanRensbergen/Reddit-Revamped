@@ -1567,8 +1567,15 @@
 		color: black !important;
 	}
 	
-	.res-nightmode .interstitial-message .md { /* message that you need to be 18 to view NSFW subreddits */
+	.res-nightmode .interstitial-message .md, /* message that you need to be 18 to view NSFW subreddits */
+	.res-nightmode .interstitial .c-btn /* message-the-mods button */{ 
 		color: white !important;
+	}
+	
+	.res-nightmode .interstitial-subreddit-description { /* message that you need to be invited to subreddit */
+		background-color: black !important;
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
 	}
 	
 	/* HEADER */
