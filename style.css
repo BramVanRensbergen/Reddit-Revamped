@@ -2324,8 +2324,16 @@
 		font-size: 12px !important;
 	}
 	
+	.RESHoverInfoCard .res-fancy-toggle-button.remove {
+		font-style: normal !important; /* otherwise button is in italics */
+	}
+	
 	#RESHoverInfoSubscriptionButton, #subTooltipButtons .res-fancy-toggle-button {
 		background-color: #00A523 !important;
+	}
+	
+	#RESHoverInfoSubscriptionButton.remove, #subTooltipButtons .res-fancy-toggle-button.remove, .RESHoverTitle .fancy-toggle-button a.remove {
+		background-color: red !important;
 	}
 	
 	#authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,	.RESHoverTitle .fancy-toggle-button a {
