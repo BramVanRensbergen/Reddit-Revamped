@@ -2337,15 +2337,27 @@
 	
 	#authorInfoToolTip .bottomButtons a, #authorInfoToolTip .bottomButtons div,	.RESHoverTitle .fancy-toggle-button a {
 		background-color: #107AC4 !important;;
-	}
-	
+	}	
 	
 	.spot-nextprev button {
-	width: 21px !important;
-    height: 21px  !important;    
-    background-color: white !important;
-}
+		width: 21px !important;
+    	height: 21px  !important;    
+    	background-color: white !important;
+	}
 
+	/* in comments view, NSFW content may be hidden by default; these boxes allow you to change that or show the content */
+	div.over18 .form-bar {
+		background-color: black !important;
+	}
+	
+	div.over18 .form-bar .form-bar-text {
+		margin-top: 5px !important;
+	}
+	
+	div.over18 .form-bar .c-btn {
+		margin-top: 1.5px !important;
+	}
+	
 
 	
 	/********************************
