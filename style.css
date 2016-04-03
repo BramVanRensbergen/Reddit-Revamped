@@ -500,6 +500,10 @@
 	    display: none !important;
 	}
 	
+	.commentNavSortType {
+		border: none !important;
+	}
+	
 	.commentNavSortTypeDisabled {
 	    color: #ccd4e0 !important;
 	}
