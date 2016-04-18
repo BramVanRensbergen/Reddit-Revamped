@@ -1295,7 +1295,7 @@
 	    width: 98% !important;
 	    color: black !important;
 	    font-family: inherit !important;
-	    font-size: 17px !important;
+	    font-size: 19px !important;
 	    font-style: normal !important;    
 	    -moz-transition: all 0.1s linear 0s !important;
 	    -webkit-transition: all 0.1s linear 0s !important;
@@ -1340,8 +1340,9 @@
 	
 	.search-page #search {
 	    position: inherit !important;
-	    width: inherit !important;
 	    height: inherit !important;
+		  max-width: 680px !important;
+		  padding: 0px !important;
 	}
 	
 	.search-page #search input[type="text"] {
@@ -1349,15 +1350,19 @@
 	    margin-left: 0px !important;    
 	}
 	
+	.search-page #search input[type="text"], .search-page .search-submit-button {
+		height: 40px !important;
+		border: 1px solid #808080 !important;
+    	border-radius: 2px !important;
+    	box-sizing: border-box !important;
+	}
+	
 	.search-page form#search br:nth-of-type(1) {
 	   display: none !important;    
 	}
 	
-	.searchpane.raisedbox {
-	    background-color: #eee !important;
-	    padding: 2px 10px 7px 80px !important;
-	    border: 1px solid #aaa !important;
-	    border-radius: 4px !important;
+	.searchpane.raisedbox {	    
+	    padding: 12px 10px 7px 25px !important;
 	    margin-left: 6px !important;
 	    margin-right: 6px !important;
 	}
@@ -1386,6 +1391,18 @@
 	
 	.combined-search-page .search-result .search-expando.collapsed {
     	max-height: 55px !important;;
+	}
+	
+	.res-search-tab-options a {
+		background-color: white !important;
+	}
+	
+	.res-nightmode .res-search-tab-options a {
+		background-color: #171717 !important; 
+	}
+	
+	.res-nightmode .searchpane.raisedbox, .res-nightmode .searchfacets {
+	    background-color: inherit !important; 
 	}
 	
 	/***************************
@@ -1618,7 +1635,7 @@
 	    border-color:#333 !important;
 	}
 
-	.res-nightmode .side .morelink, .res-nightmode .menuarea, .res-nightmode .menuarea, .res-nightmode .commentarea .menuarea, .res-nightmode .searchpane.raisedbox, .res-nightmode .searchfacets {
+	.res-nightmode .side .morelink, .res-nightmode .menuarea, .res-nightmode .menuarea, .res-nightmode .commentarea .menuarea {
 	    background-color: #26313A !important; 
 	    border: 1px solid #384F67 !important;
 	}
