@@ -1113,6 +1113,81 @@
 		margin: 0px !important;
 	}	
 	
+	
+	/******************************
+	********** Submit page ********
+	******************************/
+	
+		.submit-page .formtabs-content {		
+		  border-top: none !important;
+	    border-radius: 4px !important;
+	    box-shadow: #888 1px 1px 5px 0px !important;
+	    padding: 15px !important;
+	}
+	
+	.submit-page .infobar {
+		margin: 0px !important;
+		padding: 10px !important;
+	}
+	
+	.submit-page #title-field .RESCharCounter {
+		top: 33px !important;
+		left: 100px !important;
+		color: gray !important;
+	}
+	
+	.submit-page #suggest-title button {
+		color: black !important;
+	}
+	
+	.res-nightmode .submit-page #suggest-title button {
+		color: white !important;
+	}
+	
+	.submit-page .markdownEditor .RESCharCounter {
+		top: 60px !important;
+		left: 140px !important;
+		color: gray !important;
+	}
+	
+	.submit-page .RESMacroWrappingSpan .RESMacroDropdownTitle {
+		top: 50px !important;
+		left: 140px !important;
+	}
+	
+	.submit-page #url {
+		width: 514px !important;
+	}
+	
+	.submit-page #sr-autocomplete {
+		padding: 5px 10px !important;
+		width: 500px !important;
+	}
+	
+	.submit-page .submit_text h1 {
+		color: white !important;
+	}
+	
+	.submit-page .info-notice {
+		margin-top: 15px !important;		
+		margin-bottom: 20px !important;
+		padding: 10px !important;
+		width: 530px !important;
+		border-radius: 4px !important;
+	  box-shadow: #888 1px 1px 5px 0px !important;
+		border-color: white !important;
+	}
+	
+	.res-nightmode .submit-page .info-notice {
+		/*background-color: hsl(210, 50%, 30%) !important;*/
+		border-color: black !important;
+	}
+	
+	.submit-page .content {
+		padding-bottom: 20px !important;
+	}
+	
+	
 	/******************************
 	******* Create a Comment ******
 	******************************/
@@ -2508,21 +2583,7 @@
 	.addButton:hover {
 	    background-color: gray !important;
 	}
-	
-	#newlink.submit.content, .submit-page div.content > .content {
-	    width: 100% !important;
-	    display: block !important;
-	    float: none !important;
-	    clear: none !important;
-	    margin-left: auto !important;
-	    margin-right :auto !important;
-	}
-	
-	.submit-page h1 {
-	    font-style: italic !important;
-	    padding-bottom: 10px !important;
-	}
-	
+		
 	ul.tabmenu.formtab {
 	    display: block !important;
 	    padding-left: 15px !important;
@@ -2561,18 +2622,7 @@
 	ul.tabmenu.formtab {
 	    padding-bottom: 2px !important;
 	}
-	
-	.formtabs-content {
-	    display: block !important;
-	    border-top: none !important;
-	    border-radius: 4px !important;
-	    box-shadow: #888 1px 1px 5px 0px !important;
-	    padding: 15px !important;
-	    margin-left: auto !important;
-	    margin-right: auto !important;
-	    max-width: 500px !important;
-	}
-	
+		
 	.roundfield textarea, .roundfield input[type="text"], .roundfield input[type="password"] {
 	    width: 100% !important;
 	}
@@ -2587,12 +2637,7 @@
 	    padding-left: 0px !important; 
 	    padding-right: 0px !important;
 	}
-	
-	.submit-page div.content {
-	    display: table !important;
-	    padding-left: 10px !important;
-	}
-	
+		
 	.thing .title:hover, .thing .title.loggedin:hover, .tagline a:hover, #header-bottom-right a:hover, .subscription-box .title:hover, .subscription-box a:hover {
 	    color: black !important; 
 	    text-decoration: none !important;
