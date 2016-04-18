@@ -1295,8 +1295,8 @@
 	    width: 98% !important;
 	    color: black !important;
 	    font-family: inherit !important;
-	    font-size: 13px !important;
-	    font-style: italic !important;    
+	    font-size: 17px !important;
+	    font-style: normal !important;    
 	    -moz-transition: all 0.1s linear 0s !important;
 	    -webkit-transition: all 0.1s linear 0s !important;
 	}
