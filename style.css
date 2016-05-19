@@ -1854,7 +1854,7 @@
 	}
 	
 	.res-nightmode #login {
-		color: black !important;
+		color: white !important;
 	}
 
 	.res-nightmode input[type="text"]:hover,  .res-nightmode .login-form input[name*="passwd"]:hover {
