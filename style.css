@@ -2354,6 +2354,17 @@
 		margin-top: 1.5px !important;
 	}
 	
+	/* cancel button on report form */
+	.reportform .report-cancel {
+		border: 1px solid gray !important;;
+		color: gray !important;
+	}
+	
+	/* both buttons on report form */
+		.res-nightmode .reportform .report-cancel, .res-nightmode  .reportform .submit-action-thing {
+		border: 1.2px solid rgb(127, 127, 127) !important;;
+		color: white !important;
+	}
 
 	
 	/********************************
