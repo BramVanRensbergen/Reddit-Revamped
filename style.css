@@ -1982,6 +1982,16 @@
 	    background-position: -15px -642px !important;
 	    background-repeat: no-repeat !important;
 	}
+	
+	.res-media-controls button {
+		font-family: batch !important; 
+		border-radius: 0px !important;		
+		background-color: transparent !important;
+	}	
+	
+	.res-media-controls {
+		background-color: rgba(0, 0, 0, 0.3) !important;
+	}
 
 	/* expandos */
 	.expando-button.image, .expando-button.video-muted, .expando-button.video-muted.collapsed,
@@ -2061,6 +2071,8 @@
 	.expando-button.video.expanded:hover {
 		background-position: -24px -538px !important;
 	}	
+	
+	
 	
 	/**********************************
 	************ Messages *************
