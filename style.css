@@ -1989,6 +1989,22 @@
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
+	.expando-button.gallery.collapsed {
+		background-position: 0px -368px !important;
+	}
+	
+	.expando-button.gallery.collapsed:hover {
+		background-position: 0px -392px !important;
+	}
+	
+	.expando-button.gallery.expanded {
+		background-position: 0px -416px !important;
+	}
+	
+	.expando-button.gallery.expanded:hover {
+		background-position: 0px -440px !important;
+	}
+	
 	.expando-button.selftext, .expando-button.video,
 	.res-nightmode .expando-button.selftext, .res-nightmode .expando-button.video{
 		 background-image: url(https://f.thumbs.redditmedia.com/3ooonkjj2lVSwgtw.png) !important;		
