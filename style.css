@@ -127,6 +127,7 @@
 	    background-color: #f5f5f5 !important;
 	    border: 1px solid #f5f5f5 !important;
 	    box-shadow: #888 0px 0px 5px 0px !important;
+	    z-index: 1000 !important;
 	}
 	
 	#header-bottom-right, #header-bottom-left, #sr-header-area, .res-nightmode #header-bottom-right, .res-nightmode #header-bottom-left, .res-nightmode #sr-header-area,
@@ -276,12 +277,12 @@
 	****************************/
 	.side {
 		opacity: 1;	 /* likely overwritten by the user option at the top of the document */ 
-		position: inline; /* likely overwritten by the user option at the top of the document */ 
+		position: absolute; /* likely overwritten by the user option at the top of the document */ 
 		width: 300px; /* likely overwritten by the user option at the top of the document */ 
 		overflow: visible; /* likely overwritten by the user option at the top of the document */ 
 		top: 0px !important;  
 		right: 0px !important; 
-		z-index: 20;
+		z-index: 50 !important;
 		-moz-transition: width 0s;
 		-webkit-transition: width 0s; /* For Safari 3.1 to 6.0 */
     	transition: width 0s;
