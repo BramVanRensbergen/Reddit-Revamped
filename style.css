@@ -661,10 +661,10 @@
 	    overflow-x: visible !important;
 	}
 		
-	/* no width limit on wiki pages */
+	/* no width limit on internal wiki pages or on wikipedia expandos */
 	.md.wiki {
 	    max-width: 15000px !important;
-	}
+	}	
 
 	.RES-keyNav-activeElement, .RES-keyNav-activeElement .usertext-body, .RES-keyNav-activeElement .usertext-body .md, 
 		.RES-keyNav-activeElement .usertext-body .md p, .commentarea .RES-keyNav-activeElement .noncollapsed, 
@@ -779,6 +779,16 @@
 	
 	.gold-button {
 		background-color: #938870 !important;
+	}
+	
+	/* fix formatting of wikipedia expands */
+	.res-media-host-wikipedia .usertext-body, .res-media-host-wikipedia .usertext-body div {
+	    max-width: 900px !important;
+	}
+	
+	.res-media-host-wikipedia .res-text-media table {
+		margin-top: 0px !important;
+		margin-left: 30px !important;
 	}
 	
 	/***************************
