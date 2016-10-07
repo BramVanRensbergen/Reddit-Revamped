@@ -2177,6 +2177,10 @@
 	    color: black !important;
 	    background-color: white !important;
 	}
+	
+	.SearchRES-result-item {
+		background-color: white !important;
+	}
 
 	#SearchRES-input {		
 		padding-left: 8px !important;
