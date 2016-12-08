@@ -2417,6 +2417,25 @@
 		color: white !important;
 	}
 
+	/* post sharing start */
+	.post-sharing {
+		margin-bottom: 9px !important;
+		margin-right: 5px !important;
+	}
+	
+	.c-close {
+		color: rgb(251, 251, 251) !important;		
+		border-color: inherit !important;
+    	background-color: inherit !important;
+	}
+		
+	.res-nightmode .c-close {
+		color: #999 !important;		
+		border-color: #999 !important;
+    	background-color: #999 !important;
+	}
+	
+	/* post sharing end */
 	
 	/********************************
 	******** Unordered **************
