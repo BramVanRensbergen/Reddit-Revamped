@@ -1140,11 +1140,17 @@
 	********** Submit page ********
 	******************************/
 	
-		.submit-page .formtabs-content {		
-		  border-top: none !important;
+	
+	.submit-page .roundfield{
+		padding: 10px 1px !important;
+		width: 517px !important;
+	}
+	
+	.submit-page .formtabs-content {		
+		border-top: none !important;
 	    border-radius: 4px !important;
 	    box-shadow: #888 1px 1px 5px 0px !important;
-	    padding: 15px !important;
+	    padding: 25px !important;
 	}
 	
 	.submit-page .infobar {
@@ -1190,11 +1196,11 @@
 		color: white !important;
 	}
 	
-	.submit-page .info-notice {
+	.submit-page .roundfield.info-notice {
 		margin-top: 15px !important;		
 		margin-bottom: 20px !important;
 		padding: 10px !important;
-		width: 530px !important;
+		width: 549px !important;
 		border-radius: 4px !important;
 	  box-shadow: #888 1px 1px 5px 0px !important;
 		border-color: white !important;
@@ -1209,6 +1215,36 @@
 		padding-bottom: 20px !important;
 	}
 	
+	.submit-page #sr-drop-down, .submit-page #new-link-preview, .submit-page .usertext-edit .livePreview .RESDialogContents {
+		color: black !important;
+		background-color: rgb(245, 245, 245) !important;
+	}
+
+	.res-nightmode.submit-page #sr-drop-down, .res-nightmode.submit-page #new-link-preview, 
+	.res-nightmode.submit-page .usertext-edit .livePreview .RESDialogContents {
+		color: white !important;
+		background-color: #222 !important;
+	}
+	
+	.submit-page #url, .submit-page #sr-autocomplete-area input, .submit-page #title-field textarea {
+		background-color: white !important;
+		color: black !important;
+		font-style: normal !important;
+	}
+	
+	.res-nightmode.submit-page #url, .res-nightmode.submit-page #sr-autocomplete-area input, .res-nightmode.submit-page #title-field textarea  {
+		background-color: #333333 !important;
+		color: white !important;
+		font-style: normal !important;
+	}
+	
+	.submit-page .submit_text h1 {
+		color: black !important;
+	}
+	
+	.res-nightmode.submit-page .submit_text h1 {
+		color: white !important;
+	}
 	
 	/******************************
 	******* Create a Comment ******
@@ -2348,6 +2384,7 @@
 	.subreddits-page .thing {
 		margin: 25px 0px !important;
 	}
+	
 		
 	/****************************
 	********** Varia ************
@@ -2628,13 +2665,6 @@
 	
 	.roundfield textarea {
 		padding: 0px !important;
-	}
-	
-	.roundfield, form .roundfield {
-	    display: block !important;
-	    width: 100% !important;
-	    padding-left: 0px !important; 
-	    padding-right: 0px !important;
 	}
 		
 	.thing .title:hover, .thing .title.loggedin:hover, .tagline a:hover, #header-bottom-right a:hover, .subscription-box .title:hover, .subscription-box a:hover {
