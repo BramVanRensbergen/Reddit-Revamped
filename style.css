@@ -721,10 +721,9 @@
 	    font-size: 11px !important;
 	}	
 				
-	 /* .noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li, .other-discussions-page .flat-list.buttons li */
-	/*.flat-list.buttons li {
-	    display: inline !important;
-	}*/
+	.commentarea .flat-list.buttons li, .profile-page .noncollapsed .flat-list.buttons li, .message .flat-list.buttons li {
+		 display: inline !important;
+	}
 	
 	.RESDialogContents {
 		margin: 0px 0px 10px 0px !important;
