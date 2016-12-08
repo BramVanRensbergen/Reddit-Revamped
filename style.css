@@ -277,7 +277,6 @@
 	****************************/
 	.side {
 		opacity: 1;	 /* likely overwritten by the user option at the top of the document */ 
-		position: absolute; /* likely overwritten by the user option at the top of the document */ 
 		width: 300px; /* likely overwritten by the user option at the top of the document */ 
 		overflow: visible; /* likely overwritten by the user option at the top of the document */ 
 		top: 0px !important;  
@@ -585,7 +584,7 @@
 		border-bottom: 0px solid white !important;		
 	}
 	
-	.panestack-title .title, 	#REScommentSubToggle {
+	.panestack-title .title, #REScommentSubToggle {
 		font-size: 13px !important;
 	}
 	
