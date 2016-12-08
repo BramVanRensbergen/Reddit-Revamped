@@ -601,6 +601,14 @@
 	    font-style: italic !important;
 	}
 	
+	.res-filterline {
+		margin-left: 6px !important;
+		margin-right: 6px !important;
+		margin-bottom: 16px !important;
+		padding: 3px !important;
+		border-radius: 3px !important;
+	}
+	
 	/*****************************
 	******* Content General ******
 	******************************/
