@@ -2010,6 +2010,14 @@
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
+	.expando-button.toggleImage.expanded {
+		background-position: 0px -48px !important;
+	}
+	
+	.expando-button.toggleImage.expanded:hover {
+		background-position: 0px -72px !important;
+	}
+	
 	.expando-button.gallery.collapsed {
 		background-position: 0px -368px !important;
 	}
