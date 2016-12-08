@@ -722,9 +722,9 @@
 	}	
 				
 	 /* .noncollapsed .flat-list.buttons li, .related-page .flat-list.buttons li, .other-discussions-page .flat-list.buttons li */
-	.flat-list.buttons li {
+	/*.flat-list.buttons li {
 	    display: inline !important;
-	}
+	}*/
 	
 	.RESDialogContents {
 		margin: 0px 0px 10px 0px !important;
