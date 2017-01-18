@@ -70,8 +70,7 @@
 	
 	p a:hover {
 	    text-decoration: underline !important;
-	}
-	
+	}	
 	
 	pre, code {
 	    font-family: Consolas, Monaco, monospace !important;
