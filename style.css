@@ -1784,6 +1784,12 @@
 	     border-radius: 3px !important;
 	}
 	
+	.res-nightmode .side .remove-sr {
+		background-color: rgb(23, 23, 23) !important;
+		filter: none !important;
+		text-indent: 0px !important;
+		line-height: 5px !important;
+	}	
 	
 	/* MENU AREA */	
 	.res-nightmode .menuarea .drop-choices a.choice:hover {
