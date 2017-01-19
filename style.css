@@ -2138,7 +2138,9 @@
 		background-position: -24px -538px !important;
 	}	
 	
-	
+	.expando-gate button {
+		background-color: inherit !important;
+	}
 	
 	/**********************************
 	************ Messages *************
