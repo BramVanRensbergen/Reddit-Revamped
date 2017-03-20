@@ -1136,8 +1136,13 @@
 	
 	/* make sure buttons starts on new line on pages with the "Change your preferences to hide NSFW media?" box */
 	.over18.spoiler .flat-list.buttons {
-		   padding-top: 65px !important; 
+		 padding-top: 65px !important; 
 	}
+	
+	/* misaligned on chrome, not useful anyway */
+	.expando-button-loading {
+    	display: none !important; 
+    }
 	
 	/******************************
 	********** Submit page ********
