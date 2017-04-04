@@ -638,7 +638,7 @@
 	    font-style: italic !important;			
 	}
 	
-  .nsfw-stamp acronym {
+  	.nsfw-stamp acronym {
 		border: 0px solid #be0d3e !important; /* otherwise the text has a dotter underline */
 	}
 		
@@ -794,6 +794,10 @@
 	.res-media-host-wikipedia .res-text-media table {
 		margin-top: 0px !important;
 		margin-left: 30px !important;
+	}
+	
+	.post-sharing-cancel {
+		background-color: lightgray !important;
 	}
 	
 	/***************************
