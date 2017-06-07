@@ -1023,6 +1023,16 @@
 	    bottom: 10px !important
 	}
 	
+	/* button to subscribe, next to subreddit name */
+	.subreddit-subscribe, .res-nightmode .subreddit-subscribe {
+		background-color: inherit !important;
+		line-height: 16px !important;
+	}
+
+	.entry .subreddit.hover {
+	 	font-weight: normal !important;	
+	}
+	
 	/***************************
 	******* Comments Page ******
 	***************************/
