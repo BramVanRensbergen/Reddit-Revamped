@@ -1488,18 +1488,20 @@
 	/***************************
 	********* Voting ***********
 	****************************/	
-	.score.likes  { 
-	    color: #ff4500 !important;
-	}
-	
 	.score.unvoted {
-	    color: #aeaeae !important;
+	    color: #aeaeae;
 	}
 	
 	.comments-page .entry .score.unvoted {
-		color: red !important;
+		color: red;
 	}
 	
+	/* score of items liked by user */
+	.score.likes  { 
+	    color: #ff4500 !important;
+	}	
+	
+	/* score of items disliked by user */
 	.score.dislikes, .res_post_downs {
 	    color: #9494FF !important;
 	}
