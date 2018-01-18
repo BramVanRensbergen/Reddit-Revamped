@@ -1033,6 +1033,10 @@
 	 	font-weight: normal !important;	
 	}
 	
+	 .res-filterline-toggle-powered {
+         background-color: inherit !important;                                   
+     }
+	
 	/***************************
 	******* Comments Page ******
 	***************************/
@@ -2121,9 +2125,9 @@
 		background-position: -49px -513px !important;
 	}
 
-	.expando-button.video-muted.collapsed {
+	.expando-button.video-muted.collapsed, .expando-button.toggleImage.image.collapsed  {
 		background-position: 0px 0px !important;
-	}
+	}	
 	
 	.expando-button.video-muted.collapsed:hover {
 		background-position: 0px -24px !important;
