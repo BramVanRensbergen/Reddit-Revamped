@@ -2076,7 +2076,11 @@
 	    background-image: url(http://c.thumbs.redditmedia.com/nBCW80XuC2_qMu_D.png) !important;
 	}
 	
-	.expando-button.toggleImage.expanded {
+    .expando-button.image.collapsed {
+		background-position: 0px 0px !important;
+	}
+
+    .expando-button.image.expanded, .expando-button.toggleImage.expanded {
 		background-position: 0px -48px !important;
 	}
 	
