@@ -778,7 +778,8 @@
 	    text-decoration: none !important;
 	}	
 	
-	.c-btn-primary { /* e.g., on login page */
+	.c-btn-primary, /* e.g., on login page */
+        form fieldset footer button { /* e.g., in report view */     
 		background-color: #4f86b5 !important;
 	}
 	
