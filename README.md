@@ -3,9 +3,9 @@ Reddit Revamped
 
 A RES-friendly, clean, and minimal <a href = "http://www.reddit.com">Reddit</a> style for both Chrome and Firefox. Supports RES night mode.
 
-For screenshots and more info, see the <a href ="https://userstyles.org/styles/90951/reddit-revamped">userstyles entry</a> for this style.
+For screenshots and more info, see the [userstyle page](https://userstyles.world/style/13433/reddit-revamped) for this style.
 
-Should be used with the <a href = "https://userstyles.org/">Stylish</a> Firefox/Chrome addon. Install using the <a href ="https://userstyles.org/styles/90951/reddit-revamped">userstyles entry</a>.
+Should be used with the [userstyles](https://userstyles.world/) Firefox/Chrome addon. Install using the [reddit revamped userstyle](https://userstyles.world/style/13433/reddit-revamped).
 
 Based on a previous version of <a href = "http://userstyles.org/styles/71917/aerial-a-css-style-for-reddit-res-compatible">Reddit Aerial.</a>
 
