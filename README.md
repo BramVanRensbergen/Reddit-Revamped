@@ -5,7 +5,7 @@ A RES-friendly, clean, and minimal <a href = "http://www.reddit.com">Reddit</a> 
 
 For screenshots and more info, see the [userstyle page](https://userstyles.world/style/13433/reddit-revamped) for this style.
 
-Should be used with the [userstyles](https://userstyles.world/) Firefox/Chrome addon. Install using the [reddit revamped userstyle](https://userstyles.world/style/13433/reddit-revamped).
+Should be used with the Stylish [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)/[Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?pli=1) addon. Install using the [reddit revamped userstyle](https://userstyles.world/style/13433/reddit-revamped).
 
 Based on a previous version of <a href = "http://userstyles.org/styles/71917/aerial-a-css-style-for-reddit-res-compatible">Reddit Aerial.</a>
 
