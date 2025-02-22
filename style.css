@@ -1,8 +1,9 @@
 /* ==UserStyle==
 @name           Reddit Revamped
+@namespace      RedditRevamped
 @author         Decius
-@description    `A RES-friendly, clean, and minimal old Reddit style for both Chrome and Firefox. Supports RES night mode.`
-@version        20231203.1.1
+@description    `A RES-friendly, clean, and minimal Reddit style for both Chrome and Firefox. Supports RES night mode. Distributed <a href="https://userstyles.world/style/13433/reddit-revamped">here</a>. Based on a previous version of <a href = "http://userstyles.org/styles/71917/aerial-a-css-style-for-reddit-res-compatible">Reddit Aerial</a>.Suggestions/bug reports/comments/feedback are welcome at <a href = "mailto:redditrevamped@gmail.com">redditrevamped@gmail.com</a>. You can also check out the skin's code and changelog at <a href="https://github.com/BramVanRensbergen/reddit-revamped-css-style">github</a>.`
+@version        2025.02.22.1.1
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,11 +13,18 @@
 	******* User Options  *******
 	****************************/    
 	
-	/* comment out or remove the following line to permanently display the right sidebar */
+	/* auto-hiding of right sidebar: comment out or remove the following line to permanently display the right sidebar */
 	.side {opacity: 0 !important;	position: absolute !important; width: 0px !important; overflow: hidden !important;}
 	
-	/* comment out or remove the following line to restore the subreddit bar at the top of each page, containing your subscribed subreddits */
+	/* top subreddit bar: comment out or remove the following line to restore the subreddit bar at the top of each page, containing your subscribed subreddits */
 	#sr-header-area {display: none;} #header {height: 25px !important;} #header-bottom-right {top: 2px !important;}
+                   
+    	/* resolution-dependent centering. By default all centered, delete block to left-center or adapt the px value to center only when horizontal resolution is greater than the px. */
+	@media (min-width: 1px) {
+	        #header, div.content, .with-listing-chooser.listing-chooser-collapsed div.content, .comments-page .content{ 
+	            padding-left: 25% !important;
+		}
+	}
 			
 	/****************************
 	***** Removed Elements ******
@@ -620,7 +628,6 @@
 	
 	div.content, .with-listing-chooser.listing-chooser-collapsed div.content {
 		margin: 0px 50px !important; 
-   		padding: 10px !important;
 	}
 	
 	div.content.policy-page{
@@ -1662,7 +1669,7 @@
 	/********************************
 	**** RES Nightmode specific *****
 	*********************************/
-	/* GENERAL */	
+	/* NM - GENERAL */	
 	.res-nightmode, .res-nightmode #search input[type="text"], .res-nightmode .side, .res-nightmode .side .linkinfo, .res-nightmode .side .titlebox, 
 		.res-nightmode .side h1, .res-nightmode .side md,  .res-nightmode .side ul, .res-nightmode .side ol, .res-nightmode .side li, 
 		.res-nightmode #sr-more-link, .res-nightmode .organic-listing .tabmenu, .res-nightmode .content, .res-nightmode .thing.even,
@@ -1772,7 +1779,7 @@
 		margin-bottom: 20px !important;
 	}
 	
-	/* HEADER */
+	/* NM - HEADER */
 	.res-nightmode #header {
 		background-color: #2D2D2D !important; /* #393939 */	
 	}
@@ -1797,7 +1804,7 @@
 	}
 	
 	
-	/* SIDEBARS */
+	/* NM - SIDEBARS */
 	.res-nightmode .side {
    		box-shadow: 0px 0px 50px 20px rgba(255,255,255, 0.04) !important;;
    		border-left: #369 3px solid !important;
@@ -1827,7 +1834,7 @@
 		line-height: 5px !important;
 	}	
 	
-	/* MENU AREA */	
+	/* NM - MENU AREA */	
 	.res-nightmode .menuarea .drop-choices a.choice:hover {
 	    background-color: transparent !important;
 	}
@@ -1853,7 +1860,7 @@
 	}
 	
 	
-	/* LISTING PAGE */
+	/* NM - LISTING PAGE */
 	.res-nightmode .title:visited {
 	    color: #9B5FC9 !important;
 	}
@@ -1881,7 +1888,7 @@
 	}
 	
 	
-	/* COMMENTS PAGE */
+	/* NM - COMMENTS PAGE */
 	.res-nightmode .usertext-edit .RESDialogSmall > h3 {
 		background: none !important;
 	}
@@ -1932,7 +1939,7 @@
 	}
 	
 	
-	/* GENERAL INPUT AND LOGIN */
+	/* NM - GENERAL INPUT AND LOGIN */
 	.res-nightmode #login input {
 		background-color: white !important;
 		color: black !important;
@@ -1970,7 +1977,7 @@
 	}
 	
 	
-	/* RES-SPECIFIC MENUS */
+	/* NM - RES-SPECIFIC MENUS */
 	.res-nightmode .RESDialogSmall { 
 	    background: none !important;
 	}
@@ -2002,7 +2009,7 @@
 	    background: inherit !important;
 	}	
 	
-	/* SEARCH */	
+	/* NM - SEARCH */	
 	.res-nightmode #search input[type="submit"] {
 	     background-color: #171717 !important;
 	}
@@ -2020,7 +2027,9 @@
 	.res-nightmode .combined-search-page .search-result .search-expando.collapsed::before {
 		 background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #171717 100%) repeat scroll 0 0;
 	}
-	
+    
+    
+
 
 	/**********************************
 	************* ICONS ***************
@@ -2172,6 +2181,12 @@
 	.expando-gate button {
 		background-color: inherit !important;
 	}
+    
+    .expando-button {
+        background-size: auto;
+    }
+
+    
 	
 	/**********************************
 	************ Messages *************
@@ -2427,13 +2442,18 @@
 	/****************************
 	********** Varia ************
 	*****************************/  
+ 
         
-    /* high res fixes */
-    @media (min-width: 2000px) {
-        #header, div.content, .with-listing-chooser.listing-chooser-collapsed div.content, .comments-page .content{ 
-            padding-left: 25% !important;
-        }
+    /* disable padding of content of error page for correct centering */
+    div.content #classy-error {
+        padding-left: 0% !important;
+        margin: 0px !important;
     }
+
+    .content:has(> #classy-error) {  
+         padding-left: 0% !important;
+    }   
+    
 	
 	.login-form-section button {
 	    margin: 7px !important;
@@ -2955,5 +2975,5 @@
 	    margin-right: 10px !important;
 	    color: #aaa !important;
 	}
-    
 }
+    
