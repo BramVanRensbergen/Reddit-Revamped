@@ -3,7 +3,7 @@
 @namespace      RedditRevamped
 @author         Decius
 @description    `A RES-friendly, clean, and minimal Reddit style for both Chrome and Firefox. Supports RES night mode. Distributed <a href="https://userstyles.world/style/13433/reddit-revamped">here</a>. Based on a previous version of <a href = "http://userstyles.org/styles/71917/aerial-a-css-style-for-reddit-res-compatible">Reddit Aerial</a>.Suggestions/bug reports/comments/feedback are welcome at <a href = "mailto:redditrevamped@gmail.com">redditrevamped@gmail.com</a>. You can also check out the skin's code and changelog at <a href="https://github.com/BramVanRensbergen/reddit-revamped-css-style">github</a>.`
-@version        2025.02.22.1.1
+@version        2025.04.03.1.1
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2128,6 +2128,10 @@
 	
 	.RESUserTagImage, .RESGalleryControls a {
 		background-image: none !important;
+	}
+	
+        .expando-button.selftext {
+	        background-size: auto !important;
 	}
 	
 	.expando-button.selftext.collapsed {
