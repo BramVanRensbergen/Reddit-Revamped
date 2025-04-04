@@ -2130,7 +2130,7 @@
 		background-image: none !important;
 	}
 	
-        .expando-button.selftext {
+        .expando-button {
 	        background-size: auto !important;
 	}
 	
@@ -2184,13 +2184,7 @@
 	
 	.expando-gate button {
 		background-color: inherit !important;
-	}
-    
-    .expando-button {
-        background-size: auto;
-    }
-
-    
+	}    
 	
 	/**********************************
 	************ Messages *************
